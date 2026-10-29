@@ -1,0 +1,8 @@
+title: Händelserapporter
+description: Källgranskade händelserapporter
+lang: sv
+theme: minima
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
