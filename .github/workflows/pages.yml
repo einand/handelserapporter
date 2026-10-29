@@ -36,6 +36,24 @@ jobs:
           fi
       - name: Bygg mobilanpassad webbplats
         run: hugo --minify --contentDir hugo-content --destination public
+      - name: Installera Node.js för lokala Mermaid-resurser
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Lägg Mermaid i den publicerade webbplatsen
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .mermaid-build
+          npm install --prefix .mermaid-build --no-save --no-audit --no-fund --ignore-scripts mermaid@11.12.2
+          mkdir -p public/vendor/mermaid
+          cp -R .mermaid-build/node_modules/mermaid/dist/. public/vendor/mermaid/
+          test -s public/vendor/mermaid/mermaid.esm.min.mjs
+          test -d public/vendor/mermaid/chunks
+          if grep -R 'cdn.jsdelivr.net/npm/mermaid' public --include='*.html'; then
+            echo 'External Mermaid CDN reference found' >&2
+            exit 1
+          fi
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v4
         with:
