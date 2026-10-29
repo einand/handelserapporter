@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="sv"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101a2b">
+<title>{{ if .IsHome }}Händelserapporter{{ else }}{{ .Title }} · Händelserapporter{{ end }}</title>
+<meta name="description" content="Källgranskade, versionshanterade händelserapporter.">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head><body>
+<a class="skip" href="#innehall">Hoppa till innehåll</a>
+<header class="topbar"><div class="wrap topinner"><a class="brand" href="{{ "" | relURL }}"><span class="mark">H</span><span>HÄNDELSE<span class="brand-light">RAPPORTER</span></span></a><nav aria-label="Huvudmeny"><a href="{{ "" | relURL }}">Översikt</a><a href="{{ "visit/" | relURL }}">Visit Group</a><a href="https://github.com/einand/handelserapporter">GitHub ↗</a></nav></div></header>
+<main id="innehall" class="wrap">
+{{ if .IsHome }}
+<section class="hero"><p class="eyebrow">ÖPPEN INCIDENTDOKUMENTATION</p><h1>Händelser, belägg<br><em>och sammanhang.</em></h1><p class="lead">Löpande uppdaterade rapporter med tydliga källor, versionshistorik och åtskillnad mellan bekräftade uppgifter och obekräftade samband.</p></section>
+<section class="report-grid" aria-label="Rapporter"><a class="report-card" href="{{ "visit/" | relURL }}"><span class="card-top"><span class="dot"></span> AKTIV BEVAKNING</span><h2>Visit Group / iTicket</h2><p>Dataintrång, kundpåverkan, tekniska fynd och verifierade källor.</p><span class="card-link">Öppna incidentrapport <span aria-hidden="true">↗</span></span></a></section>
+{{ else }}
+<div class="breadcrumbs"><a href="{{ "" | relURL }}">Händelserapporter</a><span>/</span><span>{{ .Title }}</span></div>
+<div class="pagehead"><p class="eyebrow">KÄLLGRANSKAD DOKUMENTATION</p><h1>{{ .Title }}</h1><p class="subhead">Källor, tidslinje och versionshistorik · uppdateras vid verifierade fynd</p></div>
+<div class="document-layout"><aside class="sidebar"><div class="sidebox"><p class="sidetitle">PÅ DEN HÄR SIDAN</p>{{ .TableOfContents }}<a class="backlink" href="{{ "visit/" | relURL }}">Aktuell rapport ↗</a></div></aside><article class="document prose">{{ .Content }}</article></div>
+{{ end }}
+</main>
+<footer><div class="wrap footerinner"><span>HÄNDELSERAPPORTER · Källgranskad dokumentation</span><span>Publicerad med Hugo och GitHub Pages</span></div></footer>
+</body></html>
