@@ -5,19 +5,33 @@ title: Händelserapport – Visit Group / iTicket
 
 # Händelserapport – Visit Group / iTicket
 
-**Rapportversion:** 1.12 · **Rapportdatum:** 29 oktober 2026
+**Rapportversion:** 1.13 · **Rapportdatum:** 29 oktober 2026
 
-[Arkiverad rapport v1.12](./historik/v1.12/)
+[Arkiverad rapport v1.13](./historik/v1.13/) · [Föregående version v1.12](./historik/v1.12/)
 
 ---
 
 # Teknisk incidentrapport: dataintrång hos Skansens biljettleverantör, Liseberg och Visit/iTicket
 
 **Rapportdatum:** 29 oktober 2026  
-**Version:** 1.12 – fullständig konsoliderad rapport med daterade OSINT-tillägg  
+**Version:** 1.13 – fullständig konsoliderad rapport med daterade OSINT-tillägg  
 **Tidszon:** Europe/Stockholm  
 **Omfattning:** Skansen, Liseberg, Visit Group International AB/VISIT, iTicket samt andra offentligt identifierbara kunder på samma plattform  
 **Metod:** passiv OSINT och icke-intrusiv granskning av publika webbresurser. Ingen portskanning, sårbarhetsskanning, inloggning, exploatering, fuzzning eller annan aktiv säkerhetstestning har utförts.
+
+## Nytt verifierat kundbesked – 29 oktober 2026 kl. 17:26 CET (källans händelsedatum 27 oktober)
+
+**Sjätte offentligt namngivna verksamheten med ett eget Visit Group-relaterat incidentbesked: Skånes Djurpark.** Parkens [officiella webbplats](https://www.skanesdjurpark.se/) visar en framträdande informationsruta med rubriken **”Viktig information om dataintrång”**. Där uppger Skånes Djurpark att den **27 oktober 2026** informerades om att biljettleverantören **Visit Group** utsatts för dataintrång och att **berörda gäster kontaktats via mejl**. Uppgiften återfanns i sökmotorernas färska indexering av parkens startsida vid kontrollen 29 oktober. En separat direktöppning av samma startsida gav äldre cachat innehåll utan meddelandet, varför fullständigt underliggande informationsblad inte har kunnat granskas i denna körning.
+
+| Uppgift | Klassning | Säkerhetsgrad |
+|---|---|---|
+| Skånes Djurpark namnger Visit Group som sin biljettleverantör och anger att Visit Group utsatts för dataintrång. | **Primärt kundbesked**, återgivet från parkens egen webbplats i färsk sökindexering. | **Hög** för att verksamheten lämnat detta besked; direktläsning av aktuell sida var cachebegränsad. |
+| Skånes Djurpark anger att berörda gäster har kontaktats via mejl. | **Primärt kundbesked** om notifiering, utan publicerat antal i den kontrollerade texten. | **Hög** för att detta meddelats; antal, tidsperiod och exponerade fält är **okända**. |
+| Skånes Djurpark har drabbats av samma tekniska Citybreak-intrång som Visit beskrivit. | **Inte tekniskt verifierat.** Leverantörsnamn och incidentbesked styrker inte produkt, tenant, exfiltration eller gemensam rotorsak. | **Ej fastställt**. |
+
+**Käll- och datumavgränsning:** Meddelandet anger **27 oktober som dagen för underrättelsen**, inte säkert publiceringsdatum för webbsidan. Det upptäcktes i denna bevakning **29 oktober 2026**. [Skånes Djurparks officiella startsida](https://www.skanesdjurpark.se/) och [undersida för besöksplanering](https://www.skanesdjurpark.se/planera) visar båda meddelandet i färska sökresultat. Ingen ytterligare kund med ett eget verifierat Visit-relaterat incidentbesked har identifierats i denna kontroll. Antalet offentligt namngivna verksamheter med egna incidentbesked är därmed **sex**: **Skansen, Liseberg, Tekniska museet, STF, Junibacken och Skånes Djurpark**.
+
+**Övrig kontroll 29 oktober kl. 17:26:** Nya engelskspråkiga artiklar om Skansen och Liseberg, exempelvis [Nordisk Post den 29 oktober](https://www.nordiskpost.com/2026/10/29/liseberg-skansen-personal-data-leaks/), återger redan kända uppgifter och ger ingen ytterligare verifierad incidentpart eller teknisk rotorsak. [Tekniska museets primärbesked](https://www.tekniskamuseet.se/dataintrang/) är fortsatt daterat 28 oktober. [Skansens engelska besked](https://www.skansen.se/en/data-breach/) anger också 28 oktober som senaste uppdatering. Riktade sökningar efter norska, danska, franska och engelska incidentuppgifter för kartlagda VISIT-kunder gav inga ytterligare verifierade offer, angripare, ransomwarekopplingar eller incidentspecifika IoC:er. [VISIT:s statussida](https://status.visitgroup.com/) och [Citybreak-meddelandet](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) kunde inte öppnas direkt; detta är inte bevis för driftstörning. [Utvecklardokumentationen](https://visit.com/developer-documentation) beskriver produkt-API:er men gav inga nya incidentspecifika tekniska uppgifter. [iTickets webbplats](https://www.iticket.com/) svarade inte inom kontrollens tidsgräns. Ingen aktiv säkerhetstestning har utförts.
 
 ## Nya källbelagda VISIT-kundrelationer – 29 oktober 2026 kl. 09:53 CET (äldre källmaterial)
 
