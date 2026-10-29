@@ -19,4 +19,20 @@
 {{ end }}
 </main>
 <footer><div class="wrap footerinner"><span>HÄNDELSERAPPORTER · Källgranskad dokumentation</span><span>Publicerad med Hugo och GitHub Pages</span></div></footer>
+{{ if and (not .IsHome) (in .RawContent "```mermaid") }}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.12.2/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: false,
+    securityLevel: "strict",
+    theme: "neutral",
+    flowchart: { useMaxWidth: true, htmlLabels: true }
+  });
+  try {
+    await mermaid.run({ querySelector: ".mermaid" });
+  } catch (error) {
+    console.error("Kunde inte rendera Mermaid-diagram:", error);
+  }
+</script>
+{{ end }}
 </body></html>
