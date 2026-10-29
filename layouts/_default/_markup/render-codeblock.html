@@ -1,0 +1,9 @@
+{{- if eq .Type "mermaid" -}}
+<div class="diagram-panel" role="group" aria-label="Diagram">
+  <div class="diagram-heading">DIAGRAM</div>
+  <pre class="mermaid">{{ .Inner | htmlEscape | safeHTML }}</pre>
+  <noscript><p>Aktivera JavaScript för att visa diagrammet.</p></noscript>
+</div>
+{{- else -}}
+<pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner | htmlEscape | safeHTML }}</code></pre>
+{{- end -}}
