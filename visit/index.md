@@ -1,133 +1,16 @@
 ---
-layout: default
-title: Händelserapport – Visit Group / iTicket
+title: "Visit Group / iTicket – incidentrapport"
+date: 2026-10-29
+description: "Sammanhållen källgranskad incidentrapport om Visit Group och berörda verksamheter."
 ---
 
-# Händelserapport – Visit Group / iTicket
+# Incidentrapport: Visit Group / iTicket
 
-**Rapportversion:** 1.13 · **Rapportdatum:** 29 oktober 2026
+**Rapportversion:** 1.14 · **Sammanställd:** 29 oktober 2026 · **Tidszon:** Europe/Stockholm
 
-[Arkiverad rapport v1.13](./historik/v1.13/) · [Föregående version v1.12](./historik/v1.12/)
+Rapporten beskriver det samlade kunskapsläget. Tidigare versioner finns i [versionsarkivet](./historik/). Källbelagda kundrelationer innebär inte i sig att en verksamhet har drabbats av intrånget.
 
----
-
-# Teknisk incidentrapport: dataintrång hos Skansens biljettleverantör, Liseberg och Visit/iTicket
-
-**Rapportdatum:** 29 oktober 2026  
-**Version:** 1.13 – fullständig konsoliderad rapport med daterade OSINT-tillägg  
-**Tidszon:** Europe/Stockholm  
-**Omfattning:** Skansen, Liseberg, Visit Group International AB/VISIT, iTicket samt andra offentligt identifierbara kunder på samma plattform  
-**Metod:** passiv OSINT och icke-intrusiv granskning av publika webbresurser. Ingen portskanning, sårbarhetsskanning, inloggning, exploatering, fuzzning eller annan aktiv säkerhetstestning har utförts.
-
-## Nytt verifierat kundbesked – 29 oktober 2026 kl. 17:26 CET (källans händelsedatum 27 oktober)
-
-**Sjätte offentligt namngivna verksamheten med ett eget Visit Group-relaterat incidentbesked: Skånes Djurpark.** Parkens [officiella webbplats](https://www.skanesdjurpark.se/) visar en framträdande informationsruta med rubriken **”Viktig information om dataintrång”**. Där uppger Skånes Djurpark att den **27 oktober 2026** informerades om att biljettleverantören **Visit Group** utsatts för dataintrång och att **berörda gäster kontaktats via mejl**. Uppgiften återfanns i sökmotorernas färska indexering av parkens startsida vid kontrollen 29 oktober. En separat direktöppning av samma startsida gav äldre cachat innehåll utan meddelandet, varför fullständigt underliggande informationsblad inte har kunnat granskas i denna körning.
-
-| Uppgift | Klassning | Säkerhetsgrad |
-|---|---|---|
-| Skånes Djurpark namnger Visit Group som sin biljettleverantör och anger att Visit Group utsatts för dataintrång. | **Primärt kundbesked**, återgivet från parkens egen webbplats i färsk sökindexering. | **Hög** för att verksamheten lämnat detta besked; direktläsning av aktuell sida var cachebegränsad. |
-| Skånes Djurpark anger att berörda gäster har kontaktats via mejl. | **Primärt kundbesked** om notifiering, utan publicerat antal i den kontrollerade texten. | **Hög** för att detta meddelats; antal, tidsperiod och exponerade fält är **okända**. |
-| Skånes Djurpark har drabbats av samma tekniska Citybreak-intrång som Visit beskrivit. | **Inte tekniskt verifierat.** Leverantörsnamn och incidentbesked styrker inte produkt, tenant, exfiltration eller gemensam rotorsak. | **Ej fastställt**. |
-
-**Käll- och datumavgränsning:** Meddelandet anger **27 oktober som dagen för underrättelsen**, inte säkert publiceringsdatum för webbsidan. Det upptäcktes i denna bevakning **29 oktober 2026**. [Skånes Djurparks officiella startsida](https://www.skanesdjurpark.se/) och [undersida för besöksplanering](https://www.skanesdjurpark.se/planera) visar båda meddelandet i färska sökresultat. Ingen ytterligare kund med ett eget verifierat Visit-relaterat incidentbesked har identifierats i denna kontroll. Antalet offentligt namngivna verksamheter med egna incidentbesked är därmed **sex**: **Skansen, Liseberg, Tekniska museet, STF, Junibacken och Skånes Djurpark**.
-
-**Övrig kontroll 29 oktober kl. 17:26:** Nya engelskspråkiga artiklar om Skansen och Liseberg, exempelvis [Nordisk Post den 29 oktober](https://www.nordiskpost.com/2026/10/29/liseberg-skansen-personal-data-leaks/), återger redan kända uppgifter och ger ingen ytterligare verifierad incidentpart eller teknisk rotorsak. [Tekniska museets primärbesked](https://www.tekniskamuseet.se/dataintrang/) är fortsatt daterat 28 oktober. [Skansens engelska besked](https://www.skansen.se/en/data-breach/) anger också 28 oktober som senaste uppdatering. Riktade sökningar efter norska, danska, franska och engelska incidentuppgifter för kartlagda VISIT-kunder gav inga ytterligare verifierade offer, angripare, ransomwarekopplingar eller incidentspecifika IoC:er. [VISIT:s statussida](https://status.visitgroup.com/) och [Citybreak-meddelandet](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) kunde inte öppnas direkt; detta är inte bevis för driftstörning. [Utvecklardokumentationen](https://visit.com/developer-documentation) beskriver produkt-API:er men gav inga nya incidentspecifika tekniska uppgifter. [iTickets webbplats](https://www.iticket.com/) svarade inte inom kontrollens tidsgräns. Ingen aktiv säkerhetstestning har utförts.
-
-## Nya källbelagda VISIT-kundrelationer – 29 oktober 2026 kl. 09:53 CET (äldre källmaterial)
-
-**Två större svenska hotellgrupper och en fristående hotellreferens har identifierats i VISIT:s och samarbetspartners publicerade material.** Dessa är **nyupptäckta relationer i kundkartläggningen**, inte nya säkerhetsincidenter. VISIT Summit hölls **14–16 september 2026**; övriga källor är publicerade före eller kontrollerade 29 oktober 2026. Inga källor belägger påverkan från intrånget 23–27 oktober.
-
-| Kund / verksamhet | Belagd relation och primärunderlag | Säkerhetsgrad för relation | Incidentkoppling |
-|---|---|---|---|
-| **ESS Group** (koncern, enligt Guest XP cirka 14 destinationer) | VISIT namnger [ESS Group som kund/partner](https://visit.com/platform) och beskriver [VisBook-användning i ESS:s gästdataarbete](https://visit.com/blog/start-small-then-say-welcome-back). På [VISIT Summit 2026](https://visit.com/summit) beskrevs en kundledd demonstration av VISIT-plattformen hos ESS. | **Mycket hög** för VISIT-koncernrelation och VisBook i dokumenterad ESS-miljö; ej belagt att varje ESS-anläggning använder samma produkt. | **Ingen bekräftad påverkan.** |
-| **Ellery Beach House**, Lidingö (ESS Group) | [Guest XP:s kundcase](https://guestxp.io/blog/ellery-beach-house-guest-experience) anger uttryckligen **VisBook PMS och BookVisit** för Ellery. Kundcaset beskriver Guest XP:s integration och är en tredjepartsförstahandskälla. | **Mycket hög** för namngiven anläggning och produkterna. | **Ingen bekräftad påverkan.** |
-| **Lotus Hotel Group** (fyra hotell) | [VISIT Summit 2026](https://visit.com/summit) namnger Lotus bland exempel på integrerad gästresa; [HotelTechReport:s VISIT PMS-profil](https://hoteltechreport.com/operations/property-management-systems/visit-pms) namnger **Lotus Hotel Group** som VisBook-referens. [Lotus egen webbplats](https://lotushotelgroup.se/lotus-member/) anger de fyra hotellen: **Arken Hotel & Art Garden Spa**, **Hôtel Eggers**, **Varbergs Stadshotell & Asia Spa**, **Billingehus**. | **Hög** för koncernrelation och VisBook-referens. Koncerntillhörighet är bekräftad, men samma installation på alla fyra hotellen är inte separat verifierad. | **Ingen bekräftad påverkan.** |
-| **Vadstena Klosterhotell** | Namnges uttryckligen i [VISIT Summit 2026](https://visit.com/summit) som hotell i demonstration av integrerad gästresa. [Guest XP:s webbplats](https://guestxp.io/) visar hotellet bland sina kunder för en produkt integrerad i VisBook/BookVisit, men bekräftar inte separat vilket VISIT-system hotellet använder. | **Medel–hög** för VISIT-ekosystemrelation; **ej tillräcklig för produkt-/tenantklassning**. | **Ingen bekräftad påverkan.** |
-
-**Avgränsning:** VISIT:s officiella incidentmeddelande den 28 oktober begränsade intrånget till **Citybreak Online** enligt leverantörens egen beskrivning. VisBook- och BookVisit-kundrelationer innebär inte i sig att kundens uppgifter hanterats i den komprometterade Citybreak-miljön. Ingen av ovanstående ska räknas som ett sjätte incidentoffer eller som verifierat exponerad tenant. Namngivna hotell inom koncernerna ska inte dubbelräknas som separata kundavtal utan avtalsbelägg.
-
-**Övrig kontroll 29 oktober:** [Skansen](https://www.skansen.se/dataintrang/) (senast uppdaterad 28 okt 12:20), [Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) (27 okt), [Tekniska museet](https://www.tekniskamuseet.se/dataintrang/) (28 okt), [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/) (28 okt 10:25) och [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) (28 okt) hade inga nyare verifierade incidentbesked. Riktade sökningar på svenska, norska, danska, engelska och franska efter de kartlagda verksamheterna och ransomware-/dataintrångsrapporter gav inga ytterligare namngivna drabbade kunder, angripare eller incidentspecifika tekniska indikatorer. [VISIT:s statussida](https://status.visitgroup.com/) och dess [Citybreak-säkerhetsmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) kunde inte läsas direkt via webbkällan; detta är inte bevis för en driftstörning. [iTickets webbplats](https://www.iticket.com/) och [VISIT:s utvecklardokumentation](https://visit.com/developer-documentation) gav inga nya incidentspecifika uppgifter. Ingen aktiv säkerhetstestning utfördes.
-
-## Nytt källbelagt kundspår – 29 oktober 2026 kl. 07:35 CET (källdatum 26 juni 2026)
-
-**Två tidigare oregistrerade Citybreak-partnerreferenser: Gotland Promotion och Destination Österlen.** I [Sirvoys officiella integrationsdokumentation, *Connect Sirvoy to BookVisit or Citybreak Partners*](https://help.sirvoy.com/setting-up-new-channels/connect-sirvoy-to-bookvisit-or-citybreak-partners), senast uppdaterad **26 juni 2026**, namnges **STF, Gotland Promotion och Destination Österlen** som exempel på **Citybreak (Visitgroup)-partner**. STF är sedan tidigare en känd Visit-relaterad incidentpart; de två andra är nya i denna kartläggning.
-
-| Verksamhet | Belagd relation | Källtyp och säkerhetsgrad | Incidentkoppling |
-|---|---|---|---|
-| **Gotland Promotion** | Namngiven som Citybreak (Visitgroup)-partner i Sirvoys integrationsdokumentation. | **Hög** för dokumenterad historisk partnerrelation, utifrån namngiven tredjepartsleverantör; aktiv drift per 29 oktober inte oberoende bekräftad. | **Ingen bekräftad påverkan**, ingen exfiltration eller tenantkoppling belagd. |
-| **Destination Österlen** | Namngiven som Citybreak (Visitgroup)-partner i samma dokumentation. | **Hög** för dokumenterad historisk partnerrelation; aktuell produktionsstatus ej verifierad. | **Ingen bekräftad påverkan**, ingen exfiltration eller tenantkoppling belagd. |
-
-**Teknisk dokumentation:** Sirvoy beskriver en integrationsväg där en Citybreak-partner kan tillhandahålla ett **BookVisit-ID**, varefter Sirvoys kanalhanterare synkroniserar tillgänglighet, priser och bokningar med BookVisit. Dokumentationen nämner också att bokningar från anslutningen importeras till Sirvoy efter konfigurering. **Detta visar en möjlig dokumenterad integrationskedja mellan Citybreak-partner, BookVisit och Sirvoy, men inte att incidentdata passerat alla dessa komponenter, att någon av dem komprometterats eller att VISIT:s produktavgränsning är felaktig.** En dokumenterad partnerrelation är inte bevis för att partnern berörs av Citybreak-intrånget. [Källa, avsnitt *Connect Sirvoy to BookVisit or Citybreak Partners*](https://help.sirvoy.com/setting-up-new-channels/connect-sirvoy-to-bookvisit-or-citybreak-partners).
-
-**Övrig kontroll:** Direkta kontroller av [Junibackens](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/), [Tekniska museets](https://www.tekniskamuseet.se/dataintrang/) och [STF:s](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) incidentmeddelanden visar inga nyare daterade kundbesked än 28 oktober. Riktade sökningar på svenska, norska, danska, engelska och franska gav inga nya verifierade drabbade verksamheter, angreppsmetoder, ransomwarebelägg eller incidentspecifika IoC:er. [VISIT:s statussida](https://status.visitgroup.com/) och [Citybreak-notisen](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) gick inte att läsa direkt via kontrollverktyget; detta är **ingen verifierad driftstörning**. Någon aktiv skanning eller sårbarhetstestning har inte genomförts.
-
-**Samlad klassning:** Två nya **källbelagda Citybreak-partnerreferenser**, inte två nya incidentoffer. Antalet offentligt namngivna verksamheter med incidentbesked är fortsatt **fem**: Skansen, Liseberg, Tekniska museet, STF och Junibacken.
-
-## Väsentligt nytt OSINT-fynd – 29 oktober 2026 kl. 02:26 CET (publicerad 28 oktober)
-
-**Liseberg: 15 000 gäster uppges drabbade av dataläckan.** [Göteborgs-Posten, *15 000 Lisebergsgäster drabbade av dataläcka*](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e), indexerad som publicerad **28 oktober 2026**, uppger att **15 000 Lisebergsgäster** berörs och att **en obehörig aktör kommit åt namn och kontaktuppgifter genom intrång hos bokningsleverantören Visit**. Tidningens fullständiga artikeltext är åtkomstbegränsad i denna kontroll; uppgifterna är verifierade som **GP:s publicerade rubrik och ingress**, inte genom en oberoende forensisk granskning eller ett nytt primärbesked från Liseberg.
-
-| Påstående | Bevisklass | Säkerhetsgrad |
-|---|---|---|
-| 15 000 Lisebergsgäster berörs. | **Ny kvantifierad medieuppgift** från Göteborgs-Posten (rubrik). Antalet är inte bekräftat i Lisebergs offentliga säkerhetsmeddelande, senast uppdaterat 27 oktober. | **Hög** för att GP rapporterar detta; **medel–hög** för den exakta omfattningen i avsaknad av tillgänglig primärkälla. |
-| En obehörig aktör har fått åtkomst till namn och kontaktuppgifter via Visit. | **Medieuppgift** från GP:s ingress; starkare formulering än Lisebergs egen varning om *möjlig* läcka. | **Hög** för publicerat påstående; tekniskt ej oberoende verifierat. |
-| Lisebergs dataläcka är kopplad till leverantören Visit. | **Uttrycklig mediekoppling** i GP:s nya rapportering. Liseberg namnger ännu inte Visit i sin offentliga säkerhetstext. | **Hög** för medieuppgiften, **inte** bevis för samma tekniska angreppsväg som hos Skansen eller för komprometterad iTicket-produkt. |
-
-**Jämförelse utan felaktig summering:** Skansen har tidigare uppgett **cirka 4 800 berörda personer**, medan STF uppgett **cirka 759 berörda bokningar**. Dessa storheter har olika definitioner och ska inte adderas till ett totalt antal unika exponerade personer. Lisebergs 15 000 är en separat medieuppgift, och exakt antal exfiltrerade poster är fortfarande okänt.
-
-**Kontroll av primärkällor och teknik:** [Lisebergs säkerhetssida](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) visar fortfarande uppdatering **27 oktober 2026** och anger en möjlig läcka men inga antal. [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/), [Tekniska museet](https://www.tekniskamuseet.se/dataintrang/), [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) och [Skansens engelska informationssida](https://www.skansen.se/en/data-breach/) har inte lämnat ny kvantifierad påverkan i denna kontroll. [iTicket](https://www.iticket.com/) och [VISIT:s API-/utvecklarsida](https://visit.com/developer-documentation) innehåller ingen ny verifierad incidentspecifik rotorsak eller IoC. VISIT:s [statussida](https://status.visitgroup.com/) och tidigare [Citybreak-säkerhetsmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) kunde inte återläsas direkt (åtkomst-/DNS-begränsning i kontrollmiljön, inte belägg för driftavbrott). Riktade sökningar på svenska, norska, danska, engelska och franska för övriga kartlagda kunder gav inga nya namngivna bekräftade incidentoffer eller belagda ransomware-/angriparuppgifter.
-
-**Samlad klassning:** **Väsentlig ny medieuppgift om Lisebergs omfattning (15 000) och leverantörskoppling**. Ingen ny kund med bekräftat incidentbesked, ingen verifierad teknisk gemensam rotorsak och ingen oberoende verifierad exfiltrationsvolym. Inga nya kundrelationer behöver läggas till i registret denna gång.
-
-## Nytt verifierat OSINT-fynd – 28 oktober 2026, cirka kl. 21:49 CET
-
-**Femte namngivna verksamheten med ett eget Visit-relaterat incidentbesked: Junibacken, Stockholm.** I [Junibackens officiella säkerhetsmeddelande](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/), **senast uppdaterat 28 oktober 2026 kl. 10:25**, bekräftar Junibacken uttryckligen att man fått information om **ett dataintrång hos Visit, leverantören av dess bokningssystem**. Junibackens [startsida](https://www.junibacken.se/) länkar även till samma incidentinformation. Detta är en **nyupptäckt primärkälla i bevakningen**, även om publiceringen skedde tidigare samma dag.
-
-| Ny verifierad uppgift | Klassning | Säkerhetsgrad |
-|---|---|---|
-| Junibacken namnger **Visit** som sin bokningsleverantör och uppger att Visit utsatts för dataintrång. | **Bekräftad incidentkommunikation hos kund och uttrycklig leverantörskoppling**; inte oberoende tekniskt belägg för exakt komprometterad produkt/tenant. | **Mycket hög** för kundens förstahandsbesked. |
-| Junibacken uppger att **berörda personer informerats**. | Bekräftat kundbesked om notifiering; antal personer och exakta uppgiftsfält anges inte. | **Hög** för kundens uppgift. |
-| Junibacken uppger att incidenten **anmälts till Integritetsskyddsmyndigheten (IMY)** och att intrånget **polisanmälts**. | Bekräftad uppgift från kunden om gjorda anmälningar; registreringsnummer eller oberoende mottagningsbekräftelser har inte publicerats i den granskade källan. | **Mycket hög** för att Junibacken lämnat beskedet; **ej oberoende verifierat** hos myndigheterna. |
-| Junibacken uppger att **Visit blockerat obehörig åtkomst och säkrat berörda tjänster**. | Leverantörens åtgärder återgivna av kunden, inte oberoende tekniskt verifierade. | **Hög** för uppgiften. |
-| Enligt Junibacken omfattas **inga kort- eller betalningsuppgifter** och man känner inte till att uppgifterna använts för bedrägerier. | Kundens egen avgränsning; exakt exponerad personuppgiftsmängd och faktisk exfiltration är ännu okända. | **Hög** för uttalandet; faktisk frånvaro av missbruk kan inte styrkas. |
-
-**Bevisgräns:** Junibackens primärkälla bekräftar **Visit-relaterat incidentbesked**, men identifierar inte vilken av VISIT:s interna produkter, databaser eller integrationer som berörs. Den styrker inte att iTicket som produkt har komprometterats, att Junibackens egna system hackats eller att dess data faktiskt exfiltrerats. Junibacken blir därmed **femte namngivna verksamheten med offentligt incidentbesked** efter Skansen, Liseberg, Tekniska museet och STF; Lisebergs exakta gemensamma tekniska orsak är fortsatt inte fastställd.
-
-**Övrig kontroll:** Förnyade sökningar i svenska, norska, danska, engelska och franska källor samt för kartlagda kunder gav ingen ytterligare namngiven incidentbekräftelse, identifierad angripare, ransomwarekoppling, attackvektor eller incidentspecifik IoC. [VISIT:s statussida](https://status.visitgroup.com/) och de två tidigare dokumenterade [Citybreak-](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) och [WebX-meddelandena](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4) kunde **inte återläsas direkt** i denna kontrollmiljö; det är **inte bevis för ett driftavbrott**. Indexerade produkt- och API-uppgifter gav ingen ny incidentspecifik teknisk detalj. Inga aktiva säkerhetstester utfördes.
-
-## Kompletterande OSINT-kontroll – 28 oktober 2026, cirka kl. 20:19 CET
-
-**Ny verifierad kundrelation, men ingen ny verifierad incident:** **Gausta (Norge)** använder enligt [VISIT:s eget kundcase](https://visit.com/success-stories/gausta) leverantörens **All-in-One PMS (VisBook)** och **GetFOOD** för bland annat hotell- och restaurangdrift. Källans ursprungliga publiceringsdatum är inte fastställt; **verifieringsdatum är 28 oktober 2026**. **Säkerhetsgrad: mycket hög för leverantörsrelationen** (förstahandskälla). **Ingen offentlig bekräftelse på att Gausta drabbats av dataintrånget, ingen belagd användning av Citybreak eller iTicket i just detta kundcase och ingen belagd koppling till den rapporterade Citybreak-incidenten.** Gausta ska inte sammanblandas med **Gaustabanen**, som redan förekommer separat i kundkartläggningen.
-
-**Övrig kontroll:** [Skansen](https://www.skansen.se/en/data-breach/) uppdaterade sin engelska incidentinformation kl. **12:20** den 28 oktober men har inte namngivit fler drabbade kunder eller redovisat ny teknisk rotorsak. [Tekniska museet](https://www.tekniskamuseet.se/dataintrang/) och [Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/) lämnar ingen ny incidentbekräftelse utöver tidigare dokumenterade besked. Sökningar i svenska, norska, danska, engelska och franska nyhets- och säkerhetskällor gav inga nya belagda intrångsdrabbade verksamheter eller attackerarkopplingar. VISIT:s [statussida](https://status.visitgroup.com/) och dess [säkerhetsmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) gick **inte att återläsa direkt** i denna kontrollmiljö; tidigare kontrollerade meddelanden kvarstår som senast belagda, men deras aktuella status kan inte bekräftas för detta klockslag. Ingen aktiv sårbarhetsprovning eller nätverksskanning har utförts.
-
-**Bedömning:** En ny leverantörsrelation har dokumenterats i kundregistret. Ingen ny väsentlig säkerhetsincident är verifierad; inga nya påståenden om drabbade eller exfiltration görs.
-
-## Senaste verifierade uppdatering – 28 oktober 2026 kl. 18:48 CET
-
-**Väsentlig ny primärkälla: VISIT bekräftar själv ett säkerhetsintrång i Citybreak Online.** Två incidentmeddelanden publicerades på [VISIT:s officiella statussida](https://status.visitgroup.com/) den **28 oktober kl. 10:41 och 11:55 CET**. VISIT uppger att obehöriga fått tillgång till en *mycket begränsad mängd bokningsdata* i **Citybreak**, att åtkomsten stoppats, att berörda Citybreak-kunder informerats, att externa säkerhetsexperter utreder och att berörda myndigheter underrättats. Enligt VISIT omfattas **inte kortuppgifter eller inloggnings-/API-uppgifter**, och **andra VISIT-produkter är inte påverkade av just denna incident**. **Mycket hög säkerhet för att leverantören lämnat dessa uppgifter; exfiltrationsvolym och teknisk angreppsväg är inte oberoende verifierade.** [Primärkälla kl. 11:55](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e).
-
-**Viktig avgränsning:** Att VISIT avgränsar den publicerade säkerhetsincidenten till **Citybreak** är inte i sig bevis för att Skansens eller Lisebergs iTicket-relaterade kundmiljöer komprometterats. Skansen, Tekniska museet och STF namnger Visit som leverantör för sina incidenter, medan iTicket används som biljettplattform av bland annat Skansen och Liseberg. Offentliga uppgifter räcker ännu inte för att visa vilka bakgrundssystem, integrationer eller tenants som lagrade de berörda bokningarna. Den exakta tekniska kopplingen måste därför hållas **öppen**; VISIT:s produktavgränsning får inte okritiskt likställas med kundernas produktval.
-
-**Separat driftincident med publicerad rotorsak:** VISIT:s [WebX-incidentredogörelse](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4), markerad löst **28 oktober kl. 15:12 CET**, uppger att **delad lagring slutade svara** och gjorde WebX-sidor otillgängliga **27 oktober kl. 15:30–17:55 CET** (cirka 2 timmar 25 minuter). Berörda tjänster anges som Citybreak Web, BookVisit Web och Stays. VISIT känner inte till någon dataförlust från **driftstörningen**. Detta är **inte bevis för koppling till intrånget**. Säkerhetsgrad **mycket hög för leverantörens beskrivning**, oberoende RCA från lagringsleverantören saknas. [Systemstatus kl. 18:48 CET](https://status.visitgroup.com/) anger normal drift, inklusive iTicket och Citybreak.
-
-Inga ytterligare namngivna intrångsdrabbade kunder, publika incidentspecifika IoC:er, identifierad angripare eller bekräftad ransomwarekoppling har hittats. Se daterat tillägg kl. 18:48 för detaljer och källklassning.
-
-## Senaste verifierade uppdatering – 28 oktober 2026 kl. 18:25 CET
-
-**Utökad, källbelagd kartläggning av VISIT:s kundekosystem – inte nya incidentoffer.** VISIT:s [officiella kundcase-översikt](https://visit.com/success-stories) och enskilda kundcase identifierar **16 tidigare ej registrerade kundreferenser**, främst inom VisBook, BookVisit, Godo och Travia, samt **två ytterligare namngivna verksamheter** som uttryckligen använder samma VISIT-PMS inom Mössebergsgruppen. Bland de nya referenserna finns **Lisebergsbyn** (VisBook, ett separat boendeerbjudande under Lisebergs varumärke) och **Jula Hotell** (VisBook och BookVisit, med fem namngivna anläggningar). Se kundregistret och tillägget kl. 18:25 för samtliga källor.
-
-**Säkerhetsgrad: mycket hög för de uttryckligen dokumenterade kund-/produktrelationerna; ingen verifierad incidentkoppling för någon av de nytillagda verksamheterna.** Uppgifterna är befintliga leverantörsreferenser, inte nya avtal den 28 oktober. Inga nya namngivna incidentdrabbade, exfiltrationsbevis, attackvektorer eller incident-IoC:er har hittats. Visit Groups statussida kunde inte kontrolleras direkt i denna körning (åtkomst-/DNS-fel i kontrollmiljön, inte bevis på störning). Skansen, Liseberg, Tekniska museet och STF kvarstår som de fyra offentligt identifierade verksamheterna med incidentbesked.
-
-## Senaste verifierade uppdatering – 28 oktober 2026 kl. 16:53 CET
-
-**Ny fjärde namngiven verksamhet med bekräftad koppling till Visit-intrånget: Svenska Turistföreningen (STF).** I [STF:s eget incidentmeddelande, publicerat 27 oktober och uppdaterat 28 oktober kl. 07:40](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) namnges **Visit** uttryckligen som leverantör för bokning av boenden och aktiviteter. STF bekräftar att **cirka 759 bokningar på svenskaturistforeningen.se**, främst gjorda **23–26 oktober**, **berörs av intrånget**. STF har ännu inte fastställt exakt vilka personuppgifter som hämtats ut och avser kontakta berörda gäster. Betal- och kortuppgifter lagras inte i bokningssystemet, enligt STF. **Säkerhetsgrad: mycket hög** för den direkta leverantörskopplingen och de cirka 759 berörda bokningarna; **exfiltration, exakta datatyper och antal personer ej verifierade**. 759 är **bokningar, inte 759 unika personer**. Detta är ett nyupptäckt belagt fall i bevakningen, trots att kundens uppdatering publicerades tidigare på dagen.
-
-**Ny mediekälla:** [PC för Alla, 28 oktober 2026](https://www.pcforalla.se/article/3271398/dataintrang-visit-information-om-besokare-lackt.html) namnger samma fyra verksamheter: Skansen, Liseberg, Tekniska museet och STF. I en egen kommentar till tidningen säger Tekniska museets PR-ansvarige Calle Ros-Pehrson att berörda gäster informerats. Tidningen preciserar att **namn och e-postadresser** är de aktuella uppgifterna för Tekniska museet; detta är **medieuppgift med hög säkerhetsgrad för att den återges, men inte en forensiskt verifierad uttömmande fältlista**.
-
-**Tidigare verifierat:** Skansen uppger att **4 800 personer** berörs; Tekniska museet bekräftar möjlig exponering via Visit; Liseberg varnar för möjlig läcka i sin leverantörs bokningssystem. **Fyra verksamheter har därmed nu identifierats med uttryckliga incidentbesked**, men deras faktiska dataexfiltration, tenant-scope och gemensamma tekniska rotorsak är fortfarande inte verifierade. Ingen ny incidentkoppling för övriga kartlagda VISIT-/iTicket-kunder har kunnat styrkas.
-
-## Ledningssammanfattning
+## Sammanfattning
 
 **NYTT 28 oktober kl. 18:48 CET:** VISIT har på sin officiella [statussida](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) bekräftat obehörig åtkomst till en begränsad mängd **Citybreak-bokningsdata**. Leverantören säger uttryckligen att andra VISIT-produkter inte påverkats av **denna** säkerhetsincident. Det är därmed nu **belagt att VISIT självt medger ett säkerhetsintrång**, men inte att alla iTicket-kunder eller alla VISIT-kunder har drabbats. Sambandet mellan de namngivna kundernas aviseringar och den av VISIT avgränsade Citybreak-incidenten är inte tekniskt dokumenterat. Separat uppger VISIT att ett WebX-avbrott 27 oktober berodde på fel i delad lagring; detta är inte ett belagt cyberangrepp. Se tillägget kl. 18:48.
 
@@ -684,7 +567,7 @@ Den samlade tekniska bedömningen per **28 oktober 2026** är därför:
 
 ---
 
-# Bilaga: utökat kundregister och bevakningsstatus (version 0.5)
+## Kartlagda kundrelationer och bevakningsstatus
 
 ## Utökat kundregister
 Registren innehåller även verksamheter, destinationer, koncernrelationer och historiska referenser. De är **inte** en verifierad förteckning över aktiva iTicket-tenanter. Vissa rader avser samma koncern eller kundavtal.
@@ -790,11 +673,109 @@ Registren innehåller även verksamheter, destinationer, koncernrelationer och h
 ## Fortsatt bevakning
 Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya belagda kunder, officiella leverantörssidor, svensk och internationell media. Rapportera endast betydelsefulla nya incidentfynd med datum, källa och bevisgrad.
 
+## Bekräftade kundbesked och omfattning
+
+**Sjätte offentligt namngivna verksamheten med ett eget Visit Group-relaterat incidentbesked: Skånes Djurpark.** Parkens [officiella webbplats](https://www.skanesdjurpark.se/) visar en framträdande informationsruta med rubriken **”Viktig information om dataintrång”**. Där uppger Skånes Djurpark att den **27 oktober 2026** informerades om att biljettleverantören **Visit Group** utsatts för dataintrång och att **berörda gäster kontaktats via mejl**. Uppgiften återfanns i sökmotorernas färska indexering av parkens startsida vid kontrollen 29 oktober. En separat direktöppning av samma startsida gav äldre cachat innehåll utan meddelandet, varför fullständigt underliggande informationsblad inte har kunnat granskas i denna körning.
+
+| Uppgift | Klassning | Säkerhetsgrad |
+|---|---|---|
+| Skånes Djurpark namnger Visit Group som sin biljettleverantör och anger att Visit Group utsatts för dataintrång. | **Primärt kundbesked**, återgivet från parkens egen webbplats i färsk sökindexering. | **Hög** för att verksamheten lämnat detta besked; direktläsning av aktuell sida var cachebegränsad. |
+| Skånes Djurpark anger att berörda gäster har kontaktats via mejl. | **Primärt kundbesked** om notifiering, utan publicerat antal i den kontrollerade texten. | **Hög** för att detta meddelats; antal, tidsperiod och exponerade fält är **okända**. |
+| Skånes Djurpark har drabbats av samma tekniska Citybreak-intrång som Visit beskrivit. | **Inte tekniskt verifierat.** Leverantörsnamn och incidentbesked styrker inte produkt, tenant, exfiltration eller gemensam rotorsak. | **Ej fastställt**. |
+
+**Käll- och datumavgränsning:** Meddelandet anger **27 oktober som dagen för underrättelsen**, inte säkert publiceringsdatum för webbsidan. Det upptäcktes i denna bevakning **29 oktober 2026**. [Skånes Djurparks officiella startsida](https://www.skanesdjurpark.se/) och [undersida för besöksplanering](https://www.skanesdjurpark.se/planera) visar båda meddelandet i färska sökresultat. Ingen ytterligare kund med ett eget verifierat Visit-relaterat incidentbesked har identifierats i denna kontroll. Antalet offentligt namngivna verksamheter med egna incidentbesked är därmed **sex**: **Skansen, Liseberg, Tekniska museet, STF, Junibacken och Skånes Djurpark**.
+
+**Liseberg: 15 000 gäster uppges drabbade av dataläckan.** [Göteborgs-Posten, *15 000 Lisebergsgäster drabbade av dataläcka*](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e), indexerad som publicerad **28 oktober 2026**, uppger att **15 000 Lisebergsgäster** berörs och att **en obehörig aktör kommit åt namn och kontaktuppgifter genom intrång hos bokningsleverantören Visit**. Tidningens fullständiga artikeltext är åtkomstbegränsad i denna kontroll; uppgifterna är verifierade som **GP:s publicerade rubrik och ingress**, inte genom en oberoende forensisk granskning eller ett nytt primärbesked från Liseberg.
+
+| Påstående | Bevisklass | Säkerhetsgrad |
+|---|---|---|
+| 15 000 Lisebergsgäster berörs. | **Ny kvantifierad medieuppgift** från Göteborgs-Posten (rubrik). Antalet är inte bekräftat i Lisebergs offentliga säkerhetsmeddelande, senast uppdaterat 27 oktober. | **Hög** för att GP rapporterar detta; **medel–hög** för den exakta omfattningen i avsaknad av tillgänglig primärkälla. |
+| En obehörig aktör har fått åtkomst till namn och kontaktuppgifter via Visit. | **Medieuppgift** från GP:s ingress; starkare formulering än Lisebergs egen varning om *möjlig* läcka. | **Hög** för publicerat påstående; tekniskt ej oberoende verifierat. |
+| Lisebergs dataläcka är kopplad till leverantören Visit. | **Uttrycklig mediekoppling** i GP:s nya rapportering. Liseberg namnger ännu inte Visit i sin offentliga säkerhetstext. | **Hög** för medieuppgiften, **inte** bevis för samma tekniska angreppsväg som hos Skansen eller för komprometterad iTicket-produkt. |
+
+**Jämförelse utan felaktig summering:** Skansen har tidigare uppgett **cirka 4 800 berörda personer**, medan STF uppgett **cirka 759 berörda bokningar**. Dessa storheter har olika definitioner och ska inte adderas till ett totalt antal unika exponerade personer. Lisebergs 15 000 är en separat medieuppgift, och exakt antal exfiltrerade poster är fortfarande okänt.
+
+**Femte namngivna verksamheten med ett eget Visit-relaterat incidentbesked: Junibacken, Stockholm.** I [Junibackens officiella säkerhetsmeddelande](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/), **senast uppdaterat 28 oktober 2026 kl. 10:25**, bekräftar Junibacken uttryckligen att man fått information om **ett dataintrång hos Visit, leverantören av dess bokningssystem**. Junibackens [startsida](https://www.junibacken.se/) länkar även till samma incidentinformation. Detta är en **nyupptäckt primärkälla i bevakningen**, även om publiceringen skedde tidigare samma dag.
+
+| Ny verifierad uppgift | Klassning | Säkerhetsgrad |
+|---|---|---|
+| Junibacken namnger **Visit** som sin bokningsleverantör och uppger att Visit utsatts för dataintrång. | **Bekräftad incidentkommunikation hos kund och uttrycklig leverantörskoppling**; inte oberoende tekniskt belägg för exakt komprometterad produkt/tenant. | **Mycket hög** för kundens förstahandsbesked. |
+| Junibacken uppger att **berörda personer informerats**. | Bekräftat kundbesked om notifiering; antal personer och exakta uppgiftsfält anges inte. | **Hög** för kundens uppgift. |
+| Junibacken uppger att incidenten **anmälts till Integritetsskyddsmyndigheten (IMY)** och att intrånget **polisanmälts**. | Bekräftad uppgift från kunden om gjorda anmälningar; registreringsnummer eller oberoende mottagningsbekräftelser har inte publicerats i den granskade källan. | **Mycket hög** för att Junibacken lämnat beskedet; **ej oberoende verifierat** hos myndigheterna. |
+| Junibacken uppger att **Visit blockerat obehörig åtkomst och säkrat berörda tjänster**. | Leverantörens åtgärder återgivna av kunden, inte oberoende tekniskt verifierade. | **Hög** för uppgiften. |
+| Enligt Junibacken omfattas **inga kort- eller betalningsuppgifter** och man känner inte till att uppgifterna använts för bedrägerier. | Kundens egen avgränsning; exakt exponerad personuppgiftsmängd och faktisk exfiltration är ännu okända. | **Hög** för uttalandet; faktisk frånvaro av missbruk kan inte styrkas. |
+
+**Bevisgräns:** Junibackens primärkälla bekräftar **Visit-relaterat incidentbesked**, men identifierar inte vilken av VISIT:s interna produkter, databaser eller integrationer som berörs. Den styrker inte att iTicket som produkt har komprometterats, att Junibackens egna system hackats eller att dess data faktiskt exfiltrerats. Junibacken blir därmed **femte namngivna verksamheten med offentligt incidentbesked** efter Skansen, Liseberg, Tekniska museet och STF; Lisebergs exakta gemensamma tekniska orsak är fortsatt inte fastställd.
+
+**Källa:** [Skansens officiella incident-FAQ](https://www.skansen.se/dataintrang/), **senast uppdaterad 28 oktober 2026 kl. 09:20**, kontrollerad kl. 11:10 CET. Detta är en väsentlig förbättring av bevisläget jämfört med tidigare mediereferat.
+
+| Fynd | Kund/leverantör | Bevisklassning | Säkerhetsgrad |
+|---|---|---|---|
+| Skansen anger att även **andra kunder hos Visit har påverkats**. Dessa namnges inte. | Skansen / Visit / icke namngivna kunder | Bekräftat uttalande från drabbad kund; **inte** verifierad identitet eller omfattning för övriga kunder | **Mycket hög** för uttalandet, **okänd** för kundidentiteter |
+| **Visit har enligt Skansen uppgett att säkerhetsbristen åtgärdats.** | Visit / Skansen | Leverantörsuppgift återgiven av kund; ingen oberoende teknisk verifiering av patch eller återställd säkerhet | **Hög** för återgivet besked; **ej oberoende verifierat** |
+| **Ett säkerhetsbolag genomför en fördjupad utredning**, enligt Skansen. | Visit / Skansen | Primärt kundmeddelande om pågående incidentutredning; bolagets namn och uppdragets omfattning inte offentliggjorda | **Hög** |
+| Skansen säger att det enligt erhållen information **inte finns någon koppling till uppmärksammade PHP-sårbarheter**. | Visit / Skansen | Officiellt besked som talar emot tidigare PHP2Shell-hypotes; ingen publicerad teknisk rotorsaksrapport | **Mycket hög** för beskedet; teknisk attribution fortfarande ej fastställd |
+| Möjligt exponerade data: **namn, telefonnummer, e-postadress, genomförda biljettköp**. Enligt leverantören **inte personnummer eller kort-/betalkortsuppgifter**. | Skansen | Direkt primärkälla, jämfört med äldre sekundär fältlista som även nämnde adress. Skansens lista är inte uttryckligen uttömmande. | **Mycket hög** för publicerad beskrivning |
+| Skansen anger att **biljettförsäljningen fungerar som vanligt**, och att berörda e-postadresser kontaktats 27 oktober. | Skansen | Verksamhets- och informationsstatus enligt Skansen | **Mycket hög** |
+
+**Avgränsning:** Skansen säger inte vilka andra Visit-kunder som påverkats. Liseberg har fortfarande en egen varning om möjlig läcka, senast daterad 27 oktober, men att det är exakt samma intrång är ännu inte tekniskt verifierat. Att Visit uppger att en säkerhetsbrist är åtgärdad säger inte vilken komponent som berörts, hur intrånget skedde eller om all exfiltrerad information är kartlagd. Skansens formulering om andra kunder ska inte tolkas som att hela iTicket-kundbasen är drabbad.
+
+**Övrig kontroll 28 oktober kl. 11:10:** Lisebergs [officiella säkerhetssida](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/) var fortsatt daterad 27 oktober. [iTickets webbplats](https://iticket.com/) och [VISIT:s webbplats](https://visit.com/) var åtkomliga utan någon ny publik incidentredogörelse i de granskade sidorna. [Visit Groups statussida](https://status.visitgroup.com/) gick inte att hämta genom webbverktyget; aktuell status är därmed inte verifierad. Sökningar på svenska, norska, danska, engelska och franska gav inga ytterligare namngivna incidentoffer eller verifierad attackvektor.
+
+---
+
+### Skansen: 4 800 personer uppges berörda; polisanmälan planeras
+
+**Källa:** [SVT Nyheter/TT – Misstänkt dataintrång mot nöjesparker](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker), **publicerad 28 oktober kl. 05:04, uppdaterad kl. 11:20 CET**. Kontrollerad 28 oktober kl. 12:09 CET. Detta är ett nytt sakligt tillägg sedan rapportversion 1.1 kl. 11:10.
+
+| Ny uppgift | Kund | Källtyp / bevisklass | Säkerhetsgrad |
+|---|---|---|---|
+| **4 800 personer** uppges ha fått sina uppgifter åtkomliga för obehöriga. Det gäller biljettbokningar **23–26 oktober 2026**. | Skansen | Skansens uppgift återgiven av SVT/TT; inte en egen teknisk mätning eller publicerad forensisk rapport | **Hög** för uppgiftens attribution; ingen oberoende verifiering av antal |
+| **Alla dessa personer har informerats via e-post**, enligt Skansens kommunikationschef. | Skansen | Uttalande från kunden till SVT/TT | **Hög** |
+| Skansen **kommer att polisanmäla** händelsen och utreder den tillsammans med leverantören. | Skansen | Planerad åtgärd enligt SVT/TT; **inte** bekräftelse på att polisanmälan redan registrerats | **Hög** för uttalad avsikt |
+
+**Leverantörskoppling:** För Skansen är det sedan tidigare direkt bekräftat att intrånget skett hos biljettleverantören **Visit**. De nya uppgifterna stärker kunskapen om **Skansens omfattning**, men verifierar inte ytterligare drabbade iTicket-kunder, gemensam tenant/databas med Liseberg eller identisk attackvektor. **Liseberg:** ingen ny verifierad omfattningssiffra eller rotorsak. **Andra kunder:** inga nya namngivna incidentoffer.
+
+**Kontroller utan ny incidentuppgift:** [Skansens egen incident-FAQ](https://www.skansen.se/dataintrang/) var fortfarande uppdaterad kl. 09:20; [Lisebergs säkerhetssida](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/) var fortsatt daterad 27 oktober. [iTickets webbplats](https://www.iticket.com/) var åtkomlig utan nytt incidentmeddelande på granskade sidor. [Visit Groups statussida](https://status.visitgroup.com/) gick inte att hämta i webbverktyget; aktuell tjänstestatus kunde därför inte verifieras. Riktade sökningar på svenska, norska, danska, engelska och franska samt för namngivna iTicket-/VISIT-kunder gav ingen ytterligare verifierad koppling till intrånget.
+
+---
+
+**Primärkälla:** [Tekniska museet – Dataintrång](https://www.tekniskamuseet.se/dataintrang/), **senast uppdaterad 28 oktober 2026** (ingen exakt publiceringstid anges). Kontrollerad **28 oktober kl. 14:41 CET**.
+
+| Uppgift | Kund | Klassning | Säkerhetsgrad |
+|---|---|---|---|
+| Museet informerades **27 oktober** om **dataintrång hos biljettleverantören Visit**. | **Tekniska museet** | **Bekräftad leverantörsincident och kundkoppling**, enligt kundens eget incidentmeddelande. | **Mycket hög** |
+| Personuppgifter i leverantörens bokningssystem **kan ha exponerats**. Främst bokningar **23–26 oktober**, men även **tidigare bokningar kan omfattas**. | Tekniska museet | **Bekräftad varning om möjlig exponering**, inte bevisad kopiering/exfiltration för varje post. | **Mycket hög** för varningens innehåll; faktisk exfiltration **ej fastställd** |
+| Museet uppger att **samtliga identifierade berörda besökare informerats via e-post onsdagen 28 oktober**. | Tekniska museet | Förstahandsuppgift om kundens incidentkommunikation. | **Mycket hög** för uppgiften; antal personer ej angivet |
+| **Betal- och kortuppgifter uppges inte omfattas**. Museet har inte kännedom om att uppgifterna använts för bedrägeri. | Tekniska museet | Kundens egen risk- och statusinformation. | **Hög** för uttalandet; frånvaro av bedrägerier kan inte slutligt verifieras |
+| **Visit uppges ha åtgärdat säkerhetsbristen** och en utredning pågår. | Tekniska museet / Visit | Uppgift från leverantören återgiven av kunden, inte tekniskt testad. | **Hög** för återgivningen, **inte** oberoende verifierad remediation |
+
+**Viktig skillnad:** Tekniska museet är nu ett **namngivet fall med bekräftad koppling till ett intrång hos Visit**, inte enbart en kund i en leverantörslista. Formuleringen är däremot fortfarande **möjlig exponering**, och det finns ingen publicerad forensisk dokumentation som visar att museet, Skansen och Liseberg drabbats via samma applikationskomponent, databas, tenant eller initiala angreppsväg. Inte heller har ett exakt antal berörda vid Tekniska museet offentliggjorts.
 
 
-## Daterade OSINT-tillägg — 28 oktober 2026, kl. 04:39 CET
+---
 
-### Nytt verifierat fynd: Visit Group rapporterade en större driftstörning under säkerhetsförbättringar 27 oktober
+
+---
+
+**Primärkälla:** [STF – Information om säkerhetsincident hos vår bokningsleverantör](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/), ursprungligen **27 oktober 2026**, uppdaterat **28 oktober kl. 07:40**; upptäckt och kontrollerat i denna bevakning **28 oktober kl. 16:53 CET**.
+
+| Uppgift | Verksamhet | Bevisklassning | Säkerhetsgrad |
+|---|---|---|---|
+| **Visit namnges uttryckligen som leverantör** för STF:s webbplatsbokningar av boenden och aktiviteter. | Svenska Turistföreningen | Bekräftad direkt kundrelation, från kundens primärkälla. Exakt Visit-produkt (iTicket/BookVisit/annan) är inte belagd. | **Mycket hög** |
+| **Cirka 759 bokningar berörs av intrånget**, primärt gjorda **23–26 oktober 2026**. | STF | Bekräftad påverkan på bokningsposter enligt kundens egen incidentutredning. **Inte** liktydigt med 759 personer eller 759 verifierat stulna poster. | **Mycket hög** för kundens besked, inte oberoende forensiskt verifierat |
+| STF vet ännu **inte exakt vilka uppgifter som hämtats ut** och avser kontakta berörda gäster. | STF | Exfiltrationens omfattning och innehåll **ej fastställda**. | **Mycket hög** för osäkerhetsbeskedet |
+| Kortbetalningar hanteras av separat betalleverantör och **kortuppgifter lagras inte i bokningssystemet**. | STF | Kundens uppgift om dataavgränsning; ej oberoende tekniskt kontrollerad. | **Hög** |
+| [PC för Alla, 28 oktober](https://www.pcforalla.se/article/3271398/dataintrang-visit-information-om-besokare-lackt.html) tar upp **Skansen, Liseberg, Tekniska museet och STF** i en samlad artikel. | Samtliga fyra | Medieomnämnande som bekräftar spridningen av incidentrapportering, men inte gemensam teknisk rotorsak. | **Hög** för artikelinnehållet |
+| PC för Alla anger att **namn och e-postadresser** är de aktuella uppgifterna hos Tekniska museet och återger kommentar från museets PR-ansvarige om information till gäster. | Tekniska museet | Medieuppgift/uttalande, **inte** publicerad forensisk fältlista. | **Hög** för uppgiftens publicering; lägre för teknisk fullständighet |
+
+## Leverantörens besked och driftstörningar
+
+**Väsentlig ny primärkälla: VISIT bekräftar själv ett säkerhetsintrång i Citybreak Online.** Två incidentmeddelanden publicerades på [VISIT:s officiella statussida](https://status.visitgroup.com/) den **28 oktober kl. 10:41 och 11:55 CET**. VISIT uppger att obehöriga fått tillgång till en *mycket begränsad mängd bokningsdata* i **Citybreak**, att åtkomsten stoppats, att berörda Citybreak-kunder informerats, att externa säkerhetsexperter utreder och att berörda myndigheter underrättats. Enligt VISIT omfattas **inte kortuppgifter eller inloggnings-/API-uppgifter**, och **andra VISIT-produkter är inte påverkade av just denna incident**. **Mycket hög säkerhet för att leverantören lämnat dessa uppgifter; exfiltrationsvolym och teknisk angreppsväg är inte oberoende verifierade.** [Primärkälla kl. 11:55](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e).
+
+**Viktig avgränsning:** Att VISIT avgränsar den publicerade säkerhetsincidenten till **Citybreak** är inte i sig bevis för att Skansens eller Lisebergs iTicket-relaterade kundmiljöer komprometterats. Skansen, Tekniska museet och STF namnger Visit som leverantör för sina incidenter, medan iTicket används som biljettplattform av bland annat Skansen och Liseberg. Offentliga uppgifter räcker ännu inte för att visa vilka bakgrundssystem, integrationer eller tenants som lagrade de berörda bokningarna. Den exakta tekniska kopplingen måste därför hållas **öppen**; VISIT:s produktavgränsning får inte okritiskt likställas med kundernas produktval.
+
+**Separat driftincident med publicerad rotorsak:** VISIT:s [WebX-incidentredogörelse](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4), markerad löst **28 oktober kl. 15:12 CET**, uppger att **delad lagring slutade svara** och gjorde WebX-sidor otillgängliga **27 oktober kl. 15:30–17:55 CET** (cirka 2 timmar 25 minuter). Berörda tjänster anges som Citybreak Web, BookVisit Web och Stays. VISIT känner inte till någon dataförlust från **driftstörningen**. Detta är **inte bevis för koppling till intrånget**. Säkerhetsgrad **mycket hög för leverantörens beskrivning**, oberoende RCA från lagringsleverantören saknas. [Systemstatus kl. 18:48 CET](https://status.visitgroup.com/) anger normal drift, inklusive iTicket och Citybreak.
 
 **Källa:** Visit Groups egen statussida, [Service Issue - Websites - VISIT](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4), kontrollerad 28 oktober 2026. **Källsäkerhet: mycket hög** (primärkälla). **Koppling till dataintrånget: obekräftad** (ingen publicerad teknisk attribution).
 
@@ -811,8 +792,6 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 
 ---
 
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 06:07 CET
-
 ### Bekräftad kundstörning: Lisebergs onlinebokning påverkades 27 oktober
 
 **Kund:** Liseberg. **Händelsedatum:** 27 oktober 2026 (exakt start- och sluttid ej offentligt verifierade). **Fynddatum:** 28 oktober 2026. **Säkerhetsgrad:** hög för att Liseberg rapporterade en driftstörning; obekräftad koppling till dataintrånget och till Visit Groups separata webbincident.
@@ -827,10 +806,52 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 
 ---
 
+**Kund/produkt:** Citybreak Online, VISIT. **Källdatum:** 28 oktober 2026 kl. **10:41** respektive **11:55 CET**. **Verifierat i denna bevakning:** 28 oktober kl. **18:48 CET**.
 
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 07:50 CET
+**Källor:** [VISIT – Citybreak security incident: update, kl. 11:55](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e); [tidigare meddelande kl. 10:41](https://status.visitgroup.com/issues/6ae1c35a14715192c0ea41a5); [samlad status](https://status.visitgroup.com/).
 
-### Ny belagd kundrelation: Ästad Vingård (ej belagd incident)
+| Faktauppgift | Bevisklassning | Säkerhetsgrad |
+|---|---|---|
+| VISIT uppger att **obehöriga fått tillgång till en mycket begränsad mängd bokningsdata från Citybreak**. | **Bekräftad incident enligt leverantörens primärkälla**. Exakt antal poster och faktiskt exporterade data ej verifierade. | **Mycket hög** för leverantörens erkännande; **okänd** för exfiltrationsvolym. |
+| Åtkomsten har blockerats; oberoende säkerhetsexperter utreder. | Leverantörens egen uppgift; inte oberoende tekniskt styrkt. | **Hög**. |
+| Relevanta myndigheter har underrättats. | Leverantörens egen uppgift, myndighetsbekräftelse ej hittad. | **Hög**. |
+| Berörda **Citybreak-kunder** har kontaktats direkt; VISIT kontaktar inte resenärer/gäster. | Leverantörens uppgift om incidentkommunikation. | **Hög**. |
+| Inga kortdata eller inloggnings-/API-uppgifter påverkades, enligt VISIT. | Leverantörens avgränsning, inte publicerad forensisk rapport. | **Hög**. |
+| **Andra VISIT-produkter påverkades inte av denna incident**, enligt VISIT. | Leverantörens uttryckliga produktavgränsning. Inte bevis för att inga andra incidenter inträffat. | **Mycket hög** för att beskedet lämnats, teknisk verifiering saknas. |
+| Alla system, inklusive Citybreak, fungerar enligt leverantören. | Statusbesked, inte säkerhetsbevis. | **Hög**. |
+
+**Tolkning av iTicket kontra Citybreak:** Skansens biljettmiljö har tidigare identifierats som iTicket, men kundens offentliga incidentbesked namnger **Visit** och inte vilken intern lagringskomponent som exponerats. Liseberg använder iTicket, men har inte offentliggjort teknisk rotorsak. Det finns därför **ingen verifierad teknisk motsägelse** mellan VISIT:s påstående om en Citybreak-avgränsad incident och kundernas varningar; det finns däremot en **viktig obesvarad fråga** om produkt-, integrations- och datalagringsgränser. **Skansen, Liseberg, Tekniska museet och STF kvarstår som namngivna verksamheter med incidentbesked**, men detta nya leverantörsmeddelande identifierar inte någon ytterligare kund och namnger inte dessa fyra.
+
+
+**Källa:** [VISIT – Service Issue - Websites - VISIT](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4), markerad **Resolved 28 oktober 2026 kl. 15:12 CET**. Incidentens faktiska varaktighet enligt leverantören: **27 oktober kl. 15:30–17:55 CET**, cirka **2 timmar 25 minuter**. Berörda webbkomponenter: **Citybreak Web, BookVisit Web och Stays**.
+
+VISIT anger att en **delad lagringstjänst slutade svara**, vilket gjorde att WebX-sidor inte kunde läsa sin centrala webbplatskonfiguration och därför gav timeout. Leverantören uppger att felet identifierades inom tio minuter, eskalerades till lagringsleverantören och att tjänsten återställdes kl. 17:55. Man känner inte till någon dataförlust från driftavbrottet. Förebyggande åtgärder gäller övervakning av lagring, felisolering och leverantörens kommande rotorsaksanalys. **Säkerhetsgrad mycket hög för publicerad incidentbeskrivning, men den externa lagringsleverantörens RCA är ännu inte publicerad.**
+
+**Bevisavgränsning:** Den tidigare statustexten sade att störningen inträffade under planerade säkerhetsförbättringar. Den nya redogörelsen beskriver en lagringsrelaterad driftsorsak. **Inget av detta styrker att intrånget orsakade driftstörningen eller tvärtom.** De ska tills vidare behandlas som två separata händelser. [VISIT:s statussida](https://status.visitgroup.com/) visade **Operating Normally 28 oktober kl. 18:48 CET** för iTicket, Citybreak och övriga listade tjänster.
+
+## Belagda kundrelationer utan verifierad incidentkoppling
+
+**Två större svenska hotellgrupper och en fristående hotellreferens har identifierats i VISIT:s och samarbetspartners publicerade material.** Dessa är **nyupptäckta relationer i kundkartläggningen**, inte nya säkerhetsincidenter. VISIT Summit hölls **14–16 september 2026**; övriga källor är publicerade före eller kontrollerade 29 oktober 2026. Inga källor belägger påverkan från intrånget 23–27 oktober.
+
+| Kund / verksamhet | Belagd relation och primärunderlag | Säkerhetsgrad för relation | Incidentkoppling |
+|---|---|---|---|
+| **ESS Group** (koncern, enligt Guest XP cirka 14 destinationer) | VISIT namnger [ESS Group som kund/partner](https://visit.com/platform) och beskriver [VisBook-användning i ESS:s gästdataarbete](https://visit.com/blog/start-small-then-say-welcome-back). På [VISIT Summit 2026](https://visit.com/summit) beskrevs en kundledd demonstration av VISIT-plattformen hos ESS. | **Mycket hög** för VISIT-koncernrelation och VisBook i dokumenterad ESS-miljö; ej belagt att varje ESS-anläggning använder samma produkt. | **Ingen bekräftad påverkan.** |
+| **Ellery Beach House**, Lidingö (ESS Group) | [Guest XP:s kundcase](https://guestxp.io/blog/ellery-beach-house-guest-experience) anger uttryckligen **VisBook PMS och BookVisit** för Ellery. Kundcaset beskriver Guest XP:s integration och är en tredjepartsförstahandskälla. | **Mycket hög** för namngiven anläggning och produkterna. | **Ingen bekräftad påverkan.** |
+| **Lotus Hotel Group** (fyra hotell) | [VISIT Summit 2026](https://visit.com/summit) namnger Lotus bland exempel på integrerad gästresa; [HotelTechReport:s VISIT PMS-profil](https://hoteltechreport.com/operations/property-management-systems/visit-pms) namnger **Lotus Hotel Group** som VisBook-referens. [Lotus egen webbplats](https://lotushotelgroup.se/lotus-member/) anger de fyra hotellen: **Arken Hotel & Art Garden Spa**, **Hôtel Eggers**, **Varbergs Stadshotell & Asia Spa**, **Billingehus**. | **Hög** för koncernrelation och VisBook-referens. Koncerntillhörighet är bekräftad, men samma installation på alla fyra hotellen är inte separat verifierad. | **Ingen bekräftad påverkan.** |
+| **Vadstena Klosterhotell** | Namnges uttryckligen i [VISIT Summit 2026](https://visit.com/summit) som hotell i demonstration av integrerad gästresa. [Guest XP:s webbplats](https://guestxp.io/) visar hotellet bland sina kunder för en produkt integrerad i VisBook/BookVisit, men bekräftar inte separat vilket VISIT-system hotellet använder. | **Medel–hög** för VISIT-ekosystemrelation; **ej tillräcklig för produkt-/tenantklassning**. | **Ingen bekräftad påverkan.** |
+
+**Avgränsning:** VISIT:s officiella incidentmeddelande den 28 oktober begränsade intrånget till **Citybreak Online** enligt leverantörens egen beskrivning. VisBook- och BookVisit-kundrelationer innebär inte i sig att kundens uppgifter hanterats i den komprometterade Citybreak-miljön. Ingen av ovanstående ska räknas som ett sjätte incidentoffer eller som verifierat exponerad tenant. Namngivna hotell inom koncernerna ska inte dubbelräknas som separata kundavtal utan avtalsbelägg.
+
+**Två tidigare oregistrerade Citybreak-partnerreferenser: Gotland Promotion och Destination Österlen.** I [Sirvoys officiella integrationsdokumentation, *Connect Sirvoy to BookVisit or Citybreak Partners*](https://help.sirvoy.com/setting-up-new-channels/connect-sirvoy-to-bookvisit-or-citybreak-partners), senast uppdaterad **26 juni 2026**, namnges **STF, Gotland Promotion och Destination Österlen** som exempel på **Citybreak (Visitgroup)-partner**. STF är sedan tidigare en känd Visit-relaterad incidentpart; de två andra är nya i denna kartläggning.
+
+| Verksamhet | Belagd relation | Källtyp och säkerhetsgrad | Incidentkoppling |
+|---|---|---|---|
+| **Gotland Promotion** | Namngiven som Citybreak (Visitgroup)-partner i Sirvoys integrationsdokumentation. | **Hög** för dokumenterad historisk partnerrelation, utifrån namngiven tredjepartsleverantör; aktiv drift per 29 oktober inte oberoende bekräftad. | **Ingen bekräftad påverkan**, ingen exfiltration eller tenantkoppling belagd. |
+| **Destination Österlen** | Namngiven som Citybreak (Visitgroup)-partner i samma dokumentation. | **Hög** för dokumenterad historisk partnerrelation; aktuell produktionsstatus ej verifierad. | **Ingen bekräftad påverkan**, ingen exfiltration eller tenantkoppling belagd. |
+
+**Teknisk dokumentation:** Sirvoy beskriver en integrationsväg där en Citybreak-partner kan tillhandahålla ett **BookVisit-ID**, varefter Sirvoys kanalhanterare synkroniserar tillgänglighet, priser och bokningar med BookVisit. Dokumentationen nämner också att bokningar från anslutningen importeras till Sirvoy efter konfigurering. **Detta visar en möjlig dokumenterad integrationskedja mellan Citybreak-partner, BookVisit och Sirvoy, men inte att incidentdata passerat alla dessa komponenter, att någon av dem komprometterats eller att VISIT:s produktavgränsning är felaktig.** En dokumenterad partnerrelation är inte bevis för att partnern berörs av Citybreak-intrånget. [Källa, avsnitt *Connect Sirvoy to BookVisit or Citybreak Partners*](https://help.sirvoy.com/setting-up-new-channels/connect-sirvoy-to-bookvisit-or-citybreak-partners).
+
+**Ny verifierad kundrelation, men ingen ny verifierad incident:** **Gausta (Norge)** använder enligt [VISIT:s eget kundcase](https://visit.com/success-stories/gausta) leverantörens **All-in-One PMS (VisBook)** och **GetFOOD** för bland annat hotell- och restaurangdrift. Källans ursprungliga publiceringsdatum är inte fastställt; **verifieringsdatum är 28 oktober 2026**. **Säkerhetsgrad: mycket hög för leverantörsrelationen** (förstahandskälla). **Ingen offentlig bekräftelse på att Gausta drabbats av dataintrånget, ingen belagd användning av Citybreak eller iTicket i just detta kundcase och ingen belagd koppling till den rapporterade Citybreak-incidenten.** Gausta ska inte sammanblandas med **Gaustabanen**, som redan förekommer separat i kundkartläggningen.
 
 - **Kund:** Ästad Vingård, Sverige. **Verifieringsdatum:** 28 oktober 2026. **Säkerhetsgrad för kundrelationen:** mycket hög, Visit Groups eget kundcase. **Produkt:** BookVisit och VisBook, **inte iTicket enligt den citerade källan**.
 - **Källa:** [Visit Group – Ästad Vingård implements Visit Group’s platform solutions](https://www.visitgroup.com/sv/news/astad-vingard-implements-visit-groups-platform-solutions-automate-operations-and-elevate-guest). Leverantören uppger att kunden har driftsatt BookVisit och VisBook. Artikelns ursprungliga publiceringsdatum kunde inte säkerställas från den tillgängliga källtexten; datumet ovan avser verifiering, inte publicering.
@@ -841,10 +862,6 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 **Avgränsning av falska träffar:** [Yle rapporterade 12 mars 2026](https://yle.fi/a/74-20214910) om ett separat intrång som berörde Viking Lines förbeställningar via leverantören Digitalist Experience Oy. Den händelsen är historisk och **har ingen belagd koppling till Visit Group-incidenten i oktober**. Den ska inte räknas som ny påverkan hos Viking Line i denna bevakning.
 
 ---
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 09:49 CET
-
-### Sju ytterligare verifierade kund- eller leverantörsrelationer – inga nya incidentoffer
 
 **Verifieringsdatum:** 28 oktober 2026. **Källsäkerhet:** mycket hög för relationer som framgår av leverantörens egen dokumentation, hög för Brittany Ferries med både leverantörsuppgift och branschpress. **Incidentkoppling:** ingen belagd för någon av dessa verksamheter. Kundrelationer gäller **VISIT-koncernen och skilda produkter**, inte nödvändigtvis iTicket eller samma driftmiljö som Skansen och Liseberg.
 
@@ -864,49 +881,6 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 
 ---
 
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 11:10 CET
-
-### Ny primär incidentinformation från Skansen – fler Visit-kunder påverkade, säkerhetsbrist uppges åtgärdad
-
-**Källa:** [Skansens officiella incident-FAQ](https://www.skansen.se/dataintrang/), **senast uppdaterad 28 oktober 2026 kl. 09:20**, kontrollerad kl. 11:10 CET. Detta är en väsentlig förbättring av bevisläget jämfört med tidigare mediereferat.
-
-| Fynd | Kund/leverantör | Bevisklassning | Säkerhetsgrad |
-|---|---|---|---|
-| Skansen anger att även **andra kunder hos Visit har påverkats**. Dessa namnges inte. | Skansen / Visit / icke namngivna kunder | Bekräftat uttalande från drabbad kund; **inte** verifierad identitet eller omfattning för övriga kunder | **Mycket hög** för uttalandet, **okänd** för kundidentiteter |
-| **Visit har enligt Skansen uppgett att säkerhetsbristen åtgärdats.** | Visit / Skansen | Leverantörsuppgift återgiven av kund; ingen oberoende teknisk verifiering av patch eller återställd säkerhet | **Hög** för återgivet besked; **ej oberoende verifierat** |
-| **Ett säkerhetsbolag genomför en fördjupad utredning**, enligt Skansen. | Visit / Skansen | Primärt kundmeddelande om pågående incidentutredning; bolagets namn och uppdragets omfattning inte offentliggjorda | **Hög** |
-| Skansen säger att det enligt erhållen information **inte finns någon koppling till uppmärksammade PHP-sårbarheter**. | Visit / Skansen | Officiellt besked som talar emot tidigare PHP2Shell-hypotes; ingen publicerad teknisk rotorsaksrapport | **Mycket hög** för beskedet; teknisk attribution fortfarande ej fastställd |
-| Möjligt exponerade data: **namn, telefonnummer, e-postadress, genomförda biljettköp**. Enligt leverantören **inte personnummer eller kort-/betalkortsuppgifter**. | Skansen | Direkt primärkälla, jämfört med äldre sekundär fältlista som även nämnde adress. Skansens lista är inte uttryckligen uttömmande. | **Mycket hög** för publicerad beskrivning |
-| Skansen anger att **biljettförsäljningen fungerar som vanligt**, och att berörda e-postadresser kontaktats 27 oktober. | Skansen | Verksamhets- och informationsstatus enligt Skansen | **Mycket hög** |
-
-**Avgränsning:** Skansen säger inte vilka andra Visit-kunder som påverkats. Liseberg har fortfarande en egen varning om möjlig läcka, senast daterad 27 oktober, men att det är exakt samma intrång är ännu inte tekniskt verifierat. Att Visit uppger att en säkerhetsbrist är åtgärdad säger inte vilken komponent som berörts, hur intrånget skedde eller om all exfiltrerad information är kartlagd. Skansens formulering om andra kunder ska inte tolkas som att hela iTicket-kundbasen är drabbad.
-
-**Övrig kontroll 28 oktober kl. 11:10:** Lisebergs [officiella säkerhetssida](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/) var fortsatt daterad 27 oktober. [iTickets webbplats](https://iticket.com/) och [VISIT:s webbplats](https://visit.com/) var åtkomliga utan någon ny publik incidentredogörelse i de granskade sidorna. [Visit Groups statussida](https://status.visitgroup.com/) gick inte att hämta genom webbverktyget; aktuell status är därmed inte verifierad. Sökningar på svenska, norska, danska, engelska och franska gav inga ytterligare namngivna incidentoffer eller verifierad attackvektor.
-
----
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 12:09 CET
-
-### Skansen: 4 800 personer uppges berörda; polisanmälan planeras
-
-**Källa:** [SVT Nyheter/TT – Misstänkt dataintrång mot nöjesparker](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker), **publicerad 28 oktober kl. 05:04, uppdaterad kl. 11:20 CET**. Kontrollerad 28 oktober kl. 12:09 CET. Detta är ett nytt sakligt tillägg sedan rapportversion 1.1 kl. 11:10.
-
-| Ny uppgift | Kund | Källtyp / bevisklass | Säkerhetsgrad |
-|---|---|---|---|
-| **4 800 personer** uppges ha fått sina uppgifter åtkomliga för obehöriga. Det gäller biljettbokningar **23–26 oktober 2026**. | Skansen | Skansens uppgift återgiven av SVT/TT; inte en egen teknisk mätning eller publicerad forensisk rapport | **Hög** för uppgiftens attribution; ingen oberoende verifiering av antal |
-| **Alla dessa personer har informerats via e-post**, enligt Skansens kommunikationschef. | Skansen | Uttalande från kunden till SVT/TT | **Hög** |
-| Skansen **kommer att polisanmäla** händelsen och utreder den tillsammans med leverantören. | Skansen | Planerad åtgärd enligt SVT/TT; **inte** bekräftelse på att polisanmälan redan registrerats | **Hög** för uttalad avsikt |
-
-**Leverantörskoppling:** För Skansen är det sedan tidigare direkt bekräftat att intrånget skett hos biljettleverantören **Visit**. De nya uppgifterna stärker kunskapen om **Skansens omfattning**, men verifierar inte ytterligare drabbade iTicket-kunder, gemensam tenant/databas med Liseberg eller identisk attackvektor. **Liseberg:** ingen ny verifierad omfattningssiffra eller rotorsak. **Andra kunder:** inga nya namngivna incidentoffer.
-
-**Kontroller utan ny incidentuppgift:** [Skansens egen incident-FAQ](https://www.skansen.se/dataintrang/) var fortfarande uppdaterad kl. 09:20; [Lisebergs säkerhetssida](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/) var fortsatt daterad 27 oktober. [iTickets webbplats](https://www.iticket.com/) var åtkomlig utan nytt incidentmeddelande på granskade sidor. [Visit Groups statussida](https://status.visitgroup.com/) gick inte att hämta i webbverktyget; aktuell tjänstestatus kunde därför inte verifieras. Riktade sökningar på svenska, norska, danska, engelska och franska samt för namngivna iTicket-/VISIT-kunder gav ingen ytterligare verifierad koppling till intrånget.
-
----
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 13:27 CET
-
-### Två ytterligare belagda koncernkunder i Norge – inga nya verifierade incidentoffer
-
 **Verifieringsdatum:** 28 oktober 2026 kl. 13:27 CET. Källorna beskriver **redan tidigare ingångna avtal**; datumet avser dagens verifiering och inte en ny incident eller ett nytecknat avtal.
 
 | Verksamhet | Verifierad relation | Ursprungligt källdatum | Källa | Säkerhetsgrad / incidentkoppling |
@@ -919,52 +893,6 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 **Bevisavgränsning:** Ett koncernavtal med VISIT, särskilt för Travia eller hotellbokningsprodukter, visar inte att kunden använder iTicket eller delar komprometterad infrastruktur med Skansen. Dessa två verksamheter ska inte klassas som drabbade utan separat incidentbekräftelse.
 
 ---
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 14:41 CET
-
-### Nytt namngivet incidentoffer: Tekniska museet bekräftar möjlig personuppgiftsexponering hos Visit
-
-**Primärkälla:** [Tekniska museet – Dataintrång](https://www.tekniskamuseet.se/dataintrang/), **senast uppdaterad 28 oktober 2026** (ingen exakt publiceringstid anges). Kontrollerad **28 oktober kl. 14:41 CET**.
-
-| Uppgift | Kund | Klassning | Säkerhetsgrad |
-|---|---|---|---|
-| Museet informerades **27 oktober** om **dataintrång hos biljettleverantören Visit**. | **Tekniska museet** | **Bekräftad leverantörsincident och kundkoppling**, enligt kundens eget incidentmeddelande. | **Mycket hög** |
-| Personuppgifter i leverantörens bokningssystem **kan ha exponerats**. Främst bokningar **23–26 oktober**, men även **tidigare bokningar kan omfattas**. | Tekniska museet | **Bekräftad varning om möjlig exponering**, inte bevisad kopiering/exfiltration för varje post. | **Mycket hög** för varningens innehåll; faktisk exfiltration **ej fastställd** |
-| Museet uppger att **samtliga identifierade berörda besökare informerats via e-post onsdagen 28 oktober**. | Tekniska museet | Förstahandsuppgift om kundens incidentkommunikation. | **Mycket hög** för uppgiften; antal personer ej angivet |
-| **Betal- och kortuppgifter uppges inte omfattas**. Museet har inte kännedom om att uppgifterna använts för bedrägeri. | Tekniska museet | Kundens egen risk- och statusinformation. | **Hög** för uttalandet; frånvaro av bedrägerier kan inte slutligt verifieras |
-| **Visit uppges ha åtgärdat säkerhetsbristen** och en utredning pågår. | Tekniska museet / Visit | Uppgift från leverantören återgiven av kunden, inte tekniskt testad. | **Hög** för återgivningen, **inte** oberoende verifierad remediation |
-
-**Viktig skillnad:** Tekniska museet är nu ett **namngivet fall med bekräftad koppling till ett intrång hos Visit**, inte enbart en kund i en leverantörslista. Formuleringen är däremot fortfarande **möjlig exponering**, och det finns ingen publicerad forensisk dokumentation som visar att museet, Skansen och Liseberg drabbats via samma applikationskomponent, databas, tenant eller initiala angreppsväg. Inte heller har ett exakt antal berörda vid Tekniska museet offentliggjorts.
-
-**Övrig kontroll:** [Skansens incident-FAQ](https://www.skansen.se/dataintrang/), [Skansens korta nyhetsnotis uppdaterad 12:20](https://www.skansen.se/aktuellt/dataintrang-visit-oktober2026/), [Lisebergs säkerhetsinformation](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet/), [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker), [iTicket](https://www.iticket.com/) och [VISIT](https://visit.com/) kontrollerades. Sökningar på svenska, norska, danska, engelska och franska och för kartlagda kunder gav ingen ytterligare namngiven incidentbekräftelse, publicerad attackmetod, exfiltrationsbevisning eller incidentspecifika IoC:er. [Visit Groups statussida](https://status.visitgroup.com/) var inte direkt åtkomlig för webbverktyget; ingen slutsats om faktisk driftstatus kan dras av detta.
-
----
-
-
----
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 16:53 CET
-
-### Nytt namngivet incidentfall: Svenska Turistföreningen bekräftar cirka 759 berörda bokningar hos Visit
-
-**Primärkälla:** [STF – Information om säkerhetsincident hos vår bokningsleverantör](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/), ursprungligen **27 oktober 2026**, uppdaterat **28 oktober kl. 07:40**; upptäckt och kontrollerat i denna bevakning **28 oktober kl. 16:53 CET**.
-
-| Uppgift | Verksamhet | Bevisklassning | Säkerhetsgrad |
-|---|---|---|---|
-| **Visit namnges uttryckligen som leverantör** för STF:s webbplatsbokningar av boenden och aktiviteter. | Svenska Turistföreningen | Bekräftad direkt kundrelation, från kundens primärkälla. Exakt Visit-produkt (iTicket/BookVisit/annan) är inte belagd. | **Mycket hög** |
-| **Cirka 759 bokningar berörs av intrånget**, primärt gjorda **23–26 oktober 2026**. | STF | Bekräftad påverkan på bokningsposter enligt kundens egen incidentutredning. **Inte** liktydigt med 759 personer eller 759 verifierat stulna poster. | **Mycket hög** för kundens besked, inte oberoende forensiskt verifierat |
-| STF vet ännu **inte exakt vilka uppgifter som hämtats ut** och avser kontakta berörda gäster. | STF | Exfiltrationens omfattning och innehåll **ej fastställda**. | **Mycket hög** för osäkerhetsbeskedet |
-| Kortbetalningar hanteras av separat betalleverantör och **kortuppgifter lagras inte i bokningssystemet**. | STF | Kundens uppgift om dataavgränsning; ej oberoende tekniskt kontrollerad. | **Hög** |
-| [PC för Alla, 28 oktober](https://www.pcforalla.se/article/3271398/dataintrang-visit-information-om-besokare-lackt.html) tar upp **Skansen, Liseberg, Tekniska museet och STF** i en samlad artikel. | Samtliga fyra | Medieomnämnande som bekräftar spridningen av incidentrapportering, men inte gemensam teknisk rotorsak. | **Hög** för artikelinnehållet |
-| PC för Alla anger att **namn och e-postadresser** är de aktuella uppgifterna hos Tekniska museet och återger kommentar från museets PR-ansvarige om information till gäster. | Tekniska museet | Medieuppgift/uttalande, **inte** publicerad forensisk fältlista. | **Hög** för uppgiftens publicering; lägre för teknisk fullständighet |
-
-**Samlad klassning:** Fyra verksamheter har nu **uttryckliga offentliga incidentbesked** som gäller Visit eller leverantörens bokningssystem: Skansen, Liseberg, Tekniska museet och STF. **STF är ett direkt bekräftat Visit-relaterat fall**, medan Lisebergs exakta tekniska koppling till Skansens incident fortfarande inte har offentliggjorts. Samma leverantör och samtidiga besked bevisar inte samma initiala angreppsväg, delad databas eller tenant. Antal personer får **inte** räknas genom att addera Skansens 4 800 personer till STF:s 759 bokningar.
-
-**Övrig kontroll:** VISIT:s officiella webbplats och [API-dokumentationsöversikt](https://visit.com/developer-documentation), [iTickets webbplats](https://iticket.com/), [Skansens incidentinformation](https://www.skansen.se/dataintrang/), [Tekniska museets incidentinformation](https://www.tekniskamuseet.se/dataintrang/) och [Lisebergs säkerhetsinformation](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) granskades. Sökningar på svenska, norska, danska, engelska och franska för övriga kartlagda kunder gav ingen ytterligare **belagd** incidentkoppling eller nya incidentspecifika IoC:er. [Visit Groups statussida](https://status.visitgroup.com/) gav ett åtkomstfel vid denna kontroll; det visar **inte** att tjänsten är nere. Ingen ny teknisk attackvektor eller ransomwarekoppling har verifierats.
-
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 18:25 CET
-
-### VISIT:s officiella kundcase bekräftar 16 ytterligare kundreferenser och två närstående anläggningar – inga nya incidentoffer
 
 **Källa och verifiering:** [VISIT – Success Stories](https://visit.com/success-stories) samt respektive kundcase, kontrollerade **28 oktober 2026 kl. 18:25 CET**. Källornas ursprungliga publiceringsdatum anges inte genomgående och kan därför inte säkert dateras; **28 oktober är verifieringsdatum, inte startdatum för relationerna**. VISIT:s kundcase är förstahandsbelägg för leverantörsrelationen men inte för incidentpåverkan. **Säkerhetsgrad mycket hög** för explicit dokumenterad användning; **hög** för Mora Hotel & Spa som visas i leverantörens kundregister utan verifierad produktdetalj.
 
@@ -995,64 +923,16 @@ Timbevakningen till och med 1 november 2026 omfattar dessa verksamheter samt nya
 
 ---
 
-## Daterat OSINT-tillägg — 28 oktober 2026, kl. 18:48 CET
-
-### VISIT publicerar primärbekräftelse om obehörig åtkomst till Citybreak-data
-
-**Kund/produkt:** Citybreak Online, VISIT. **Källdatum:** 28 oktober 2026 kl. **10:41** respektive **11:55 CET**. **Verifierat i denna bevakning:** 28 oktober kl. **18:48 CET**.
-
-**Källor:** [VISIT – Citybreak security incident: update, kl. 11:55](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e); [tidigare meddelande kl. 10:41](https://status.visitgroup.com/issues/6ae1c35a14715192c0ea41a5); [samlad status](https://status.visitgroup.com/).
-
-| Faktauppgift | Bevisklassning | Säkerhetsgrad |
-|---|---|---|
-| VISIT uppger att **obehöriga fått tillgång till en mycket begränsad mängd bokningsdata från Citybreak**. | **Bekräftad incident enligt leverantörens primärkälla**. Exakt antal poster och faktiskt exporterade data ej verifierade. | **Mycket hög** för leverantörens erkännande; **okänd** för exfiltrationsvolym. |
-| Åtkomsten har blockerats; oberoende säkerhetsexperter utreder. | Leverantörens egen uppgift; inte oberoende tekniskt styrkt. | **Hög**. |
-| Relevanta myndigheter har underrättats. | Leverantörens egen uppgift, myndighetsbekräftelse ej hittad. | **Hög**. |
-| Berörda **Citybreak-kunder** har kontaktats direkt; VISIT kontaktar inte resenärer/gäster. | Leverantörens uppgift om incidentkommunikation. | **Hög**. |
-| Inga kortdata eller inloggnings-/API-uppgifter påverkades, enligt VISIT. | Leverantörens avgränsning, inte publicerad forensisk rapport. | **Hög**. |
-| **Andra VISIT-produkter påverkades inte av denna incident**, enligt VISIT. | Leverantörens uttryckliga produktavgränsning. Inte bevis för att inga andra incidenter inträffat. | **Mycket hög** för att beskedet lämnats, teknisk verifiering saknas. |
-| Alla system, inklusive Citybreak, fungerar enligt leverantören. | Statusbesked, inte säkerhetsbevis. | **Hög**. |
-
-**Tolkning av iTicket kontra Citybreak:** Skansens biljettmiljö har tidigare identifierats som iTicket, men kundens offentliga incidentbesked namnger **Visit** och inte vilken intern lagringskomponent som exponerats. Liseberg använder iTicket, men har inte offentliggjort teknisk rotorsak. Det finns därför **ingen verifierad teknisk motsägelse** mellan VISIT:s påstående om en Citybreak-avgränsad incident och kundernas varningar; det finns däremot en **viktig obesvarad fråga** om produkt-, integrations- och datalagringsgränser. **Skansen, Liseberg, Tekniska museet och STF kvarstår som namngivna verksamheter med incidentbesked**, men detta nya leverantörsmeddelande identifierar inte någon ytterligare kund och namnger inte dessa fyra.
-
-### VISIT publicerar rotorsak för separat WebX-avbrott
-
-**Källa:** [VISIT – Service Issue - Websites - VISIT](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4), markerad **Resolved 28 oktober 2026 kl. 15:12 CET**. Incidentens faktiska varaktighet enligt leverantören: **27 oktober kl. 15:30–17:55 CET**, cirka **2 timmar 25 minuter**. Berörda webbkomponenter: **Citybreak Web, BookVisit Web och Stays**.
-
-VISIT anger att en **delad lagringstjänst slutade svara**, vilket gjorde att WebX-sidor inte kunde läsa sin centrala webbplatskonfiguration och därför gav timeout. Leverantören uppger att felet identifierades inom tio minuter, eskalerades till lagringsleverantören och att tjänsten återställdes kl. 17:55. Man känner inte till någon dataförlust från driftavbrottet. Förebyggande åtgärder gäller övervakning av lagring, felisolering och leverantörens kommande rotorsaksanalys. **Säkerhetsgrad mycket hög för publicerad incidentbeskrivning, men den externa lagringsleverantörens RCA är ännu inte publicerad.**
-
-**Bevisavgränsning:** Den tidigare statustexten sade att störningen inträffade under planerade säkerhetsförbättringar. Den nya redogörelsen beskriver en lagringsrelaterad driftsorsak. **Inget av detta styrker att intrånget orsakade driftstörningen eller tvärtom.** De ska tills vidare behandlas som två separata händelser. [VISIT:s statussida](https://status.visitgroup.com/) visade **Operating Normally 28 oktober kl. 18:48 CET** för iTicket, Citybreak och övriga listade tjänster.
+## Kompletterande källvärdering och kommunikation
 
 ### Övrig kontroll och resultat
 
 [Skansens primära incident-FAQ](https://www.skansen.se/dataintrang/) var uppdaterad **28 oktober kl. 12:20** och uppgav fortsatt att flera andra Visit-kunder påverkats. [Tekniska museets incidentinformation](https://www.tekniskamuseet.se/dataintrang/) bekräftar fortsatt möjlig exponering. [iTickets webbplats](https://www.iticket.com/) och [VISIT:s API-översikt](https://visit.com/developer-documentation) innehåller ingen i denna kontroll ny verifierad teknisk angreppsbeskrivning. Sökningar på svenska, norska, danska, engelska och franska samt riktade sökningar för de namngivna kundgrupperna gav **inga nya namngivna drabbade kunder, ransomwarebelägg eller incidentspecifika IoC:er**. En tredjepartsartikel publicerad den 28 oktober om Liseberg och Skansen återgav äldre uppgifter och innehöll inte ny bekräftad teknisk information.
 
----
-
 ## Bedömning av Visit Groups kommunikation och incidenthantering
 
 Efter att VISIT den 28 oktober publicerat ett eget Citybreak-säkerhetsmeddelande har transparensen förbättrats, men den offentliga bilden av incidentens omfattning är fortfarande ofullständig. Det är positivt att Skansen och Liseberg har informerat om risken för exponerade personuppgifter, men det saknas fortfarande centrala uppgifter om angreppets orsak, vilka system som komprometterats, hur många personer som berörs och om andra kunder på samma plattform kan vara påverkade. För en leverantör som hanterar biljettförsäljning och personuppgifter åt många verksamheter är tydlig, samordnad och fortlöpande information särskilt viktig. Den befintliga Citybreak-notisen bör därför kompletteras med en tidslinje, tydligare omfattning och förklaring av hur de namngivna kundernas incidentbesked förhåller sig till leverantörens avgränsning, när sådana uppgifter kan publiceras utan att skada utredningen. Samtidigt går det inte att dra slutsatsen att den tekniska incidenthanteringen varit bristfällig enbart utifrån den begränsade offentliga informationen. Min kritik gäller främst den externa transparensen och möjligheten för kunder och registrerade personer att bedöma sin risk, inte ett påstående om att leverantören underlåtit att vidta nödvändiga säkerhetsåtgärder.
 
-## Ändringshistorik
-- **1.12, 29 oktober 2026 kl. 09:53 CET:** ESS Group och Ellery Beach House (VisBook/BookVisit), Lotus Hotel Group (VisBook, fyra namngivna koncernhotell) samt Vadstena Klosterhotell (VISIT-ekosystemreferens, specifik produkt okänd) tillagda med källor och säkerhetsgrader. Inga nya verifierade drabbade verksamheter eller angreppsuppgifter. VISIT:s statussida inte direkt åtkomlig.
-- **1.11, 29 oktober 2026 kl. 07:35 CET:** Gotland Promotion och Destination Österlen tillagda som två historiskt källbelagda Citybreak (Visitgroup)-partners enligt Sirvoys integrationsdokumentation (uppdaterad 26 juni 2026). Dokumenterad integrationsväg via BookVisit-ID och Sirvoy noterad utan att dra slutsatser om kompromettering eller dataflöde vid intrånget. Inga nya verifierade drabbade verksamheter eller angreppsuppgifter; VISIT:s statussida ej direkt åtkomlig.
-- **1.10, 29 oktober 2026 kl. 02:26 CET:** Göteborgs-Posten rapporterar i artikel publicerad 28 oktober att 15 000 Lisebergsgäster drabbats och att obehörig åtkomst till namn och kontaktuppgifter skett hos Visit. Uppgifterna klassas som medieuppgifter, inte primär- eller forensiskt verifierad omfattning; Lisebergs officiella säkerhetssida anger fortfarande möjlig läcka och inget antal. Ingen ny bekräftad drabbad verksamhet eller teknisk rotorsak.
-- **1.9, 28 oktober 2026 cirka kl. 21:49 CET:** Junibacken identifierad som femte verksamhet med eget offentligt Visit-relaterat incidentbesked (kundens källa senast uppdaterad kl. 10:25). Junibacken uppger att berörda informerats, att incidenten anmälts till IMY och polisanmälts samt att inga kort- eller betaluppgifter omfattas. Ingen exfiltrationsvolym eller teknisk produkt-/tenantkoppling verifierad. Kundregister och aktuell risköversikt uppdaterade. Statussidan kunde inte läsas direkt.
-- **1.7, 28 oktober 2026 kl. 18:48 CET:** VISIT:s officiella statussida kunde läsas och bekräftar obehörig åtkomst till begränsade Citybreak-bokningsdata (meddelanden 10:41 och 11:55), åtgärder, myndighetsunderrättelse, att kort-/API-uppgifter inte berörts och att andra produkter enligt leverantören inte påverkats av just den incidenten. Separat WebX-avbrott 27 oktober 15:30–17:55 får publicerad lagringsrelaterad rotorsaksbeskrivning (markerad löst 28 oktober 15:12). Ingen verifierad teknisk koppling mellan händelserna eller ytterligare namngiven kund.
-- **1.6, 28 oktober 2026 kl. 18:25 CET:** 16 nya officiellt belagda VISIT-kundreferenser, plus två uttryckligen namngivna anläggningar inom Mössebergsgruppen, inlagda med produkt- och källklassning. Jula Hotells fem anläggningar dokumenterade utan att dubbelräknas som fristående avtal. Lisebergsbyn/VisBook särskilt avgränsat från Lisebergsparken/iTicket. Inga nya incidentoffer eller tekniska intrångsbevis.
-- **1.5, 28 oktober 2026 kl. 16:53 CET:** STF identifierad som fjärde namngiven verksamhet med uttryckligt Visit-relaterat incidentbesked. STF bekräftar cirka 759 berörda bokningar (inte personer) främst 23–26 oktober; exakta exfiltrerade data okända. PC för Allas samlade artikel och medieuppgift om Tekniska museets namn/e-post noterade. Kundregister, risköversikt och huvudbedömning uppdaterade.
-- **1.4, 28 oktober 2026 kl. 14:41 CET:** Tekniska museets primära incidentmeddelande verifierar en tredje namngiven verksamhet som fått besked om dataintrång hos Visit och varnar för möjlig exponering av besökaruppgifter. Perioden 23–26 oktober kan utsträckas till äldre bokningar; berörda informerades 28 oktober. Ingen offentlig verifiering av exakt rotorsak, exfiltration eller antal. Kundregister och huvudbedömning uppdaterade.
-- **1.3, 28 oktober 2026 kl. 13:27 CET:** två ytterligare äldre men nu belagda VISIT-koncernrelationer i Norge (Unike Hoteller, Classic Norway Hotels) med separata källdatum och tydlig gräns mellan leverantörsrelation och incidentpåverkan. Inga nya namngivna drabbade eller nya tekniska attackuppgifter; statussidan ej åtkomlig.
-- **1.2, 28 oktober 2026 kl. 12:09 CET:** SVT/TT:s uppdatering 11:20 ger första kvantifierade uppgiften om Skansens påverkan (4 800 personer), bekräftar kundens uppgift att alla informerats via e-post och att polisanmälan planeras. Uppgifter klassade som medieåtergivna kundbesked, inte oberoende tekniskt verifierade.
-- **1.1, 28 oktober 2026 kl. 11:10 CET:** Skansens primära incident-FAQ (uppdaterad 09:20) bekräftar påverkan hos andra icke namngivna Visit-kunder, uppger att bristen åtgärdats, att extern säkerhetsutredning pågår, samt avvisar koppling till PHP-sårbarheterna. Primär fältlista och verksamhetsstatus införda; tidigare PHP-hypotes och kundstatus korrigerade.
-- **1.0, 28 oktober 2026 kl. 09:49 CET:** sju nya verifierade kund-/leverantörsrelationer (The Whale, Wasaline, Iso-Syöte, De Historiske, Finnskogtoppen, Kokkedal Slot, Brittany Ferries) med separat produktklassning; inga nya bekräftade drabbade. Fortsatt begränsad åtkomst till Visit Groups statussida.
-- **0.9, 28 oktober 2026 kl. 07:50 CET:** Ästad Vingård tillagt som officiellt belagd BookVisit/VisBook-kund utan påvisad incident; kontroll av nya medieuppgifter, status och falsk träff om Viking Line. Ingen ny bekräftad incident.
-- **0.8, 28 oktober 2026 kl. 06:07 CET:** belagd störning i Lisebergs onlinebokning 27 oktober, med tydlig åtskillnad mellan kundstörning, möjlig dataläcka och obekräftad orsak.
-- **0.7, 28 oktober 2026 kl. 04:39 CET:** officiellt belagd driftstörning 27 oktober under planerade säkerhetsförbättringar; separerad från obekräftad koppling till dataintrånget; iTicket-status kontrollerad.
-- **0.6, 28 oktober 2026:** tillagd bedömning av leverantörens offentliga kommunikation och incidenthantering.
-- **0.5, 28 oktober 2026:** fullständigt ursprungligt forskningsunderlag bevarat; utökat register med 39 verksamhetsrader, separata referenser och incidentklassning.
-- **0.4:** separat förkortad sammanställning; ersätts av denna fullständiga version.
+## Rapportens versionshistorik
 
-### Versionsnotering 1.8 – 28 oktober 2026 cirka kl. 20:19 CET
-
-Gausta tillagt som separat, officiellt belagd VISIT-/VisBook-/GetFOOD-kund, utan verifierad incidentkoppling. Förnyad kontroll av incidentkällor gav inga nya namngivna drabbade eller tekniska IoC:er. VISIT:s statussida var otillgänglig för direkt återläsning i denna körning.
+Se [tidigare fullständiga rapporter](./historik/) och [Git-historiken](https://github.com/einand/handelserapporter/commits/main/visit/index.md) för ändringar mellan versioner.
