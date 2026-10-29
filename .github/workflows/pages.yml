@@ -1,4 +1,4 @@
-name: Publicera händelserapporter
+name: Publicera händelserapporter med Hugo
 
 on:
   push:
@@ -19,18 +19,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/configure-pages@v6
-      - uses: actions/jekyll-build-pages@v1
+      - name: Installera Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          source: ./
-          destination: ./_site
+          hugo-version: '0.152.2'
+          extended: true
+      - name: Förbered rapportinnehåll utan att ändra källfiler
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p hugo-content/visit/historik
+          cp index.md hugo-content/_index.md
+          cp visit/index.md hugo-content/visit/_index.md
+          if compgen -G 'visit/historik/*.md' > /dev/null; then
+            cp visit/historik/*.md hugo-content/visit/historik/
+          fi
+      - name: Bygg mobilanpassad webbplats
+        run: hugo --minify --contentDir hugo-content --destination public
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
