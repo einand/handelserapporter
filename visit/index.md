@@ -6,13 +6,13 @@ description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT o
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.18 · 30 oktober 2026**
+**Rapportversion 1.19 · 30 oktober 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
 ## Sammanfattning
 
-[VISIT har bekräftat](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) att en obehörig aktör fått tillgång till en begränsad mängd bokningsuppgifter i **Citybreak Online**. VISIT uppger att åtkomsten blockerats, att berörda kunder och relevanta myndigheter informerats och att externa experter utreder händelsen. Enligt leverantören omfattas inte kortuppgifter eller API-nycklar.
+[VISIT har bekräftat](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) att en obehörig aktör fått tillgång till en begränsad mängd bokningsuppgifter i **Citybreak Online**. VISIT uppger att åtkomsten blockerats, att berörda kunder och relevanta myndigheter informerats och att externa experter utreder händelsen. Enligt leverantören omfattas inte kortuppgifter, inloggningsuppgifter eller API-nycklar. **VISIT uppger uttryckligen att incidenten endast gäller Citybreak och att koncernens övriga produkter inte är påverkade.** Detta är leverantörens egen avgränsning, inte en oberoende forensisk verifiering.
 
 Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen, Liseberg, Tekniska museet, Svenska Turistföreningen (STF), Junibacken och Skånes Djurpark**. Deras uppgifter har olika grad av säkerhet beträffande faktisk dataexponering. De offentliga källorna fastställer inte att alla sex omfattas av exakt samma tekniska händelse eller samma databas.
 
@@ -31,13 +31,13 @@ Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen,
 
 ### Leverantörens besked
 
-[VISIT:s incidentinformation från den 28 oktober](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) avser uttryckligen **Citybreak Online**. VISIT uppger att obehörig åtkomst har stoppats och att säkerhetsutredning pågår. Uppgifterna kommer från leverantören; någon fullständig offentlig teknisk incidentrapport har inte identifierats.
+[VISIT:s incidentinformation från den 28 oktober](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) avser uttryckligen **Citybreak Online**. VISIT uppger att obehörig åtkomst har stoppats och att säkerhetsutredning pågår. I sitt [utförligare statusmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) anger leverantören också att **samtliga system fungerar normalt**, att berörda Citybreak-kunder kontaktats direkt, att **inga inloggningsuppgifter eller API-behörigheter** påverkats och att **övriga VISIT-produkter inte omfattas**. VISIT anger att statusinformationen skickades till kunder för samtliga tjänster för att nå alla, **inte för att samtliga tjänster hade drabbats**. Uppgifterna kommer från leverantören; någon fullständig offentlig teknisk incidentrapport har inte identifierats.
 
 **Tekniskt fortfarande okänt:** intrångsväg, angripare, exakt omfattning av utlämnade uppgifter och vilka kundmiljöer som ingick i samma tekniska åtkomst. Ingen incidentspecifik offentlig lista över IP-adresser, hashvärden eller andra indikatorer har verifierats. **Skansen uppger uttryckligen i sin [incident-FAQ](https://www.skansen.se/dataintrang/) att det, enligt den information verksamheten fått, inte finns någon koppling till de nyligen uppmärksammade PHP-sårbarheterna.** Detta är Skansens återgivning av leverantörsinformation, inte en publicerad forensisk rotorsaksanalys.
 
 ### Produkter och teknisk avgränsning
 
-VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**. En kundrelation till en av produkterna visar inte att kunden haft uppgifter i den berörda Citybreak-miljön. Att Skansen och Liseberg har dokumenterade iTicket-relationer fastställer inte gemensam databas, tenant eller teknisk rotorsak. Leverantörens produktavgränsning ska därför inte utvidgas utan ytterligare belägg.
+VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**. En kundrelation till en av produkterna visar inte att kunden haft uppgifter i den berörda Citybreak-miljön. Att Skansen och Liseberg har dokumenterade iTicket-relationer fastställer inte gemensam databas, tenant eller teknisk rotorsak. Leverantören uppger uttryckligen att **endast Citybreak** berörts och att övriga produkter inte påverkats. Kundernas egna incidentbesked och deras iTicket-relationer ska därför redovisas separat, utan att iTicket betecknas som komprometterat. Leverantörens produktavgränsning ska inte utvidgas utan ytterligare belägg.
 
 ## Påverkan hos namngivna verksamheter
 
@@ -71,7 +71,7 @@ Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinfor
 
 ## Separata driftstörningar
 
-[VISIT:s statussida](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4) redovisar en driftstörning den **27 oktober** som berörde **Citybreak Web, BookVisit Web och Stays** under säkerhetsförbättringar. VISIT har beskrivit problem med delad lagring och markerade händelsen löst den **28 oktober**. Liseberg informerade också om tillfälliga problem med onlinebokning. **Det finns inget publicerat tekniskt belägg för att dessa driftstörningar orsakade dataintrånget.**
+[VISIT:s statussida](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4) redovisar en driftstörning den **27 oktober** som berörde **Citybreak Web, BookVisit Web och Stays** under säkerhetsförbättringar. VISIT har i sin [driftincidentrapport](https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4) preciserat att **WebX-plattformens delade lagring slutade svara**, vilket gjorde webbplatser otillgängliga **27 oktober kl. 15.30–17.55 CET (2 timmar och 25 minuter)**. Tjänsten återställdes samma kväll, och statusärendet markerades avslutat **28 oktober**. Leverantören uppger att ingen dataförlust är känd och att man väntar på lagringsleverantörens rotorsaksanalys. Liseberg informerade också om tillfälliga problem med onlinebokning. **Det finns inget publicerat tekniskt belägg för att dessa driftstörningar orsakade dataintrånget.**
 
 ## Tidslinje för bekräftade händelser
 
