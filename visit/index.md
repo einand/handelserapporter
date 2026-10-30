@@ -6,7 +6,7 @@ description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT o
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.19 · 30 oktober 2026**
+**Rapportversion 1.20 · 30 oktober 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -14,7 +14,7 @@ Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess 
 
 [VISIT har bekräftat](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) att en obehörig aktör fått tillgång till en begränsad mängd bokningsuppgifter i **Citybreak Online**. VISIT uppger att åtkomsten blockerats, att berörda kunder och relevanta myndigheter informerats och att externa experter utreder händelsen. Enligt leverantören omfattas inte kortuppgifter, inloggningsuppgifter eller API-nycklar. **VISIT uppger uttryckligen att incidenten endast gäller Citybreak och att koncernens övriga produkter inte är påverkade.** Detta är leverantörens egen avgränsning, inte en oberoende forensisk verifiering.
 
-Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen, Liseberg, Tekniska museet, Svenska Turistföreningen (STF), Junibacken och Skånes Djurpark**. Deras uppgifter har olika grad av säkerhet beträffande faktisk dataexponering. De offentliga källorna fastställer inte att alla sex omfattas av exakt samma tekniska händelse eller samma databas.
+Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade incidentbesked: **Skansen, Liseberg, Tekniska museet, Svenska Turistföreningen (STF), Junibacken, Skånes Djurpark och Kongeparken (Norge)**. Deras uppgifter har olika grad av säkerhet beträffande faktisk dataexponering. De offentliga källorna fastställer inte att samtliga verksamheter omfattas av exakt samma tekniska händelse eller samma databas.
 
 | Verksamhet | Offentligt besked | Känd omfattning |
 |---|---|---|
@@ -24,6 +24,7 @@ Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen,
 | [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) | Berörda bokningar hos Visit | Cirka **759 bokningar**, inte personer |
 | [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/) | Visit-relaterat intrång och kundinformation | Antal ej publicerat |
 | [Skånes Djurpark](https://www.skanesdjurpark.se/) | Besked om intrång hos Visit Group och mejl till berörda | Antal ej publicerat |
+| [Kongeparken, Norge](https://www.kongeparken.no/) | Parken uppger att biljettleverantören Visit Group utsatts för dataintrång och att berörda gäster kontaktats | Antal ej publicerat |
 
 **Antalen ska inte summeras.** Personer, gäster och bokningar är inte samma mått. Det finns heller inget offentligt belägg för att de berörda grupperna är helt åtskilda.
 
@@ -65,6 +66,10 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 [Skånes Djurparks officiella webbplats](https://www.skanesdjurpark.se/) visar ett incidentmeddelande om att parken den **27 oktober** informerades om intrång hos biljettleverantören Visit Group och att berörda gäster kontaktats via mejl. Exakt antal berörda och teknisk produktkoppling är inte fastställda.
 
+### Kongeparken (Norge)
+
+[Kongeparkens officiella webbplats](https://www.kongeparken.no/) publicerar ett meddelande under rubriken *Viktig informasjon om datainnbrudd*. Parken uppger att den **27 oktober** informerades om ett dataintrång hos sin biljettleverantör **Visit Group** och att **berörda gäster har kontaktats via e-post**. Det är ett **eget kundbesked med uttrycklig koppling till Visit-intrånget**, inte enbart en leverantörsreferens eller ett medieomnämnande. Antal berörda, vilka uppgifter som kan ha exponerats och exakt berörd teknisk produkt är inte offentligt fastställda. Beskedet är synligt i webbplatsens sökindexerade innehåll; det kunde inte återfinnas i den direktlästa förenklade HTML-vyn.
+
 ## Personuppgifter och praktiska risker
 
 Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinformation**. VISIT och flera kunder uppger att **kortuppgifter inte ingår**. Uppgifterna innebär ändå risk för exempelvis riktade falska meddelanden som hänvisar till en verklig bokning. Någon faktisk bedrägerikampanj kopplad till just dessa uppgifter är inte verifierad i underlaget.
@@ -78,7 +83,7 @@ Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinfor
 | Datum | Händelse och källa |
 |---|---|
 | **23–26 oktober 2026** | Bokningsperiod som flera kundbesked särskilt pekar ut; hos Tekniska museet kan även äldre bokningar omfattas. |
-| **27 oktober** | Flera kunder får besked om incidenten. Skansen och Liseberg informerar om möjlig eller konstaterad påverkan. VISIT rapporterar separat driftstörning. |
+| **27 oktober** | Flera kunder, däribland Skansen, Liseberg och norska Kongeparken, uppger att de informerats om incidenten. VISIT rapporterar separat driftstörning. |
 | **28 oktober** | VISIT publicerar sitt [Citybreak-besked](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e). Fler verksamheter publicerar egna incidentmeddelanden. |
 | **29 oktober** | Skånes Djurparks tidigare incidentbesked identifieras i offentlig sökindexering. |
 
