@@ -1,12 +1,12 @@
 ---
 title: "Visit Group – verifierad incidentrapport"
-date: 2026-10-29
+date: 2026-10-30
 description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT och berörda kunder."
 ---
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.16 · 29 oktober 2026**
+**Rapportversion 1.17 · 30 oktober 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -33,7 +33,7 @@ Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen,
 
 [VISIT:s incidentinformation från den 28 oktober](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) avser uttryckligen **Citybreak Online**. VISIT uppger att obehörig åtkomst har stoppats och att säkerhetsutredning pågår. Uppgifterna kommer från leverantören; någon fullständig offentlig teknisk incidentrapport har inte identifierats.
 
-**Tekniskt fortfarande okänt:** intrångsväg, angripare, exakt omfattning av utlämnade uppgifter och vilka kundmiljöer som ingick i samma tekniska åtkomst. Ingen incidentspecifik offentlig lista över IP-adresser, hashvärden eller andra indikatorer har verifierats.
+**Tekniskt fortfarande okänt:** intrångsväg, angripare, exakt omfattning av utlämnade uppgifter och vilka kundmiljöer som ingick i samma tekniska åtkomst. Ingen incidentspecifik offentlig lista över IP-adresser, hashvärden eller andra indikatorer har verifierats. **Skansen uppger uttryckligen i sin [incident-FAQ](https://www.skansen.se/dataintrang/) att det, enligt den information verksamheten fått, inte finns någon koppling till de nyligen uppmärksammade PHP-sårbarheterna.** Detta är Skansens återgivning av leverantörsinformation, inte en publicerad forensisk rotorsaksanalys.
 
 ### Produkter och teknisk avgränsning
 
@@ -43,7 +43,7 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 ### Skansen
 
-[Skansens information](https://www.skansen.se/dataintrang/) beskriver intrång hos biljettleverantören Visit. [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) återger uppgiften att omkring **4 800 personer** berörts av biljettbokningar den **23–26 oktober 2026**. Enligt Skansen kan namn, telefonnummer, e-postadresser och biljettköp ha omfattats, men inte personnummer eller kortuppgifter. Skansen uppger att berörda informerats, att en säkerhetsutredning pågår och att leverantören meddelat att bristen åtgärdats. En polisanmälan uppgavs vara planerad; genomförandet är inte verifierat.
+[Skansens information](https://www.skansen.se/dataintrang/) beskriver intrång hos biljettleverantören Visit. [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) återger uppgiften att omkring **4 800 personer** berörts av biljettbokningar den **23–26 oktober 2026**. Enligt Skansen kan namn, telefonnummer, e-postadresser och biljettköp ha omfattats, men inte personnummer eller kortuppgifter. Skansen uppger att berörda informerats, att en säkerhetsutredning pågår och att leverantören meddelat att bristen åtgärdats. En polisanmälan uppgavs vara planerad; genomförandet är inte verifierat. I sin [frågor-och-svar-text](https://www.skansen.se/dataintrang/) anger Skansen dessutom att **de egna systemen inte har utsatts för intrång** och att **biljettförsäljningen fungerar normalt**.
 
 ### Liseberg
 
@@ -63,7 +63,7 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 ### Skånes Djurpark
 
-[Skånes Djurpark](https://www.skanesdjurpark.se/) har i ett officiellt incidentmeddelande, återgivet i sökindex, uppgett att Visit Group utsatts för intrång och att berörda gäster kontaktats via mejl. Beskedet anger **27 oktober** som underrättelsedag. Exakt antal berörda och teknisk produktkoppling är inte fastställda. Den fullständiga informationstexten har inte kunnat kontrolleras genom direktläsning.
+[Skånes Djurparks officiella webbplats](https://www.skanesdjurpark.se/) visar ett incidentmeddelande om att parken den **27 oktober** informerades om intrång hos biljettleverantören Visit Group och att berörda gäster kontaktats via mejl. Exakt antal berörda och teknisk produktkoppling är inte fastställda.
 
 ## Personuppgifter och praktiska risker
 
