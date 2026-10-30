@@ -6,7 +6,7 @@ description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT o
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.17 · 30 oktober 2026**
+**Rapportversion 1.18 · 30 oktober 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -19,7 +19,7 @@ Sex verksamheter har publicerat egna Visit-relaterade incidentbesked: **Skansen,
 | Verksamhet | Offentligt besked | Känd omfattning |
 |---|---|---|
 | [Skansen](https://www.skansen.se/dataintrang/) | Intrång hos Visit och information till berörda | Cirka **4 800 personer** enligt Skansen, återgivet av SVT/TT |
-| [Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) | Möjlig läcka i bokningssystemet | **15 000 gäster enligt Göteborgs-Posten**, inte bekräftat i Lisebergs egen information |
+| [Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) | Lisebergs webbplats varnar för möjlig läcka; en presskommunikatör bekräftar i [SVT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) att boknings- och kontaktuppgifter har läckt | **15 000 gäster enligt SVT/TT och Göteborgs-Posten**; antalet saknas i Lisebergs eget webbmeddelande |
 | [Tekniska museet](https://www.tekniskamuseet.se/dataintrang/) | Möjlig exponering efter intrång hos Visit | Antal ej publicerat |
 | [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) | Berörda bokningar hos Visit | Cirka **759 bokningar**, inte personer |
 | [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/) | Visit-relaterat intrång och kundinformation | Antal ej publicerat |
@@ -47,7 +47,7 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 ### Liseberg
 
-[Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) har varnat för en **möjlig personuppgiftsläcka** i bokningssystemet. [Göteborgs-Posten](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e) uppger att **15 000 gäster** drabbats och knyter uppgiften till Visit. Siffran och formuleringen om faktisk åtkomst är medieuppgifter och inte bekräftade i Lisebergs offentliga säkerhetstext.
+[Lisebergs offentliga säkerhetsmeddelande, senast uppdaterat 27 oktober](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet), beskriver en **möjlig personuppgiftsläcka** hos bokningsleverantören och uppger att inga kort- eller betalningsuppgifter omfattas. I en [SVT/TT-artikel uppdaterad 29 oktober](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) säger däremot **Sofia Wikstedt, presskommunikatör på Liseberg**, att namn, kontaktuppgifter och viss information om köp eller bokningar **har läckt**. Detta är ett uttalande från Lisebergs representant återgivet av SVT, inte en offentlig forensisk analys. **15 000 gäster** anges av [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) och [Göteborgs-Posten](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e); antalet står inte i Lisebergs eget webbmeddelande. Kopplingen till Visit som leverantör rapporteras av medierna, medan ett gemensamt tekniskt angreppsförlopp med andra kunder inte är fastställt.
 
 ### Tekniska museet
 
