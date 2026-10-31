@@ -1,12 +1,12 @@
 ---
 title: "Visit Group – verifierad incidentrapport"
-date: 2026-10-30
+date: 2026-10-31
 description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT och berörda kunder."
 ---
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.21 · 30 oktober 2026**
+**Rapportversion 1.22 · 31 oktober 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -32,7 +32,7 @@ Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade incide
 
 ### Leverantörens besked
 
-[VISIT:s incidentinformation från den 28 oktober](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) avser uttryckligen **Citybreak Online**. VISIT uppger att obehörig åtkomst har stoppats och att säkerhetsutredning pågår. I sitt [utförligare statusmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) anger leverantören också att **samtliga system fungerar normalt**, att berörda Citybreak-kunder kontaktats direkt, att **inga inloggningsuppgifter eller API-behörigheter** påverkats och att **övriga VISIT-produkter inte omfattas**. VISIT anger att statusinformationen skickades till kunder för samtliga tjänster för att nå alla, **inte för att samtliga tjänster hade drabbats**. Uppgifterna kommer från leverantören; någon fullständig offentlig teknisk incidentrapport har inte identifierats.
+[VISIT:s incidentinformation från den 28 oktober](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) avser uttryckligen **Citybreak Online**. VISIT uppger att obehörig åtkomst har stoppats och att säkerhetsutredning pågår. I sitt [utförligare statusmeddelande](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) anger leverantören också att **samtliga system fungerar normalt**, att berörda Citybreak-kunder kontaktats direkt, att **inga inloggningsuppgifter eller API-behörigheter** påverkats och att **övriga VISIT-produkter inte omfattas**. VISIT anger att statusinformationen skickades till kunder för samtliga tjänster för att nå alla, **inte för att samtliga tjänster hade drabbats**. Uppgifterna kommer från leverantören; någon fullständig offentlig teknisk incidentrapport har inte identifierats. Enligt [Aftonbladets återgivning av Göteborgs-Postens intervju](https://www.aftonbladet.se/nyheter/a/kv5Qrj/goteborg-15-000-lisebergsgaster-drabbade-av-datalacka) beskriver VISIT:s operative chef **James Dixon** antalet påverkade kunder som mycket begränsat och lokaliserat till Norden, främst rese- och turistverksamheter. Han anger inte ett exakt antal.
 
 **Tekniskt fortfarande okänt:** intrångsväg, angripare, exakt omfattning av utlämnade uppgifter och vilka kundmiljöer som ingick i samma tekniska åtkomst. Ingen incidentspecifik offentlig lista över IP-adresser, hashvärden eller andra indikatorer har verifierats. **Skansen uppger uttryckligen i sin [incident-FAQ](https://www.skansen.se/dataintrang/) att det, enligt den information verksamheten fått, inte finns någon koppling till de nyligen uppmärksammade PHP-sårbarheterna.** Detta är Skansens återgivning av leverantörsinformation, inte en publicerad forensisk rotorsaksanalys.
 
@@ -48,7 +48,7 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 ### Liseberg
 
-[Lisebergs offentliga säkerhetsmeddelande, senast uppdaterat 27 oktober](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet), beskriver en **möjlig personuppgiftsläcka** hos bokningsleverantören och uppger att inga kort- eller betalningsuppgifter omfattas. I en [SVT/TT-artikel uppdaterad 29 oktober](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) säger däremot **Sofia Wikstedt, presskommunikatör på Liseberg**, att namn, kontaktuppgifter och viss information om köp eller bokningar **har läckt**. Detta är ett uttalande från Lisebergs representant återgivet av SVT, inte en offentlig forensisk analys. **15 000 gäster** anges av [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) och [Göteborgs-Posten](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e); antalet står inte i Lisebergs eget webbmeddelande. Kopplingen till Visit som leverantör rapporteras av medierna, medan ett gemensamt tekniskt angreppsförlopp med andra kunder inte är fastställt.
+[Lisebergs offentliga säkerhetsmeddelande, senast uppdaterat 27 oktober](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet), beskriver en **möjlig personuppgiftsläcka** hos bokningsleverantören och uppger att inga kort- eller betalningsuppgifter omfattas. I en [SVT/TT-artikel uppdaterad 29 oktober](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) säger däremot **Sofia Wikstedt, presskommunikatör på Liseberg**, att namn, kontaktuppgifter och viss information om köp eller bokningar **har läckt**. Detta är ett uttalande från Lisebergs representant återgivet av SVT, inte en offentlig forensisk analys. **15 000 gäster** anges av [SVT/TT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) och [Göteborgs-Posten](https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e); antalet står inte i Lisebergs eget webbmeddelande. Kopplingen till Visit som leverantör rapporteras av medierna, medan ett gemensamt tekniskt angreppsförlopp med andra kunder inte är fastställt. Enligt [Aftonbladets rapportering med hänvisning till Göteborgs-Posten](https://www.aftonbladet.se/nyheter/a/kv5Qrj/goteborg-15-000-lisebergsgaster-drabbade-av-datalacka) uppger **Liseberg att händelsen har anmälts till Integritetsskyddsmyndigheten (IMY)** och att berörda gäster har informerats via e-post. Själva anmälan har inte granskats.
 
 ### Tekniska museet
 
