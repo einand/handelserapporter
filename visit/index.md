@@ -1,12 +1,12 @@
 ---
 title: "Visit Group – verifierad incidentrapport"
-date: 2026-10-31
+date: 2026-11-01
 description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT och berörda kunder."
 ---
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.22 · 31 oktober 2026**
+**Rapportversion 1.23 · 1 november 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -21,7 +21,7 @@ Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade incide
 | [Skansen](https://www.skansen.se/dataintrang/) | Intrång hos Visit och information till berörda | Cirka **4 800 personer** enligt Skansen, återgivet av SVT/TT |
 | [Liseberg](https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet) | Lisebergs webbplats varnar för möjlig läcka; en presskommunikatör bekräftar i [SVT](https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker) att boknings- och kontaktuppgifter har läckt | **15 000 gäster enligt SVT/TT och Göteborgs-Posten**; antalet saknas i Lisebergs eget webbmeddelande |
 | [Tekniska museet](https://www.tekniskamuseet.se/dataintrang/) | Möjlig exponering efter intrång hos Visit | Antal ej publicerat |
-| [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) | Bekräftat uthämtade kontakt- och bokningsuppgifter | **762 bokningar**, inte personer; även äldre bokningar |
+| [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) | Bekräftat uthämtade kontakt- och bokningsuppgifter | **1 392 bokningar**, inte personer; bokningsperioden är delvis okänd |
 | [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/) | Visit-relaterat intrång och kundinformation | Antal ej publicerat |
 | [Skånes Djurpark](https://www.skanesdjurpark.se/) | Besked om intrång hos Visit Group och mejl till berörda | Antal ej publicerat |
 | [Kongeparken, Norge](https://www.kongeparken.no/) | Parken uppger att biljettleverantören Visit Group utsatts för dataintrång och att berörda gäster kontaktats | Antal ej publicerat |
@@ -56,7 +56,7 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 ### Svenska Turistföreningen (STF)
 
-[STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) uppger i ett besked **30 oktober kl. 17.00** att **762 bokningar** berörs. Merparten gjordes **23–26 oktober 2026**, men även äldre bokningar från **augusti 2025 och januari 2026** omfattas. Enligt STF och dess leverantör har **namn, adress, telefonnummer, e-postadress, bokningsdatum, boende och pris** hämtats ut. **Kortuppgifter omfattas inte** och kortbetalningar hanteras separat. STF har tillfälligt stängt inloggningen till **”Min bokning”**; tidigare inloggningsuppgifter från bokningsbekräftelser fungerar inte längre. För betalning eller avbokning hänvisar STF till sin bokningsservice. Det finns inget besked om att dessa inloggningsuppgifter skulle ha läckt.
+[STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) uppger i sitt besked **1 november kl. 11.00** att totalt **1 392 bokningar** berörs. De först identifierade **762 bokningarna** gjordes främst **23–26 oktober 2026**, men omfattar också bokningar från **augusti 2025 och januari 2026**. Sent **31 oktober** meddelade leverantören att **ytterligare 630 bokningar** omfattas. Bokningsperioden för dessa är **okänd**. Gästerna bakom de först identifierade bokningarna informerades via e-post **28 oktober**; STF uppger att de ytterligare berörda ska kontaktas när deras bokningar har identifierats. Enligt STF och dess leverantör har **namn, adress, telefonnummer, e-postadress, bokningsdatum, boende och pris** hämtats ut. **Kortuppgifter omfattas inte** och kortbetalningar hanteras separat. STF har tillfälligt stängt inloggningen till **”Min bokning” för berörda bokningar**; tidigare inloggningsuppgifter från bokningsbekräftelser fungerar inte längre. För betalning eller avbokning hänvisar STF till sin bokningsservice. Det finns inget besked om att dessa inloggningsuppgifter skulle ha läckt.
 
 ### Junibacken
 
@@ -85,7 +85,8 @@ Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinfor
 | **23–26 oktober 2026** | Bokningsperiod som flera kundbesked särskilt pekar ut; hos Tekniska museet kan även äldre bokningar omfattas. |
 | **27 oktober** | Flera kunder, däribland Skansen, Liseberg och norska Kongeparken, uppger att de informerats om incidenten. VISIT rapporterar separat driftstörning. |
 | **28 oktober** | VISIT publicerar sitt [Citybreak-besked](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e). Fler verksamheter publicerar egna incidentmeddelanden. |
-| **30 oktober** | [STF preciserar](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) omfattningen till 762 bokningar, identifierar vilka uppgifter som hämtats ut och meddelar tillfälligt stängd inloggning till ”Min bokning”. |
+| **30 oktober** | [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) redovisar 762 identifierade bokningar och vilka uppgifter som hämtats ut. |
+| **31 oktober–1 november** | VISIT informerar STF om ytterligare 630 berörda bokningar sent den 31 oktober. [STF publicerar den 1 november](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) den sammanlagda omfattningen **1 392 bokningar**. Perioden för de ytterligare bokningarna är ännu okänd. |
 
 ## Metod och källvärdering
 
