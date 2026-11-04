@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.04 · 4 november 2026**
+**Rapportversion 1.05 · 4 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -29,7 +29,8 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 | **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; [Reuters uppger den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) att **sju Coopbutiker** drabbats, återupptagit driften och kopplat bort kylsystemen från internet. Coop uppgav att övergång från 4G till modernare modem och 5G pågick. | Coops uppgifter återgivna av Reuters; slutlig omfattning kan förändras. |
 | **Belgien** | Delhaize rapporterade påverkan i flera dussin butiker, och Carrefour uppgav **15 drabbade butiker**. | Företagsuppgifter återgivna av [AP](https://apnews.com/article/a8ea5b30d67da47957769f29101fe686) och Reuters. |
 | **Finland, Estland, Luxemburg och Irland** | Le Monde rapporterar om angrepp mot internetanslutna kylregleringssystem natten 1–2 november. | Medierapportering; inte självständigt bekräftat för varje enskild butik. |
-| **Tyskland och Storbritannien** | Reuters rapporterar om en drabbad Edeka-butik i Reisbach och brittiska NCSC:s besked om försök mot mindre köttförädlingsföretag med begränsad påverkan. | [Reuters, 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
+| **Tyskland** | Reuters rapporterar om en drabbad Edeka-butik i Reisbach. | [Reuters, 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
+| **Storbritannien** | Brittiska NCSC har bekräftat begränsad påverkan hos livsmedelsleverantörer. Grossisten **Langridge Organic** uppger att sex av dess tio kylsystem manipulerades den 2 november, med ändrade avfrostningsinställningar och störda larm. Företaget kopplade bort systemen och uppgav att inga varor förstördes. | [The Times, 4 november](https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6); [The Guardian, 3 november](https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks). Företagsuppgift återgiven av medier; gemensam angreppsväg ej fastställd. |
 
 Att en kedja eller ett land nämns här innebär **inte** att varje butik drabbats. Andra samtidiga IT-störningar får inte automatiskt kopplas till samma angrepp.
 
@@ -80,6 +81,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **13–17 oktober** | Ytterligare teknisk och internationell rapportering, inklusive Danfoss och Dixell/Copeland samt uppskattningar om över 700 butiker. |
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
+| **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
 | **4 november** | Rai Tg1 och ANSA rapporterar en ansvarsdeklaration från NoName057(16) och Z-Pentest; oberoende teknisk bekräftelse saknas. |
 | **3 november** | Reuters återger den brittiska cybersäkerhetschefens bedömning av incidenternas betydelse. |
 
@@ -88,6 +90,9 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av komprometterade eller manipulerade styrsystem**: förstörd mat och störd butiksdrift. Den mest relevanta säkerhetsfrågan är hur fjärråtkomst till kylsystem är skyddad. Enskilda leverantörers kända sårbarheter får inte likställas med forensiskt bevisad angreppsväg. Det finns för närvarande inte tillräckligt underlag för att knyta alla europeiska händelser till samma angripare.
 
 ## Källor
+
+- [The Times, 4 november: Langridge Organic beskriver sex manipulerade kylsystem](https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6)
+- [The Guardian, 3 november: brittiska livsmedelsleverantörer och NCSC](https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks)
 
 - [ANSA/Rai Tg1, 4 november: publicerat ansvarsanspråk från NoName057(16) och Z-Pentest](https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html)
 - [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
