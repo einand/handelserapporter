@@ -24,23 +24,8 @@ jobs:
         with:
           hugo-version: '0.152.2'
           extended: true
-      - name: Förbered rapportinnehåll utan att ändra källfiler
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p hugo-content/visit/historik
-          cp index.md hugo-content/_index.md
-          cp visit/index.md hugo-content/visit/_index.md
-          if compgen -G 'visit/historik/*.md' > /dev/null; then
-            cp visit/historik/*.md hugo-content/visit/historik/
-          fi
-          mkdir -p hugo-content/kylskapshacker/historik
-          cp kylskapshacker/index.md hugo-content/kylskapshacker/_index.md
-          if compgen -G 'kylskapshacker/historik/*.md' > /dev/null; then
-            cp kylskapshacker/historik/*.md hugo-content/kylskapshacker/historik/
-          fi
       - name: Bygg mobilanpassad webbplats
-        run: hugo --minify --contentDir hugo-content --destination public
+        run: hugo --minify --destination public
       - name: Installera Node.js för lokala Mermaid-resurser
         uses: actions/setup-node@v4
         with:
