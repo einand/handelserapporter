@@ -98,3 +98,22 @@ Ingen aktiv sårbarhetsskanning, exploatering eller åtkomst till interna system
 ## Versionshistorik
 
 [Tidigare rapporter](./historik/) innehåller äldre kartläggningar, tekniska observationer, hypoteser och förändringar som inte längre hör hemma i den aktuella lägesrapporten. Se även [GitHub-historiken](https://github.com/einand/handelserapporter/commits/main/visit/index.md).
+
+<!-- PDF-ARKIV-START -->
+
+## Arkiverade källor (PDF)
+
+- [PDF-kopia av källa](/handelserapporter/kallor/d15fd2997f7882657ba2.pdf) – https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/39ec4e125cf35adbcacd.pdf) – https://www.skansen.se/dataintrang/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/c7cb68c83dba403a387a.pdf) – https://www.liseberg.se/om-liseberg/bedrageri-och-sakerhet (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/b8c81bafdcac6797cefb.pdf) – https://www.svt.se/nyheter/inrikes/misstankt-dataintrang-mot-nojesparker (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/3649975860534054558c.pdf) – https://www.tekniskamuseet.se/dataintrang/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/114017b87ae926932b3a.pdf) – https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/46504b30a9d536f49085.pdf) – https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/add0a24c2ee7838ffa6f.pdf) – https://www.skanesdjurpark.se/dataintrang (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/0b824f2633b1fff0bff1.pdf) – https://www.kongeparken.no/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/93cb53428e2a9aeb07c8.pdf) – https://www.aftonbladet.se/nyheter/a/kv5Qrj/goteborg-15-000-lisebergsgaster-drabbade-av-datalacka (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/81afe1706647847d5693.pdf) – https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/5fe7fe2a2eece17b2514.pdf) – https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4 (hämtad 2026-11-04)
+
+<!-- PDF-ARKIV-SLUT -->

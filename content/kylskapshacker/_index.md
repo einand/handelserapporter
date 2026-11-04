@@ -93,3 +93,19 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Reuters, 3 november: brittiska NCSC-chefens kommentarer](https://www.reuters.com/legal/government/uk-must-expect-ai-powered-attack-critical-infrastructure-within-two-years-report-2026-11-03/)
 
 Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
+
+<!-- PDF-ARKIV-START -->
+
+## Arkiverade källor (PDF)
+
+- [PDF-kopia av källa](/handelserapporter/kallor/3994287835e164c511f0.pdf) – https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/60a17f96e9ef076ed60d.pdf) – https://www.svt.se/nyheter/lokalt/smaland/hackerattack-mot-kylar-och-frysar-ica-i-boda-och-morlunda-drabbade (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/4e45f97dab79c23db856.pdf) – https://www.svt.se/nyheter/inrikes/experterna-riskerna-ar-valkanda-andra-branscher-bor-dra-lardom (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/4c7af62aa2c0134fe34f.pdf) – https://www.aftonbladet.se/nyheter/a/31ygzM/ica-s-frysar-hackade (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/1ffa9c51ef9e9ab19330.pdf) – https://www.lemonde.fr/international/article/2026/11/02/des-cyberattaques-contre-des-refrigerateurs-et-des-congelateurs-visent-plusieurs-supermarches-en-europe_6805296_3210.html (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/45cb8ce0c9ff4431c644.pdf) – https://www.lemonde.fr/economie/article/2026/10/17/la-cyberattaque-des-frigos-de-supermarche-un-signal-d-alarme-pour-tous-les-industriels-et-un-rappel-a-la-loi-europeenne-pour-la-france_6795846_3234.html (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/6be473450b1b98c3f536.pdf) – https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/a3db8e1f2b4d2576ecea.pdf) – https://censys.com/blog/european-refrigerator-controller-redux-a-new-wave-of-refrigeration-attacks/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/01ee4286658dd3080fe5.pdf) – https://www.truesec.com/hub/blog/refrigeration-and-freezer-systems-breached-at-large-scale (hämtad 2026-11-04)
+
+<!-- PDF-ARKIV-SLUT -->
