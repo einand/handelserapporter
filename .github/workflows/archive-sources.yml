@@ -1,0 +1,39 @@
+name: Arkivera källor som PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**/_index.md'
+      - 'scripts/archive-sources.cjs'
+      - '.github/workflows/archive-sources.yml'
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installera Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Spara källor som PDF
+        run: node scripts/archive-sources.cjs
+      - name: Lagra PDF-arkiv privat som Actions-artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kallor-pdf-${{ github.run_id }}
+          path: source-pdfs/
+          retention-days: 90
+          if-no-files-found: warn
