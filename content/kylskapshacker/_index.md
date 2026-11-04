@@ -6,13 +6,13 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.01 · 4 november 2026**
+**Rapportversion 1.02 · 4 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
 ## Sammanfattning
 
-Under **11–13 oktober 2026** drabbades hundratals livsmedelsbutiker i Frankrike av angrepp mot fjärrstyrda kylsystem. Temperaturer steg kraftigt och mat förstördes; enligt franska myndigheter och Reuters förekom även bränder. Franska åklagarmyndigheten beskrev den 12 oktober angreppet som storskaligt. Den 2 november rapporterades liknande incidenter i Sverige, bland annat hos ICA och Coop, samt i andra europeiska länder. **Det är inte offentligt fastställt att alla incidenterna genomförts av samma aktör eller via exakt samma sårbarhet.**
+Under **11–13 oktober 2026** drabbades hundratals livsmedelsbutiker i Frankrike av angrepp mot fjärrstyrda kylsystem. Temperaturer steg kraftigt och mat förstördes; enligt franska myndigheter och Reuters förekom även bränder. Franska åklagarmyndigheten beskrev den 12 oktober angreppet som storskaligt. Den 2 november rapporterades liknande incidenter i Sverige, bland annat hos ICA och Coop, samt i andra europeiska länder. Enligt [Reuters den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) påverkades **23 ICA-butiker**, medan **sju Coopbutiker** hade återupptagit driften efter att kylsystemen kopplats bort från internet. **Det är inte offentligt fastställt att alla incidenterna genomförts av samma aktör eller via exakt samma sårbarhet.**
 
 Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november att centret följer incidenterna, har kontakt med drabbade verksamheter och utbyter information med nordiska och europeiska motsvarigheter. NCSC framhåller riskerna med uppkopplad operativ teknik (OT).
 
@@ -23,11 +23,11 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 | Land eller verksamhet | Belagda uppgifter | Källstatus |
 |---|---|---|
 | **Frankrike** | Angrepp i oktober mot kyl- och fryssystem i hundratals butiker. Les Mousquetaires uppgav omkring **150 Intermarché-butiker**; senare medierapportering anger över **700 butiker totalt**, med varierande avgränsningar. | Företagsuppgift via Reuters respektive senare medieuppgifter; talen är inte direkt jämförbara. |
-| **Sverige – ICA** | ICA bekräftade den 2 november en incident i ett begränsat antal butiker. Namngivna drabbade butiker i rapporteringen inkluderar ICA Kvantum Sjöbo, ICA Nära Böda, ICA Nära Sundbergs i Mörlunda och ICA i Moheda. | Centralt ICA-besked återgivet av SVT samt lokala butiksuppgifter. |
-| **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; medieuppgifter anger **sex Coopbutiker i Gävleborg/mellersta Sverige**. | Medieuppgifter och återgivna kedjebesked; slutlig omfattning okänd. |
-| **Belgien** | Reuters beskriver incidenter och tomma kylhyllor hos bland annat Delhaize. | Medierapportering. |
+| **Sverige – ICA** | ICA uppgav den 3 november att **23 butiker** påverkats, varav **åtta** behövt kassera kyl- och frysvaror. Enligt ICA var utrustningen i samtliga drabbade butiker ansluten utanför kedjans centralt förvaltade nätverk. Namngivna drabbade butiker i rapporteringen inkluderar ICA Kvantum Sjöbo, ICA Nära Böda, ICA Nära Sundbergs i Mörlunda och ICA i Moheda. | ICA:s pressansvarige till [Supply Chain Digital](https://supplychaindigital.com/news/european-supermarket-freezers-targeted-by-major-cyber-attack), samt [Reuters](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
+| **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; [Reuters uppger den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) att **sju Coopbutiker** drabbats, återupptagit driften och kopplat bort kylsystemen från internet. Coop uppgav att övergång från 4G till modernare modem och 5G pågick. | Coops uppgifter återgivna av Reuters; slutlig omfattning kan förändras. |
+| **Belgien** | Delhaize rapporterade påverkan i flera dussin butiker, och Carrefour uppgav **15 drabbade butiker**. | Företagsuppgifter återgivna av [AP](https://apnews.com/article/a8ea5b30d67da47957769f29101fe686) och Reuters. |
 | **Finland, Estland, Luxemburg och Irland** | Le Monde rapporterar om angrepp mot internetanslutna kylregleringssystem natten 1–2 november. | Medierapportering; inte självständigt bekräftat för varje enskild butik. |
-| **Övriga europeiska länder** | Spanien, Portugal, Polen och Tyskland har nämnts i internationell teknisk rapportering. | Medieuppgifter; enskilda drabbade verksamheter och kopplingar kräver ytterligare belägg. |
+| **Tyskland och Storbritannien** | Reuters rapporterar om en drabbad Edeka-butik i Reisbach och brittiska NCSC:s besked om försök mot mindre köttförädlingsföretag med begränsad påverkan. | [Reuters, 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
 
 Att en kedja eller ett land nämns här innebär **inte** att varje butik drabbats. Andra samtidiga IT-störningar får inte automatiskt kopplas till samma angrepp.
 
@@ -45,6 +45,8 @@ Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i fran
 
 **Frankrike – uppgifter om angreppssätt:** Danfoss kylstyrsystem och äldre firmware har pekats ut i rapporteringen. Teknisk rapportering beskriver fjärråtkomliga gränssnitt och otillräckligt skyddade äldre installationer. Uppgifter om förlängda avfrostningscykler har också förekommit. Det förklarar hur en angripare skulle kunna påverka kylprocessen, men offentliggjort underlag räcker inte för att fastställa en komplett angreppskedja eller en specifik CVE för varje butik.
 
+**Sverige – avgränsad nätverksinformation:** ICA har bekräftat att de 23 drabbade butikernas kylutrustning var ansluten utanför kedjans centralt förvaltade nätverk. Detta identifierar en nätverksavgränsning, **inte** en bevisad inloggningsmetod, CVE eller komplett angreppskedja.
+
 **Sverige – intrångsväg okänd:** För ICA- och Coopincidenterna saknas en offentligt verifierad teknisk rekonstruktion. Det är inte fastställt att samma sårbarhet eller utrustning användes som i Frankrike.
 
 **Kartläggning av exponering:** Censys har kartlagt internetexponerade Danfoss StoreView-gränssnitt. En exponerad enhet är inte automatiskt komprometterad. Antalet exponerade installationer får inte likställas med antalet hackade butiker.
@@ -57,7 +59,11 @@ Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i fran
 
 - **Sverige:** NCSC publicerade den **2 november kl. 17.39** ett officiellt meddelande och uppgav att man följer händelserna, har kontakt med drabbade och samverkar internationellt. Myndigheten rekommenderar inventering av internetanslutna OT-enheter, nödvändighetsprövning av uppkoppling, uppdateringar, flera skyddslager och incidentrutiner.
 - **Frankrike:** Enligt Reuters beskrev åklagarmyndigheten i Paris den 12 oktober ett storskaligt angrepp. Den franska cybersäkerhetsmyndigheten **ANSSI** skulle undersöka incidenten enligt uppgifter från premiärministerns kansli.
-- **Storbritannien:** NCSC-chefen Richard Horne kommenterade den **3 november** kylangreppen som exempel på bredare risker för uppkopplad infrastruktur. Uttalandet är en riskbedömning, inte ett påstående om att brittiska butiker säkert drabbats.
+- **Storbritannien:** NCSC-chefen Richard Horne uppgav den **3 november** att försök mot mindre brittiska köttförädlingsföretag haft begränsad påverkan och att myndigheten har förhöjd beredskap. Det är inte belagt att brittiska livsmedelskedjor drabbats på samma sätt.
+
+## Närliggande händelse utanför dagligvaruhandeln
+
+Frankrikes blodtjänst **EFS** uppgav enligt [Business Insider den 4 november](https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11) att kylutrustning vid **tre anläggningar** påverkats den 2 november genom ett angrepp mot en kylutrustningsleverantör. Övervakningslarm upptäckte temperaturökningen och blodprodukter flyttades i tid; EFS uppgav att inget material förstördes. **Det finns ingen offentlig bekräftelse på att detta är samma angrepp eller samma tekniska intrångsväg som i matbutikerna.**
 
 ## Tidslinje
 
@@ -81,6 +87,10 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
 
 ### Oberoende nyhets- och teknikkällor
+- [Reuters, 3 november: 23 ICA-butiker, sju Coopbutiker, Edeka, Danfoss och europeiska åtgärder](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/)
+- [Supply Chain Digital, 3 november: direkt uttalande från ICA:s pressansvarige](https://supplychaindigital.com/news/european-supermarket-freezers-targeted-by-major-cyber-attack)
+- [Business Insider, 4 november: EFS:s uppgifter om tre franska blodanläggningar](https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11)
+
 - [SVT, 2–3 november: ICA i Böda, Moheda och Mörlunda](https://www.svt.se/nyheter/lokalt/smaland/hackerattack-mot-kylar-och-frysar-ica-i-boda-och-morlunda-drabbade)
 - [SVT, 2–3 november: experter och Nationellt cybersäkerhetscenter](https://www.svt.se/nyheter/inrikes/experterna-riskerna-ar-valkanda-andra-branscher-bor-dra-lardom)
 - [Aftonbladet, 2 november: ICA- och Coopbutiker](https://www.aftonbladet.se/nyheter/a/31ygzM/ica-s-frysar-hackade)
