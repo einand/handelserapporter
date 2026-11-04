@@ -1,5 +1,5 @@
 ---
-title: "Cyberangrepp mot kyl- och fryssystem – verifierad incidentrapport"
+title: "Cyberangrepp mot kyl- och fryssystem – verifierad händelseförlopp"
 date: 2026-11-04
 description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och frysanläggningar i europeiska livsmedelsbutiker under oktober och november 2026."
 ---
