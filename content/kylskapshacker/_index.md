@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.02 · 4 november 2026**
+**Rapportversion 1.03 · 4 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -17,6 +17,8 @@ Under **11–13 oktober 2026** drabbades hundratals livsmedelsbutiker i Frankrik
 Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november att centret följer incidenterna, har kontakt med drabbade verksamheter och utbyter information med nordiska och europeiska motsvarigheter. NCSC framhåller riskerna med uppkopplad operativ teknik (OT).
 
 **Okänt:** gärningspersonernas identitet och motiv; slutligt antal drabbade butiker; fullständig ekonomisk skada; verifierad gemensam teknisk intrångsväg för samtliga länder; huruvida personuppgifter stulits. Inget offentligt belägg i de granskade källorna visar att incidenten utgör ett ransomware-angrepp.
+
+[Le Grand Continent den 4 november](https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/) sammanställer rapporter om angrepp i **minst 15 europeiska länder** sedan 11 oktober. Detta är en mediesammanställning, inte en myndighetsverifierad totalsiffra; enskilda fall i bland annat Norge och Grekland saknar enligt artikeln myndighetsbekräftelse.
 
 ## Drabbade verksamheter och geografisk omfattning
 
@@ -63,7 +65,7 @@ Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i fran
 
 ## Närliggande händelse utanför dagligvaruhandeln
 
-Frankrikes blodtjänst **EFS** uppgav enligt [Business Insider den 4 november](https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11) att kylutrustning vid **tre anläggningar** påverkats den 2 november genom ett angrepp mot en kylutrustningsleverantör. Övervakningslarm upptäckte temperaturökningen och blodprodukter flyttades i tid; EFS uppgav att inget material förstördes. **Det finns ingen offentlig bekräftelse på att detta är samma angrepp eller samma tekniska intrångsväg som i matbutikerna.**
+Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre anläggningar** påverkats den 2 november genom ett angrepp mot en leverantör. Enligt [AP den 4 november](https://apnews.com/article/12b80bcf93b8404264209e519c204919) uppgav kylleverantören **Coolworld** att en sårbarhet i en komponent från tredje part var inblandad och att åtgärder vidtogs. Komponentens identitet och någon specifik CVE är inte offentligt fastställda. Övervakningslarm upptäckte förändrade temperatur- och avfrostningsinställningar, och blodprodukter säkrades eller flyttades i tid. EFS uppgav att inget material förstördes och att blodinsamling och distribution fortsatte. **Det finns ingen offentlig bekräftelse på att detta är samma angrepp eller samma tekniska intrångsväg som i matbutikerna.**
 
 ## Tidslinje
 
