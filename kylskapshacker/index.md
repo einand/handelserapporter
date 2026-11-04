@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.00 · 4 november 2026**
+**Rapportversion 1.01 · 4 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -43,7 +43,13 @@ Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i fran
 
 **Produktuppgifter i rapporteringen:** Reuters och Le Monde pekar ut **Danfoss**-system i Frankrike och i den senare europeiska vågen. Ars Technica redovisar också offentlig sårbarhetsforskning om äldre styrenheter från **Danfoss, Dixell och Copeland**. Reuters uppger att Danfoss beskrivit berörda franska enheter som utrustning med föråldrad firmware. Dessa uppgifter är **inte** bevis för att varje drabbad svensk butik använde en viss produkt eller CVE.
 
-**Tekniskt rimliga riskfaktorer, inte bevisad komplett angreppskedja:** internetexponerade styrgränssnitt, föråldrad firmware, bristande åtkomstbegränsningar och svaga eller förutsägbara autentiseringslösningar har beskrivits i teknisk säkerhetsrapportering. Utan forensiska uppgifter kan man inte avgöra vilken kombination som användes i respektive incident.
+**Frankrike – uppgifter om angreppssätt:** Danfoss kylstyrsystem och äldre firmware har pekats ut i rapporteringen. Teknisk rapportering beskriver fjärråtkomliga gränssnitt och otillräckligt skyddade äldre installationer. Uppgifter om förlängda avfrostningscykler har också förekommit. Det förklarar hur en angripare skulle kunna påverka kylprocessen, men offentliggjort underlag räcker inte för att fastställa en komplett angreppskedja eller en specifik CVE för varje butik.
+
+**Sverige – intrångsväg okänd:** För ICA- och Coopincidenterna saknas en offentligt verifierad teknisk rekonstruktion. Det är inte fastställt att samma sårbarhet eller utrustning användes som i Frankrike.
+
+**Kartläggning av exponering:** Censys har kartlagt internetexponerade Danfoss StoreView-gränssnitt. En exponerad enhet är inte automatiskt komprometterad. Antalet exponerade installationer får inte likställas med antalet hackade butiker.
+
+**Riskfaktorer, inte bevisad komplett angreppskedja:** internetexponerade styrgränssnitt, föråldrad firmware, bristande åtkomstbegränsningar och svaga eller förutsägbara autentiseringslösningar. Utan forensiska uppgifter går det inte att avgöra vilka faktorer som användes i varje enskilt fall.
 
 **Ej belagt:** specifik CVE som förklarar samtliga angrepp, malwareprov, offentlig teknisk IOC-lista, identitet på angriparen, utpressningskrav, exfiltration eller bekräftat samband med andra cyberincidenter.
 
@@ -81,6 +87,9 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Le Monde, 2 november: incidenter i flera europeiska länder](https://www.lemonde.fr/international/article/2026/11/02/des-cyberattaques-contre-des-refrigerateurs-et-des-congelateurs-visent-plusieurs-supermarches-en-europe_6805296_3210.html)
 - [Le Monde, 17 oktober: omfattning och risker i Frankrike](https://www.lemonde.fr/economie/article/2026/10/17/la-cyberattaque-des-frigos-de-supermarche-un-signal-d-alarme-pour-tous-les-industriels-et-un-rappel-a-la-loi-europeenne-pour-la-france_6795846_3234.html)
 - [Ars Technica, 14 oktober: offentlig teknisk sårbarhetsforskning](https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/)
+- [Censys: kartläggning av exponerade kylstyrsystem](https://censys.com/blog/european-refrigerator-controller-redux-a-new-wave-of-refrigeration-attacks/)
+- [Truesec: Refrigeration and freezer systems breached at large scale](https://www.truesec.com/hub/blog/refrigeration-and-freezer-systems-breached-at-large-scale)
+- [Industrial Cyber: Remote access and legacy refrigeration systems](https://industrialcyber.co/control-device-security/french-supermarket-cyberattack-exposes-risks-of-unsecured-remote-access-and-legacy-refrigeration-systems/)
 - [Reuters, 3 november: brittiska NCSC-chefens kommentarer](https://www.reuters.com/legal/government/uk-must-expect-ai-powered-attack-critical-infrastructure-within-two-years-report-2026-11-03/)
 
 Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
