@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.03 · 4 november 2026**
+**Rapportversion 1.04 · 4 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -38,6 +38,10 @@ Att en kedja eller ett land nämns här innebär **inte** att varje butik drabba
 I svenska butiker rapporterades förstörda kyl- och frysvaror och tillfälligt begränsat sortiment eller stängning. SVT rapporterar att en ICA-handlare i Böda upptäckte vatten på golvet och att en frys nått **55 °C**. ICA Kvantum Sjöbo uppgav enligt Aftonbladet att temperaturer ställts på **50 °C**. Det handlar om **rapporterade avlästa eller inställda värden**, inte en fastställd temperatur för samtliga drabbade enheter.
 
 Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i franska butiker. Exakt totalskada är inte verifierad.
+
+## Ansvarsanspråk och attribuering
+
+Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html) att grupperna **NoName057(16)** och **Z-Pentest** i en publicerad video påstod sig ligga bakom kylangrepp i flera europeiska länder. Grupperna påstod att de manipulerat Danfoss- och Dixell Web-system utan skadlig kod. **Detta är en dokumenterad ansvarsdeklaration, inte verifierad gärningsmannaattribuering eller teknisk forensik.** [SentinelLABS analys](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/) framhåller att offentlig bevisning ännu inte knyter grupperna till de aktuella intrången. Påståendet fastställer inte att samtliga europeiska händelser har samma angripare eller angreppsväg.
 
 ## Teknisk analys och säkerhetsgrad
 
@@ -76,6 +80,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **13–17 oktober** | Ytterligare teknisk och internationell rapportering, inklusive Danfoss och Dixell/Copeland samt uppskattningar om över 700 butiker. |
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
+| **4 november** | Rai Tg1 och ANSA rapporterar en ansvarsdeklaration från NoName057(16) och Z-Pentest; oberoende teknisk bekräftelse saknas. |
 | **3 november** | Reuters återger den brittiska cybersäkerhetschefens bedömning av incidenternas betydelse. |
 
 ## Bedömning
@@ -83,6 +88,9 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av komprometterade eller manipulerade styrsystem**: förstörd mat och störd butiksdrift. Den mest relevanta säkerhetsfrågan är hur fjärråtkomst till kylsystem är skyddad. Enskilda leverantörers kända sårbarheter får inte likställas med forensiskt bevisad angreppsväg. Det finns för närvarande inte tillräckligt underlag för att knyta alla europeiska händelser till samma angripare.
 
 ## Källor
+
+- [ANSA/Rai Tg1, 4 november: publicerat ansvarsanspråk från NoName057(16) och Z-Pentest](https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html)
+- [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
 
 ### Myndigheter och primära uttalanden
 - [Nationellt cybersäkerhetscenter, 2 november: Cyberangrepp mot uppkopplade frys- och kylsystem](https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/)
