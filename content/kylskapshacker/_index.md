@@ -110,8 +110,9 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 
 ## Arkiverade källor (PDF)
 
-- [PDF-kopia av källa](/handelserapporter/kallor/a2736ba323f18c53b6fc.pdf) – https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11 (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/aee8bf8af321d81dd778.pdf) – https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/3994287835e164c511f0.pdf) – https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/a2736ba323f18c53b6fc.pdf) – https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11 (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/60a17f96e9ef076ed60d.pdf) – https://www.svt.se/nyheter/lokalt/smaland/hackerattack-mot-kylar-och-frysar-ica-i-boda-och-morlunda-drabbade (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/4e45f97dab79c23db856.pdf) – https://www.svt.se/nyheter/inrikes/experterna-riskerna-ar-valkanda-andra-branscher-bor-dra-lardom (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/4c7af62aa2c0134fe34f.pdf) – https://www.aftonbladet.se/nyheter/a/31ygzM/ica-s-frysar-hackade (hämtad 2026-11-04)
