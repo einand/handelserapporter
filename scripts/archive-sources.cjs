@@ -27,6 +27,7 @@ function scan(dir) {
 }
 scan(root);
 fs.mkdirSync(output, { recursive: true });
+(async () => {
 const browser = await chromium.launch({ headless: true });
 const entries = [];
 for (const item of urls.values()) {
@@ -52,3 +53,5 @@ for (const item of urls.values()) {
 await browser.close();
 fs.writeFileSync(path.join(output, 'manifest.json'), JSON.stringify({ generated_at: new Date().toISOString(), sources: entries }, null, 2));
 console.log('PDF saved:', entries.filter(e => e.status === 'saved').length, 'of', entries.length);
+
+})().catch(error => { console.error(error); process.exitCode = 1; });
