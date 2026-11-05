@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.06 · 5 november 2026**
+**Rapportversion 1.07 · 5 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -29,6 +29,7 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 | **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; [Reuters uppger den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) att **sju Coopbutiker** drabbats, återupptagit driften och kopplat bort kylsystemen från internet. Coop uppgav att övergång från 4G till modernare modem och 5G pågick. | Coops uppgifter återgivna av Reuters; slutlig omfattning kan förändras. |
 | **Belgien** | Delhaize rapporterade påverkan i flera dussin butiker, och Carrefour uppgav **15 drabbade butiker**. | Företagsuppgifter återgivna av [AP](https://apnews.com/article/a8ea5b30d67da47957769f29101fe686) och Reuters. |
 | **Finland, Estland, Luxemburg och Irland** | Le Monde rapporterar om angrepp mot internetanslutna kylregleringssystem natten 1–2 november. | Medierapportering; inte självständigt bekräftat för varje enskild butik. |
+| **Rumänien** | Rumäniens cybersäkerhetsmyndighet DNSC har enligt rumänska public service-bolaget TVR och ProTV bekräftat rapporter om onormalt höga temperaturer i kylutrustning i **sex butiker inom samma, ej namngivna kedja** natten till 2 november. Händelsen utreds som misstänkt cyberangrepp; en gemensam teknisk angreppsväg med övriga länder är inte verifierad. | [TVR, 3 november](https://tvrinfo.ro/sase-magazine-din-romania-au-fost-tinta-unui-atac-cibernetic-sistemul-de-racire-a-fost-compromis-de-hackeri/); [ProTV, 3 november](https://stirileprotv.ro/stiri/actualitate/cum-au-preluat-hackerii-controlul-frigiderelor-e-ca-intr-un-scenariu-de-film.html). Myndighetsuppgift återgiven av medier. |
 | **Tyskland** | Reuters rapporterar om en drabbad Edeka-butik i Reisbach. | [Reuters, 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
 | **Storbritannien** | Brittiska NCSC har bekräftat begränsad påverkan hos livsmedelsleverantörer. Grossisten **Langridge Organic** uppger att sex av dess tio kylsystem manipulerades den 2 november, med ändrade avfrostningsinställningar och störda larm. Företaget kopplade bort systemen och uppgav att inga varor förstördes. | [The Times, 4 november](https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6); [The Guardian, 3 november](https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks). Företagsuppgift återgiven av medier; gemensam angreppsväg ej fastställd. |
 
