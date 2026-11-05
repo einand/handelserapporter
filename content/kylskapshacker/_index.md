@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.07 · 5 november 2026**
+**Rapportversion 1.08 · 5 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -19,6 +19,8 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 **Okänt:** gärningspersonernas identitet och motiv; slutligt antal drabbade butiker; fullständig ekonomisk skada; verifierad gemensam teknisk intrångsväg för samtliga länder; huruvida personuppgifter stulits. Inget offentligt belägg i de granskade källorna visar att incidenten utgör ett ransomware-angrepp.
 
 [Le Grand Continent den 4 november](https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/) sammanställer rapporter om angrepp i **minst 15 europeiska länder** sedan 11 oktober. Detta är en mediesammanställning, inte en myndighetsverifierad totalsiffra; enskilda fall i bland annat Norge och Grekland saknar enligt artikeln myndighetsbekräftelse.
+
+**EU:s gemensamma myndighetsbesked den 4 november:** [ENISA och Europeiska kommissionen](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu) bekräftar att incidenter drabbat kommersiella kylsystem i flera EU-medlemsstater sedan 11 oktober. Efter den nya vågen 1–2 november samordnar ENISA, kommissionens DG CNECT, Europols cyberbrottscentrum EC3, EU:s CSIRT-nätverk och EU-CyCLONe informationsutbyte, lägesbild och rekommendationer. Uttalandet identifierar **inte** någon gemensam angripare, utnyttjad CVE eller forensiskt fastställd intrångsväg.
 
 ## Drabbade verksamheter och geografisk omfattning
 
@@ -67,6 +69,8 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 ## Myndigheter och utredning
 
+- **EU:** I ett [gemensamt officiellt uttalande den 4 november](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu) bekräftar ENISA och EU-kommissionen flera medlemsstaters kylsystemincidenter. ENISA, DG CNECT, Europol EC3, EU:s CSIRT-nätverk och EU-CyCLONe koordinerar informationsdelning och respons. De uppmanar verksamheter att omedelbart minska exponeringen hos berörda system. Uttalandet beskriver också rapporteringsskyldigheter enligt Cyber Resilience Act och NIS2 där de är tillämpliga; det bekräftar inte en specifik exploaterad sårbarhet.
+
 - **Sverige:** NCSC publicerade den **2 november kl. 17.39** ett officiellt meddelande och uppgav att man följer händelserna, har kontakt med drabbade och samverkar internationellt. Myndigheten rekommenderar inventering av internetanslutna OT-enheter, nödvändighetsprövning av uppkoppling, uppdateringar, flera skyddslager och incidentrutiner.
 - **Frankrike:** Enligt Reuters beskrev åklagarmyndigheten i Paris den 12 oktober ett storskaligt angrepp. **ANSSI:s generaldirektör redovisade den 21 oktober myndighetens preliminära bedömning** av oskyddad internetexponering och svaga lösenord, samt avfärdade då att tidigare omtalade produktsårbarheter hade utnyttjats. [Senatens officiella protokoll](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html).
 - **Storbritannien:** NCSC-chefen Richard Horne uppgav den **3 november** att försök mot mindre brittiska köttförädlingsföretag haft begränsad påverkan och att myndigheten har förhöjd beredskap. Det är inte belagt att brittiska livsmedelskedjor drabbats på samma sätt.
@@ -86,6 +90,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
 | **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
+| **4 november** | ENISA och EU-kommissionen publicerar ett gemensamt uttalande om samordnad europeisk respons efter angreppsvågen 1–2 november. |
 | **4 november** | Rai Tg1 och ANSA rapporterar en ansvarsdeklaration från NoName057(16) och Z-Pentest; oberoende teknisk bekräftelse saknas. |
 | **3 november** | Reuters återger den brittiska cybersäkerhetschefens bedömning av incidenternas betydelse. |
 
@@ -102,6 +107,7 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
 
 ### Myndigheter och primära uttalanden
+- [ENISA och EU-kommissionen, 4 november: gemensamt uttalande om europeisk samordning](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu)
 - [Franska senaten, 21 oktober: ANSSI-chefens uttalande om internetexponering, svaga lösenord och tidigare CVE-teorier](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html)
 - [Nationellt cybersäkerhetscenter, 2 november: Cyberangrepp mot uppkopplade frys- och kylsystem](https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/)
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
