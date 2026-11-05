@@ -1,7 +1,7 @@
 {
   "id": "9c01d5322203bd1d39c9",
   "url": "https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/",
-  "captured_at": "2026-11-05T12:26:50.481Z",
+  "captured_at": "2026-11-05T16:44:50.030Z",
   "status": "failed",
   "http_status": 401,
   "error": "HTTP 401"

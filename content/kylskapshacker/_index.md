@@ -135,6 +135,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 ## Arkiverade källor (PDF)
 
 - [PDF-kopia av källa](/handelserapporter/kallor/aee8bf8af321d81dd778.pdf) – https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/68c361a3cb7545d99426.pdf) – https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu (hämtad 2026-11-05)
 - [PDF-kopia av källa](/handelserapporter/kallor/35720377fb6c71b19705.pdf) – https://stirileprotv.ro/stiri/actualitate/cum-au-preluat-hackerii-controlul-frigiderelor-e-ca-intr-un-scenariu-de-film.html (hämtad 2026-11-05)
 - [PDF-kopia av källa](/handelserapporter/kallor/f66876dac5ed50b92e2d.pdf) – https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6 (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/e21111a5b1d5b415e35f.pdf) – https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks (hämtad 2026-11-04)
