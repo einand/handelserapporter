@@ -1,12 +1,12 @@
 ---
 title: "Cyberangrepp mot kyl- och fryssystem – verifierad händelseförlopp"
-date: 2026-11-04
+date: 2026-11-05
 description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och frysanläggningar i europeiska livsmedelsbutiker under oktober och november 2026."
 ---
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.05 · 4 november 2026**
+**Rapportversion 1.06 · 5 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -50,7 +50,9 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 **Produktuppgifter i rapporteringen:** Reuters och Le Monde pekar ut **Danfoss**-system i Frankrike och i den senare europeiska vågen. Ars Technica redovisar också offentlig sårbarhetsforskning om äldre styrenheter från **Danfoss, Dixell och Copeland**. Reuters uppger att Danfoss beskrivit berörda franska enheter som utrustning med föråldrad firmware. Dessa uppgifter är **inte** bevis för att varje drabbad svensk butik använde en viss produkt eller CVE.
 
-**Frankrike – uppgifter om angreppssätt:** Danfoss kylstyrsystem och äldre firmware har pekats ut i rapporteringen. Teknisk rapportering beskriver fjärråtkomliga gränssnitt och otillräckligt skyddade äldre installationer. Uppgifter om förlängda avfrostningscykler har också förekommit. Det förklarar hur en angripare skulle kunna påverka kylprocessen, men offentliggjort underlag räcker inte för att fastställa en komplett angreppskedja eller en specifik CVE för varje butik.
+**Franska ANSSI:s myndighetsbedömning för oktoberangreppen:** Vid en utfrågning i Frankrikes senat den **21 oktober** sade ANSSI:s generaldirektör **Vincent Strubel** att myndighetens dåvarande analys **inte** pekade på de tidigare offentliggjorda produktsårbarheter som flera externa forskare hade föreslagit. Han angav i stället **direkt internetexponering av kylutrustning, oskyddade administrationsgränssnitt och svaga lösenord** som grundläggande säkerhetsbrister bakom angreppet. Detta är en **officiell, preliminär teknisk bedömning för Frankrike**, dokumenterad i [senatens protokoll](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html), inte en publicerad rekonstruktion av varje inloggning eller bevis för samma metod i Sverige och andra länder. Ingen specifik utnyttjad CVE eller firmwareversion fastställdes i uttalandet.
+
+**Frankrike – produkt- och manipulationsuppgifter:** Danfoss-system och äldre firmware har pekats ut i medierapportering. Uppgifter om förlängda avfrostningscykler förekommer också. Dessa produktuppgifter fastställer inte vilken styrenhet eller firmware som faktiskt komprometterades i varje butik. ANSSI:s bedömning ovan ska ges företräde framför obekräftade teorier om utnyttjade produktsårbarheter.
 
 **Sverige – avgränsad nätverksinformation:** ICA har bekräftat att de 23 drabbade butikernas kylutrustning var ansluten utanför kedjans centralt förvaltade nätverk. Detta identifierar en nätverksavgränsning, **inte** en bevisad inloggningsmetod, CVE eller komplett angreppskedja.
 
@@ -65,7 +67,7 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 ## Myndigheter och utredning
 
 - **Sverige:** NCSC publicerade den **2 november kl. 17.39** ett officiellt meddelande och uppgav att man följer händelserna, har kontakt med drabbade och samverkar internationellt. Myndigheten rekommenderar inventering av internetanslutna OT-enheter, nödvändighetsprövning av uppkoppling, uppdateringar, flera skyddslager och incidentrutiner.
-- **Frankrike:** Enligt Reuters beskrev åklagarmyndigheten i Paris den 12 oktober ett storskaligt angrepp. Den franska cybersäkerhetsmyndigheten **ANSSI** skulle undersöka incidenten enligt uppgifter från premiärministerns kansli.
+- **Frankrike:** Enligt Reuters beskrev åklagarmyndigheten i Paris den 12 oktober ett storskaligt angrepp. **ANSSI:s generaldirektör redovisade den 21 oktober myndighetens preliminära bedömning** av oskyddad internetexponering och svaga lösenord, samt avfärdade då att tidigare omtalade produktsårbarheter hade utnyttjats. [Senatens officiella protokoll](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html).
 - **Storbritannien:** NCSC-chefen Richard Horne uppgav den **3 november** att försök mot mindre brittiska köttförädlingsföretag haft begränsad påverkan och att myndigheten har förhöjd beredskap. Det är inte belagt att brittiska livsmedelskedjor drabbats på samma sätt.
 
 ## Närliggande händelse utanför dagligvaruhandeln
@@ -79,6 +81,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **11–12 oktober 2026** | Omfattande kyl- och frysincidenter i franska livsmedelsbutiker. |
 | **12–13 oktober** | Franska myndigheter och Reuters redovisar angreppets omfattning och konsekvenser. |
 | **13–17 oktober** | Ytterligare teknisk och internationell rapportering, inklusive Danfoss och Dixell/Copeland samt uppskattningar om över 700 butiker. |
+| **21 oktober** | ANSSI:s generaldirektör redovisar i franska senaten myndighetens preliminära tekniska bedömning av grundläggande åtkomstbrister. |
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
 | **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
@@ -98,6 +101,7 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
 
 ### Myndigheter och primära uttalanden
+- [Franska senaten, 21 oktober: ANSSI-chefens uttalande om internetexponering, svaga lösenord och tidigare CVE-teorier](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html)
 - [Nationellt cybersäkerhetscenter, 2 november: Cyberangrepp mot uppkopplade frys- och kylsystem](https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/)
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
 
