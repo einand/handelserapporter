@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.08 · 5 november 2026**
+**Rapportversion 1.09 · 5 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -21,6 +21,8 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 [Le Grand Continent den 4 november](https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/) sammanställer rapporter om angrepp i **minst 15 europeiska länder** sedan 11 oktober. Detta är en mediesammanställning, inte en myndighetsverifierad totalsiffra; enskilda fall i bland annat Norge och Grekland saknar enligt artikeln myndighetsbekräftelse.
 
 **EU:s gemensamma myndighetsbesked den 4 november:** [ENISA och Europeiska kommissionen](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu) bekräftar att incidenter drabbat kommersiella kylsystem i flera EU-medlemsstater sedan 11 oktober. Efter den nya vågen 1–2 november samordnar ENISA, kommissionens DG CNECT, Europols cyberbrottscentrum EC3, EU:s CSIRT-nätverk och EU-CyCLONe informationsutbyte, lägesbild och rekommendationer. Uttalandet identifierar **inte** någon gemensam angripare, utnyttjad CVE eller forensiskt fastställd intrångsväg.
+
+**USA:s myndighetsvarning den 5 november:** Enligt [Reuters]( https://www.reuters.com/business/retail-consumer/us-warns-ongoing-cyber-threat-industrial-refrigeration-systems-2026-11-05/ ) utfärdade FBI, CISA och andra amerikanska myndigheter en gemensam varning om ett **pågående cyberhot** mot internetåtkomliga elektroniska temperaturregulatorer och kommersiella kylstyrsystem inom livsmedelshandel och kylförvaring. Myndigheterna varnar för att angripare kan ändra temperaturinställningar och därmed orsaka förstörda varor, brandrisk och förkortad livslängd för utrustning. CISA:s Chris Butera uppmanar alla verksamheter som är beroende av kyl- och övervakningssystem att betrakta sig som möjliga mål. **Varningen innebär inte att ett intrång i USA eller en viss utnyttjad CVE har bekräftats.**
 
 ## Drabbade verksamheter och geografisk omfattning
 
@@ -69,6 +71,9 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 ## Myndigheter och utredning
 
+Den 5 november utfärdade amerikanska FBI, CISA och andra myndigheter en gemensam varning om pågående hot mot internetanslutna kylstyrsystem. [Reuters återger myndighetsbeskedet](https://www.reuters.com/business/retail-consumer/us-warns-ongoing-cyber-threat-industrial-refrigeration-systems-2026-11-05/). Det innehåller ingen offentlig identifiering av en gemensam angripare, någon specifik utnyttjad CVE eller en bekräftad amerikansk drabbad verksamhet.
+
+
 - **EU:** I ett [gemensamt officiellt uttalande den 4 november](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu) bekräftar ENISA och EU-kommissionen flera medlemsstaters kylsystemincidenter. ENISA, DG CNECT, Europol EC3, EU:s CSIRT-nätverk och EU-CyCLONe koordinerar informationsdelning och respons. De uppmanar verksamheter att omedelbart minska exponeringen hos berörda system. Uttalandet beskriver också rapporteringsskyldigheter enligt Cyber Resilience Act och NIS2 där de är tillämpliga; det bekräftar inte en specifik exploaterad sårbarhet.
 
 - **Sverige:** NCSC publicerade den **2 november kl. 17.39** ett officiellt meddelande och uppgav att man följer händelserna, har kontakt med drabbade och samverkar internationellt. Myndigheten rekommenderar inventering av internetanslutna OT-enheter, nödvändighetsprövning av uppkoppling, uppdateringar, flera skyddslager och incidentrutiner.
@@ -80,6 +85,8 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre anläggningar** påverkats den 2 november genom ett angrepp mot en leverantör. Enligt [AP den 4 november](https://apnews.com/article/12b80bcf93b8404264209e519c204919) uppgav kylleverantören **Coolworld** att en sårbarhet i en komponent från tredje part var inblandad och att åtgärder vidtogs. Komponentens identitet och någon specifik CVE är inte offentligt fastställda. Övervakningslarm upptäckte förändrade temperatur- och avfrostningsinställningar, och blodprodukter säkrades eller flyttades i tid. EFS uppgav att inget material förstördes och att blodinsamling och distribution fortsatte. **Det finns ingen offentlig bekräftelse på att detta är samma angrepp eller samma tekniska intrångsväg som i matbutikerna.**
 
 ## Tidslinje
+
+- **5 november 2026:** FBI, CISA och andra amerikanska myndigheter varnar för pågående cyberhot mot kommersiella kyl- och temperaturstyrsystem, enligt Reuters; ingen amerikansk kompromettering fastställs i artikeln.
 
 | Datum | Verifierbar händelse |
 |---|---|
@@ -113,6 +120,8 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
 
 ### Oberoende nyhets- och teknikkällor
+
+- [Reuters, 5 november 2026: USA:s gemensamma myndighetsvarning om pågående hot mot kylstyrsystem](https://www.reuters.com/business/retail-consumer/us-warns-ongoing-cyber-threat-industrial-refrigeration-systems-2026-11-05/)
 - [Reuters, 3 november: 23 ICA-butiker, sju Coopbutiker, Edeka, Danfoss och europeiska åtgärder](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/)
 - [Supply Chain Digital, 3 november: direkt uttalande från ICA:s pressansvarige](https://supplychaindigital.com/news/european-supermarket-freezers-targeted-by-major-cyber-attack)
 - [Business Insider, 4 november: EFS:s uppgifter om tre franska blodanläggningar](https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11)
