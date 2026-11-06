@@ -1,12 +1,12 @@
 ---
 title: "Cyberangrepp mot kyl- och fryssystem – verifierad händelseförlopp"
-date: 2026-11-05
+date: 2026-11-06
 description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och frysanläggningar i europeiska livsmedelsbutiker under oktober och november 2026."
 ---
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.09 · 5 november 2026**
+**Rapportversion 1.10 · 6 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -63,7 +63,7 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 **Sverige – intrångsväg okänd:** För ICA- och Coopincidenterna saknas en offentligt verifierad teknisk rekonstruktion. Det är inte fastställt att samma sårbarhet eller utrustning användes som i Frankrike.
 
-**Kartläggning av exponering:** Censys har kartlagt internetexponerade Danfoss StoreView-gränssnitt. En exponerad enhet är inte automatiskt komprometterad. Antalet exponerade installationer får inte likställas med antalet hackade butiker.
+**Kartläggning av exponering:** [Censys redovisade den 5 november](https://censys.com/blog/european-refrigeration-controller-exposure-sitrep/) mätningar av internetexponerade kylstyrsystem i två produktfamiljer som omfattas av franska CERT-FR:s varning. Mellan **9 oktober och 5 november** minskade antalet distinkta exponerade värdar globalt från **6 695 till 3 124 (−53 %)**. Danfoss StoreView minskade från **3 004 till 708 (−76 %)** och Copeland/Dixell XWEB från **3 708 till 2 420 (−35 %)**. Censys observerade en första kraftig minskning i Frankrike efter oktoberangreppen och en bredare minskning i flera länder efter den 2 november. **Orsaken till att värdar försvann ur mätningarna är inte fastställd**; det kan inte utläsas om de stängdes av, skyddades eller av andra skäl inte längre var synliga. En exponerad enhet är inte automatiskt komprometterad. Antalet exponerade installationer får inte likställas med antalet hackade butiker.
 
 **Riskfaktorer, inte bevisad komplett angreppskedja:** internetexponerade styrgränssnitt, föråldrad firmware, bristande åtkomstbegränsningar och svaga eller förutsägbara autentiseringslösningar. Utan forensiska uppgifter går det inte att avgöra vilka faktorer som användes i varje enskilt fall.
 
@@ -133,6 +133,7 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Le Monde, 17 oktober: omfattning och risker i Frankrike](https://www.lemonde.fr/economie/article/2026/10/17/la-cyberattaque-des-frigos-de-supermarche-un-signal-d-alarme-pour-tous-les-industriels-et-un-rappel-a-la-loi-europeenne-pour-la-france_6795846_3234.html)
 - [Ars Technica, 14 oktober: offentlig teknisk sårbarhetsforskning](https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/)
 - [Censys: kartläggning av exponerade kylstyrsystem](https://censys.com/blog/european-refrigerator-controller-redux-a-new-wave-of-refrigeration-attacks/)
+- [Censys, 5 november: mätning av internetexponerade kylstyrsystem 9 oktober–5 november](https://censys.com/blog/european-refrigeration-controller-exposure-sitrep/)
 - [Truesec: Refrigeration and freezer systems breached at large scale](https://www.truesec.com/hub/blog/refrigeration-and-freezer-systems-breached-at-large-scale)
 - [Industrial Cyber: Remote access and legacy refrigeration systems](https://industrialcyber.co/control-device-security/french-supermarket-cyberattack-exposes-risks-of-unsecured-remote-access-and-legacy-refrigeration-systems/)
 - [Reuters, 3 november: brittiska NCSC-chefens kommentarer](https://www.reuters.com/legal/government/uk-must-expect-ai-powered-attack-critical-infrastructure-within-two-years-report-2026-11-03/)
