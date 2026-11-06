@@ -168,6 +168,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 
 ## Arkiverade källor (PDF)
 
+- [PDF-kopia av källa](/handelserapporter/kallor/8292f51bdf1d0ced1277.pdf) – https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/aee8bf8af321d81dd778.pdf) – https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/68c361a3cb7545d99426.pdf) – https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu (hämtad 2026-11-05)
 - [PDF-kopia av källa](/handelserapporter/kallor/4a5a8ed52f2623daea9a.pdf) – https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327 (hämtad 2026-11-06)
@@ -180,6 +181,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 - [PDF-kopia av källa](/handelserapporter/kallor/ba1a81ffac3631fe2ae3.pdf) – https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/8eea1e1e79887b53714f.pdf) – https://www.senat.fr/compte-rendu-commissions/20261019/etran.html (hämtad 2026-11-05)
 - [PDF-kopia av källa](/handelserapporter/kallor/cb2efacf4fe078bdbe1e.pdf) – https://censys.com/blog/european-refrigeration-controller-exposure-sitrep/ (hämtad 2026-11-06)
+- [PDF-kopia av källa](/handelserapporter/kallor/76c56fce46628c2c18fd.pdf) – https://www.swissinfo.ch/ger/erster-bekannter-cyberangriff-auf-k%C3%BChlanlage-in-der-schweiz/92333227 (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/a9181958de307cdcccc9.pdf) – https://nsm.no/aktuelt/norske-dagligvarebutikker-er-godt-sikret-mot-digitale-angrep-pa-kjoleanlegg (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/3994287835e164c511f0.pdf) – https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/a2736ba323f18c53b6fc.pdf) – https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11 (hämtad 2026-11-04)
