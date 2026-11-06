@@ -177,6 +177,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 - [PDF-kopia av källa](/handelserapporter/kallor/4a5a8ed52f2623daea9a.pdf) – https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327 (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/76dfe1d21b765267202a.pdf) – https://www.digi.no/sikkerhet/mulig-hackingangrep-mot-fruktlager-i-hardanger/7181422 (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/35720377fb6c71b19705.pdf) – https://stirileprotv.ro/stiri/actualitate/cum-au-preluat-hackerii-controlul-frigiderelor-e-ca-intr-un-scenariu-de-film.html (hämtad 2026-11-05)
+- [PDF-kopia av källa](/handelserapporter/kallor/a8dc2b16ab89a42c7863.pdf) – https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/f66876dac5ed50b92e2d.pdf) – https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6 (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/e21111a5b1d5b415e35f.pdf) – https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/5d4e53502e47d594ded9.pdf) – https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html (hämtad 2026-11-04)
