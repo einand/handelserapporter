@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.10 · 6 november 2026**
+**Rapportversion 1.11 · 6 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -31,6 +31,7 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 | **Frankrike** | Angrepp i oktober mot kyl- och fryssystem i hundratals butiker. Les Mousquetaires uppgav omkring **150 Intermarché-butiker**; senare medierapportering anger över **700 butiker totalt**, med varierande avgränsningar. | Företagsuppgift via Reuters respektive senare medieuppgifter; talen är inte direkt jämförbara. |
 | **Sverige – ICA** | ICA uppgav den 3 november att **23 butiker** påverkats, varav **åtta** behövt kassera kyl- och frysvaror. Enligt ICA var utrustningen i samtliga drabbade butiker ansluten utanför kedjans centralt förvaltade nätverk. Namngivna drabbade butiker i rapporteringen inkluderar ICA Kvantum Sjöbo, ICA Nära Böda, ICA Nära Sundbergs i Mörlunda och ICA i Moheda. | ICA:s pressansvarige till [Supply Chain Digital](https://supplychaindigital.com/news/european-supermarket-freezers-targeted-by-major-cyber-attack), samt [Reuters](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
 | **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; [Reuters uppger den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) att **sju Coopbutiker** drabbats, återupptagit driften och kopplat bort kylsystemen från internet. Coop uppgav att övergång från 4G till modernare modem och 5G pågick. | Coops uppgifter återgivna av Reuters; slutlig omfattning kan förändras. |
+| **Norge – Havaristen och Ullensvang Fruktlager** | Vid Havaristen den 3 november steg temperaturen i ett fryssystem och sprinkleranläggningen utlöstes. Ägaren uppgav att utrustningsleverantören såg starka indikationer på intrång; fjärranslutning via extern 4G-enhet har beskrivits, men intrångsvägen är inte forensiskt fastställd. Samma dag steg temperaturen omkring 30 grader i ett kylrum hos Ullensvang Fruktlager. Företagsledningen misstänkte intrång; endast ett kylrum var i drift och systemet kopplades bort från internet. | [NTB/Digi om Havaristen, 3 november](https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327), [NTB/Digi om Ullensvang, 4 november](https://www.digi.no/sikkerhet/mulig-hackingangrep-mot-fruktlager-i-hardanger/7181422). Misstänkta angrepp, inte offentliggjord forensisk bekräftelse. |
 | **Belgien** | Delhaize rapporterade påverkan i flera dussin butiker, och Carrefour uppgav **15 drabbade butiker**. | Företagsuppgifter återgivna av [AP](https://apnews.com/article/a8ea5b30d67da47957769f29101fe686) och Reuters. |
 | **Finland, Estland, Luxemburg och Irland** | Le Monde rapporterar om angrepp mot internetanslutna kylregleringssystem natten 1–2 november. | Medierapportering; inte självständigt bekräftat för varje enskild butik. |
 | **Rumänien** | Rumäniens cybersäkerhetsmyndighet DNSC har enligt rumänska public service-bolaget TVR och ProTV bekräftat rapporter om onormalt höga temperaturer i kylutrustning i **sex butiker inom samma, ej namngivna kedja** natten till 2 november. Händelsen utreds som misstänkt cyberangrepp; en gemensam teknisk angreppsväg med övriga länder är inte verifierad. | [TVR, 3 november](https://tvrinfo.ro/sase-magazine-din-romania-au-fost-tinta-unui-atac-cibernetic-sistemul-de-racire-a-fost-compromis-de-hackeri/); [ProTV, 3 november](https://stirileprotv.ro/stiri/actualitate/cum-au-preluat-hackerii-controlul-frigiderelor-e-ca-intr-un-scenariu-de-film.html). Myndighetsuppgift återgiven av medier. |
@@ -50,6 +51,9 @@ Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i fran
 Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html) att grupperna **NoName057(16)** och **Z-Pentest** i en publicerad video påstod sig ligga bakom kylangrepp i flera europeiska länder. Grupperna påstod att de manipulerat Danfoss- och Dixell Web-system utan skadlig kod. **Detta är en dokumenterad ansvarsdeklaration, inte verifierad gärningsmannaattribuering eller teknisk forensik.** [SentinelLABS analys](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/) framhåller att offentlig bevisning ännu inte knyter grupperna till de aktuella intrången. Påståendet fastställer inte att samtliga europeiska händelser har samma angripare eller angreppsväg.
 
 ## Teknisk analys och säkerhetsgrad
+
+**Norge – exponerad fjärrstyrning:** Næringslivets Sikkerhetsråd (NSR) uppgav den 4 november att organisationen funnit flera tiotal internetexponerade kylsystem i Norge, i vissa fall med fabriksinställda lösenord, och arbetat med att identifiera och varna ägarna. Detta är belagd exponering, **inte** bevis för att just dessa autentiseringsuppgifter användes vid de misstänkta angreppen mot Havaristen eller Ullensvang. Havaristens externa 4G-anslutning är en rapporterad teknisk omständighet, inte en verifierad rekonstruktion av angriparens åtkomst. [NTB via Radio Haugaland, 4 november](https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/); [NORDSEC, 5 november](https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer).
+
 
 **Bekräftat på övergripande nivå:** Det är styr- och övervakningssystem för kommersiell kylteknik som påverkats. Sådan teknik kan fjärrstyras och kan ha avfrostningsfunktioner som tillför värme. NCSC behandlar händelserna som risker i **operativ teknik (OT)**.
 
@@ -96,6 +100,8 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **21 oktober** | ANSSI:s generaldirektör redovisar i franska senaten myndighetens preliminära tekniska bedömning av grundläggande åtkomstbrister. |
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
+| **3 november** | Havaristen och Ullensvang Fruktlager i Norge rapporterar temperaturmanipulation och misstänkta intrång i kyl- och fryssystem. |
+| **4 november** | NSR redovisar upptäckta internetexponerade norska kylsystem, några med fabriksinställda lösenord. |
 | **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
 | **4 november** | ENISA och EU-kommissionen publicerar ett gemensamt uttalande om samordnad europeisk respons efter angreppsvågen 1–2 november. |
 | **4 november** | Rai Tg1 och ANSA rapporterar en ansvarsdeklaration från NoName057(16) och Z-Pentest; oberoende teknisk bekräftelse saknas. |
@@ -114,12 +120,19 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
 
 ### Myndigheter och primära uttalanden
+- [Norska NSM, 4 november: säkerhetsläget för dagligvarubranschens kylsystem](https://nsm.no/aktuelt/norske-dagligvarebutikker-er-godt-sikret-mot-digitale-angrep-pa-kjoleanlegg)
+
 - [ENISA och EU-kommissionen, 4 november: gemensamt uttalande om europeisk samordning](https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu)
 - [Franska senaten, 21 oktober: ANSSI-chefens uttalande om internetexponering, svaga lösenord och tidigare CVE-teorier](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html)
 - [Nationellt cybersäkerhetscenter, 2 november: Cyberangrepp mot uppkopplade frys- och kylsystem](https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/)
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
 
 ### Oberoende nyhets- och teknikkällor
+- [NTB/Digi, 3 november: Havaristens misstänkta angrepp](https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327)
+- [NTB/Digi, 4 november: Ullensvang Fruktlagers misstänkta angrepp](https://www.digi.no/sikkerhet/mulig-hackingangrep-mot-fruktlager-i-hardanger/7181422)
+- [NTB, 4 november: NSR om exponerade kylsystem och fabriksinställda lösenord](https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/)
+- [NORDSEC, 5 november: Havaristens fjärrstyrning via extern 4G](https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer)
+
 
 - [Reuters, 5 november 2026: USA:s gemensamma myndighetsvarning om pågående hot mot kylstyrsystem](https://www.reuters.com/business/retail-consumer/us-warns-ongoing-cyber-threat-industrial-refrigeration-systems-2026-11-05/)
 - [Reuters, 3 november: 23 ICA-butiker, sju Coopbutiker, Edeka, Danfoss och europeiska åtgärder](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/)
