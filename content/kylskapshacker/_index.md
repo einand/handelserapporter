@@ -151,6 +151,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 - [PDF-kopia av källa](/handelserapporter/kallor/e21111a5b1d5b415e35f.pdf) – https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/5d4e53502e47d594ded9.pdf) – https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/8eea1e1e79887b53714f.pdf) – https://www.senat.fr/compte-rendu-commissions/20261019/etran.html (hämtad 2026-11-05)
+- [PDF-kopia av källa](/handelserapporter/kallor/cb2efacf4fe078bdbe1e.pdf) – https://censys.com/blog/european-refrigeration-controller-exposure-sitrep/ (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/3994287835e164c511f0.pdf) – https://www.ncsc.se/sv/aktuellt/cyberangrepp-mot-kylsystem/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/a2736ba323f18c53b6fc.pdf) – https://www.businessinsider.com/blood-plasma-fridge-hack-france-efs-cyberattack-2026-11 (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/60a17f96e9ef076ed60d.pdf) – https://www.svt.se/nyheter/lokalt/smaland/hackerattack-mot-kylar-och-frysar-ica-i-boda-och-morlunda-drabbade (hämtad 2026-11-04)
