@@ -6,13 +6,15 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.11 · 6 november 2026**
+**Rapportversion 1.12 · 6 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
 ## Sammanfattning
 
 Under **11–13 oktober 2026** drabbades hundratals livsmedelsbutiker i Frankrike av angrepp mot fjärrstyrda kylsystem. Temperaturer steg kraftigt och mat förstördes; enligt franska myndigheter och Reuters förekom även bränder. Franska åklagarmyndigheten beskrev den 12 oktober angreppet som storskaligt. Den 2 november rapporterades liknande incidenter i Sverige, bland annat hos ICA och Coop, samt i andra europeiska länder. Enligt [Reuters den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) påverkades **23 ICA-butiker**, medan **sju Coopbutiker** hade återupptagit driften efter att kylsystemen kopplats bort från internet. **Det är inte offentligt fastställt att alla incidenterna genomförts av samma aktör eller via exakt samma sårbarhet.**
+
+I Schweiz bekräftade **Lüthi's Fleischwaren** den 5 november ett angrepp mot kylstyrningen i Köniz. Enligt SRF steg temperaturen i frysrummet till 50–70 °C, varor förstördes och butiken stängde tillfälligt. **Volg** bekräftade ändrade kylinställningar i tre butiker. Teknisk intrångsväg och koppling till andra europeiska angrepp är okända. [SRF, 5 november](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen).
 
 Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november att centret följer incidenterna, har kontakt med drabbade verksamheter och utbyter information med nordiska och europeiska motsvarigheter. NCSC framhåller riskerna med uppkopplad operativ teknik (OT).
 
@@ -31,6 +33,8 @@ Den svenska Nationellt cybersäkerhetscenter (NCSC) bekräftade den 2 november a
 | **Frankrike** | Angrepp i oktober mot kyl- och fryssystem i hundratals butiker. Les Mousquetaires uppgav omkring **150 Intermarché-butiker**; senare medierapportering anger över **700 butiker totalt**, med varierande avgränsningar. | Företagsuppgift via Reuters respektive senare medieuppgifter; talen är inte direkt jämförbara. |
 | **Sverige – ICA** | ICA uppgav den 3 november att **23 butiker** påverkats, varav **åtta** behövt kassera kyl- och frysvaror. Enligt ICA var utrustningen i samtliga drabbade butiker ansluten utanför kedjans centralt förvaltade nätverk. Namngivna drabbade butiker i rapporteringen inkluderar ICA Kvantum Sjöbo, ICA Nära Böda, ICA Nära Sundbergs i Mörlunda och ICA i Moheda. | ICA:s pressansvarige till [Supply Chain Digital](https://supplychaindigital.com/news/european-supermarket-freezers-targeted-by-major-cyber-attack), samt [Reuters](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/). |
 | **Sverige – Coop** | Coopbutiker drabbades av liknande kyl- och frysproblem; [Reuters uppger den 3 november](https://www.reuters.com/world/europe/european-supermarkets-rush-patch-vulnerabilities-after-region-wide-fridge-hack-2026-11-03/) att **sju Coopbutiker** drabbats, återupptagit driften och kopplat bort kylsystemen från internet. Coop uppgav att övergång från 4G till modernare modem och 5G pågick. | Coops uppgifter återgivna av Reuters; slutlig omfattning kan förändras. |
+| **Schweiz – Lüthi's Fleischwaren, Köniz** | Företaget bekräftade manipulerad elektronisk kyl- och frysstyrning, förstörda varor och tillfällig stängning. Nätverksanslutningen bröts. Återöppning planeras den 20 november. | Företagsbesked återgivet av [SRF](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen); intrångsväg okänd. |
+| **Schweiz – Volg** | Tre butiker rapporterade ändrade inställningar i kyldiskar. Volg uppgav att skyddsåtgärder vidtagits. | [Företagsuttalande till SRF](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen); orsak och följdskador okända. |
 | **Norge – Havaristen och Ullensvang Fruktlager** | Vid Havaristen den 3 november steg temperaturen i ett fryssystem och sprinkleranläggningen utlöstes. Ägaren uppgav att utrustningsleverantören såg starka indikationer på intrång; fjärranslutning via extern 4G-enhet har beskrivits, men intrångsvägen är inte forensiskt fastställd. Samma dag steg temperaturen omkring 30 grader i ett kylrum hos Ullensvang Fruktlager. Företagsledningen misstänkte intrång; endast ett kylrum var i drift och systemet kopplades bort från internet. | [NTB/Digi om Havaristen, 3 november](https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327), [NTB/Digi om Ullensvang, 4 november](https://www.digi.no/sikkerhet/mulig-hackingangrep-mot-fruktlager-i-hardanger/7181422). Misstänkta angrepp, inte offentliggjord forensisk bekräftelse. |
 | **Belgien** | Delhaize rapporterade påverkan i flera dussin butiker, och Carrefour uppgav **15 drabbade butiker**. | Företagsuppgifter återgivna av [AP](https://apnews.com/article/a8ea5b30d67da47957769f29101fe686) och Reuters. |
 | **Finland, Estland, Luxemburg och Irland** | Le Monde rapporterar om angrepp mot internetanslutna kylregleringssystem natten 1–2 november. | Medierapportering; inte självständigt bekräftat för varje enskild butik. |
@@ -44,6 +48,8 @@ Att en kedja eller ett land nämns här innebär **inte** att varje butik drabba
 
 I svenska butiker rapporterades förstörda kyl- och frysvaror och tillfälligt begränsat sortiment eller stängning. SVT rapporterar att en ICA-handlare i Böda upptäckte vatten på golvet och att en frys nått **55 °C**. ICA Kvantum Sjöbo uppgav enligt Aftonbladet att temperaturer ställts på **50 °C**. Det handlar om **rapporterade avlästa eller inställda värden**, inte en fastställd temperatur för samtliga drabbade enheter.
 
+I Köniz uppgav Lüthi's Fleischwarens ägare att fryst kött förstördes, prislappar smälte och temperaturen nådde 50–70 °C. Anläggningarna isolerades från nätverket och butiken stängdes tillfälligt. [SRF, 5 november](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen).
+
 Reuters rapporterade i oktober om omfattande livsmedelssvinn och bränder i franska butiker. Exakt totalskada är inte verifierad.
 
 ## Ansvarsanspråk och attribuering
@@ -54,6 +60,8 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 **Norge – exponerad fjärrstyrning:** Næringslivets Sikkerhetsråd (NSR) uppgav den 4 november att organisationen funnit flera tiotal internetexponerade kylsystem i Norge, i vissa fall med fabriksinställda lösenord, och arbetat med att identifiera och varna ägarna. Detta är belagd exponering, **inte** bevis för att just dessa autentiseringsuppgifter användes vid de misstänkta angreppen mot Havaristen eller Ullensvang. Havaristens externa 4G-anslutning är en rapporterad teknisk omständighet, inte en verifierad rekonstruktion av angriparens åtkomst. [NTB via Radio Haugaland, 4 november](https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/); [NORDSEC, 5 november](https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer).
 
+
+**Schweiz – teknisk avgränsning:** Företagen bekräftar ändrade kylinställningar och, hos Lüthi's Fleischwaren, manipulerad elektronisk styrning. Modell, firmware, CVE, autentiseringsmetod och forensiska loggar är okända. Gemensam angripare eller angreppsväg är inte verifierad. [SRF](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen).
 
 **Bekräftat på övergripande nivå:** Det är styr- och övervakningssystem för kommersiell kylteknik som påverkats. Sådan teknik kan fjärrstyras och kan ha avfrostningsfunktioner som tillför värme. NCSC behandlar händelserna som risker i **operativ teknik (OT)**.
 
@@ -90,8 +98,6 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 
 ## Tidslinje
 
-- **5 november 2026:** FBI, CISA och andra amerikanska myndigheter varnar för pågående cyberhot mot kommersiella kyl- och temperaturstyrsystem, enligt Reuters; ingen amerikansk kompromettering fastställs i artikeln.
-
 | Datum | Verifierbar händelse |
 |---|---|
 | **11–12 oktober 2026** | Omfattande kyl- och frysincidenter i franska livsmedelsbutiker. |
@@ -101,6 +107,8 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
 | **3 november** | Havaristen och Ullensvang Fruktlager i Norge rapporterar temperaturmanipulation och misstänkta intrång i kyl- och fryssystem. |
+| **5 november** | Lüthi's Fleischwaren i Köniz bekräftar ett angrepp mot kylstyrningen; Volg uppger ändrade kylinställningar i tre schweiziska butiker. |
+| **5 november** | Amerikanska myndigheter varnar för hot mot kommersiella kylstyrsystem enligt Reuters; ingen amerikansk kompromettering fastställs. |
 | **4 november** | NSR redovisar upptäckta internetexponerade norska kylsystem, några med fabriksinställda lösenord. |
 | **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
 | **4 november** | ENISA och EU-kommissionen publicerar ett gemensamt uttalande om samordnad europeisk respons efter angreppsvågen 1–2 november. |
@@ -112,6 +120,9 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av komprometterade eller manipulerade styrsystem**: förstörd mat och störd butiksdrift. Den mest relevanta säkerhetsfrågan är hur fjärråtkomst till kylsystem är skyddad. Enskilda leverantörers kända sårbarheter får inte likställas med forensiskt bevisad angreppsväg. Det finns för närvarande inte tillräckligt underlag för att knyta alla europeiska händelser till samma angripare.
 
 ## Källor
+
+- [SRF, 5 november: Lüthi's Fleischwaren och Volg](https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen)
+- [Keystone-SDA/Swissinfo, 5 november: företagsbesked från Köniz](https://www.swissinfo.ch/ger/erster-bekannter-cyberangriff-auf-k%C3%BChlanlage-in-der-schweiz/92333227)
 
 - [The Times, 4 november: Langridge Organic beskriver sex manipulerade kylsystem](https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6)
 - [The Guardian, 3 november: brittiska livsmedelsleverantörer och NCSC](https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks)
