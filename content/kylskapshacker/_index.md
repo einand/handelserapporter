@@ -187,6 +187,9 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 
 ## Arkiverade källor (PDF)
 
+- [PDF-kopia av källa](/handelserapporter/kallor/1507f57ace1d8c352445.pdf) – https://www.dutchnews.nl/2026/11/albert-heijn-sister-chain-hit-as-fridge-hacks-spread-in-europe/ (hämtad 2026-11-06)
+- [PDF-kopia av källa](/handelserapporter/kallor/ec9a7068aa330888317e.pdf) – https://www.ansa.it/amp/sito/notizie/mondo/europa/2026/11/02/attacchi-hacker-a-sistemi-di-refrigerazione-dei-supermercati-della-sicilia_5e6f0b27-05c9-468a-9004-087167137119.html (hämtad 2026-11-06)
+- [PDF-kopia av källa](/handelserapporter/kallor/d1cf9ecb8d38122247ac.pdf) – https://www.rtp.pt/noticias/pais/sete-lojas-do-intermarche-atingidas-por-ciberataque-em-portugal_n1776375 (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/8292f51bdf1d0ced1277.pdf) – https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-berner-metzgerei-opfer-von-hackerangriff-auch-volg-betroffen (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/aee8bf8af321d81dd778.pdf) – https://legrandcontinent.eu/fr/2026/11/04/au-moins-15-pays-europeens-ont-ete-touches-par-les-cyberattaques-visant-les-refrigerateurs-de-supermarches/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/68c361a3cb7545d99426.pdf) – https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu (hämtad 2026-11-05)
