@@ -1,12 +1,12 @@
 ---
 title: "Cyberangrepp mot kyl- och fryssystem – verifierad händelseförlopp"
-date: 2026-11-06
+date: 2026-11-07
 description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och frysanläggningar i europeiska livsmedelsbutiker under oktober och november 2026."
 ---
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.14 · 6 november 2026**
+**Rapportversion 1.15 · 7 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -66,6 +66,8 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 ## Teknisk analys och säkerhetsgrad
 
+**Honeypotobservationer före novemberangreppen:** Säkerhetsföretaget Lupovis uppgav den 7 november att dess simulerade, internetexponerade kylstyrsystem registrerade **över 276 försök** från vad företaget klassificerade som **91 olika hotaktörer** under **20–30 oktober**, med högst aktivitet den **26 oktober**. Enligt vd Xavier Bellekens prövades bland annat standardlösenord och kända svagheter i Danfoss-liknande styrsystem. Mätningen gäller företagets egna lockbetessystem, **inte verifierade intrång i verkliga butiker**. Uppgiften om 91 aktörer är företagets klassificering, inte oberoende identifierade personer eller grupper. Lupovis ser tecken på samordning och spekulerar om en statlig aktör, möjligen Ryssland; **varken gemensam angripare, statlig koppling eller teknisk orsak till butiksintrången är fastställd**. [Euronews, 7 november](https://www.euronews.com/2026/11/07/hackers-probed-europes-fridge-systems-weeks-before-cyberattacks-who-did-it-and-what-could-).
+
 **Norge – exponerad fjärrstyrning:** Næringslivets Sikkerhetsråd (NSR) uppgav den 4 november att organisationen funnit flera tiotal internetexponerade kylsystem i Norge, i vissa fall med fabriksinställda lösenord, och arbetat med att identifiera och varna ägarna. Detta är belagd exponering, **inte** bevis för att just dessa autentiseringsuppgifter användes vid de misstänkta angreppen mot Havaristen eller Ullensvang. Havaristens externa 4G-anslutning är en rapporterad teknisk omständighet, inte en verifierad rekonstruktion av angriparens åtkomst. [NTB via Radio Haugaland, 4 november](https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/); [NORDSEC, 5 november](https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer).
 
 
@@ -115,6 +117,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **11–12 oktober 2026** | Omfattande kyl- och frysincidenter i franska livsmedelsbutiker. |
 | **12–13 oktober** | Franska myndigheter och Reuters redovisar angreppets omfattning och konsekvenser. |
 | **13–17 oktober** | Ytterligare teknisk och internationell rapportering, inklusive Danfoss och Dixell/Copeland samt uppskattningar om över 700 butiker. |
+| **20–30 oktober** | Lupovis uppger att företagets honeypots registrerade över 276 försök riktade mot Danfoss-liknande styrsystem; högst aktivitet den 26 oktober. Uppgifterna offentliggjordes den 7 november och visar inte att samma aktörer komprometterade butiker. |
 | **21 oktober** | ANSSI:s generaldirektör redovisar i franska senaten myndighetens preliminära tekniska bedömning av grundläggande åtkomstbrister. |
 | **Natten 1–2 november** | Ny våg av rapporterade angrepp mot kylregleringssystem i flera europeiska länder. |
 | **2 november** | ICA- och Coopbutiker i Sverige rapporterar manipulerade kyl- och fryssystem; NCSC publicerar officiellt meddelande. |
@@ -157,6 +160,7 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 - [Reuters, 12–13 oktober: Frankrikes åklagarmyndighet, Les Mousquetaires och Danfoss](https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/)
 
 ### Oberoende nyhets- och teknikkällor
+- [Euronews, 7 november: Lupovis observationer av rekognosering mot simulerade kylstyrsystem](https://www.euronews.com/2026/11/07/hackers-probed-europes-fridge-systems-weeks-before-cyberattacks-who-did-it-and-what-could-)
 - [NTB/Digi, 3 november: Havaristens misstänkta angrepp](https://www.digi.no/sikkerhet/mulig-fryserangrep-mot-norsk-varehus/7181327)
 - [NTB/Digi, 4 november: Ullensvang Fruktlagers misstänkta angrepp](https://www.digi.no/sikkerhet/mulig-hackingangrep-mot-fruktlager-i-hardanger/7181422)
 - [NTB, 4 november: NSR om exponerade kylsystem och fabriksinställda lösenord](https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/)
