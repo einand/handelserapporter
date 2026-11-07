@@ -204,6 +204,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 - [PDF-kopia av källa](/handelserapporter/kallor/f66876dac5ed50b92e2d.pdf) – https://www.thetimes.com/uk/technology-uk/article/uk-fridges-vulnerable-cyber-attack-hack-europe-hzbxr5mh6 (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/e21111a5b1d5b415e35f.pdf) – https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/5d4e53502e47d594ded9.pdf) – https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/a343e6bbcb0daf84562d.pdf) – https://www.euronews.com/2026/11/07/hackers-probed-europes-fridge-systems-weeks-before-cyberattacks-who-did-it-and-what-could- (hämtad 2026-11-07)
 - [PDF-kopia av källa](/handelserapporter/kallor/6c90aa9dceb32a2eac41.pdf) – https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/ (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/ba1a81ffac3631fe2ae3.pdf) – https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/8eea1e1e79887b53714f.pdf) – https://www.senat.fr/compte-rendu-commissions/20261019/etran.html (hämtad 2026-11-05)
