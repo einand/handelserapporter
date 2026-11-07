@@ -214,6 +214,7 @@ Tidigare kompletta rapportversioner finns i [versionsarkivet](./historik/).
 - [PDF-kopia av källa](/handelserapporter/kallor/a343e6bbcb0daf84562d.pdf) – https://www.euronews.com/2026/11/07/hackers-probed-europes-fridge-systems-weeks-before-cyberattacks-who-did-it-and-what-could- (hämtad 2026-11-07)
 - [PDF-kopia av källa](/handelserapporter/kallor/6c90aa9dceb32a2eac41.pdf) – https://radioh.no/nsr-flere-dataangrep-mot-norske-kjoleanlegg-avverget/ (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/ba1a81ffac3631fe2ae3.pdf) – https://www.nordsec-cluster.no/en/news/have-you-secured-your-freezer (hämtad 2026-11-06)
+- [PDF-kopia av källa](/handelserapporter/kallor/2f5f66e442361ec7835f.pdf) – https://www.installator.dk/efter-hackerangreb-danfoss-opfordrer-til-opdatering-og-bedre-sikkerhed (hämtad 2026-11-07)
 - [PDF-kopia av källa](/handelserapporter/kallor/8eea1e1e79887b53714f.pdf) – https://www.senat.fr/compte-rendu-commissions/20261019/etran.html (hämtad 2026-11-05)
 - [PDF-kopia av källa](/handelserapporter/kallor/cb2efacf4fe078bdbe1e.pdf) – https://censys.com/blog/european-refrigeration-controller-exposure-sitrep/ (hämtad 2026-11-06)
 - [PDF-kopia av källa](/handelserapporter/kallor/76c56fce46628c2c18fd.pdf) – https://www.swissinfo.ch/ger/erster-bekannter-cyberangriff-auf-k%C3%BChlanlage-in-der-schweiz/92333227 (hämtad 2026-11-06)
