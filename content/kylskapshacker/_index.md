@@ -6,7 +6,7 @@ description: "Faktagranskad rapport om cyberangrepp mot uppkopplade kyl- och fry
 
 # Cyberangrepp mot kyl- och fryssystem i Europa
 
-**Rapportversion 1.15 · 7 november 2026**
+**Rapportversion 1.16 · 7 november 2026**
 
 Rapporten gäller **kommersiella, internetanslutna kyl- och frysanläggningar** i dagligvaruhandeln, inte vanliga hushållskylskåp. Den sammanställer verifierbara offentliga uppgifter. Händelser i olika länder hålls isär när gemensam angreppsväg inte är fastställd. Uppgifter från myndigheter, företag och medier attribueras till respektive källa.
 
@@ -79,6 +79,10 @@ Den **4 november** rapporterade [italienska Rai Tg1 via ANSA](https://videoembed
 
 **Bekräftat på övergripande nivå:** Det är styr- och övervakningssystem för kommersiell kylteknik som påverkats. Sådan teknik kan fjärrstyras och kan ha avfrostningsfunktioner som tillför värme. NCSC behandlar händelserna som risker i **operativ teknik (OT)**.
 
+**Danfoss – namngivna styrsystem i företagets eget besked:** I ett skriftligt svar till danska fackmediet Installatør den **6 november** bekräftade Danfoss presschef Lars Grubak Lohff att rapporterade europeiska angrepp omfattar företagets **AK-SM800, AK-SC355 och AK-SM800A** med föråldrade programvaruversioner. De två förstnämnda modellerna har nått slutet av sitt stöd, medan AK-SM800A fortfarande har tillgängliga uppdateringar. Danfoss rekommenderar att fjärråtkomst inte exponeras direkt mot internet och att uppdaterade system skyddas med bland annat brandvägg och VPN. Uttalandet är **leverantörens bekräftelse på berörda produktfamiljer**, inte en forensisk identifiering av en utnyttjad CVE, en viss inloggning eller vilka modeller som förekom i respektive butik. [Installatør, 6 november](https://www.installator.dk/efter-hackerangreb-danfoss-opfordrer-til-opdatering-og-bedre-sikkerhed).
+
+**Danmark – rapporterad påverkan:** Danska Installatør uppger med hänvisning till **Styrelsen for Samfundssikkerhed** att **fyra till fem danska verksamheter** berörts av kylsystemangreppen. Namn, exakt antal, teknisk intrångsväg och skadeomfattning är inte fastställda i den granskade källan. Detta är en **medieåtergiven myndighetsuppgift**, inte en separat kontrollerad myndighetsförteckning. [Installatør, 6 november](https://www.installator.dk/efter-hackerangreb-danfoss-opfordrer-til-opdatering-og-bedre-sikkerhed).
+
 **Produktuppgifter i rapporteringen:** Reuters och Le Monde pekar ut **Danfoss**-system i Frankrike och i den senare europeiska vågen. Ars Technica redovisar också offentlig sårbarhetsforskning om äldre styrenheter från **Danfoss, Dixell och Copeland**. Reuters uppger att Danfoss beskrivit berörda franska enheter som utrustning med föråldrad firmware. Dessa uppgifter är **inte** bevis för att varje drabbad svensk butik använde en viss produkt eller CVE.
 
 **Franska ANSSI:s myndighetsbedömning för oktoberangreppen:** Vid en utfrågning i Frankrikes senat den **21 oktober** sade ANSSI:s generaldirektör **Vincent Strubel** att myndighetens dåvarande analys **inte** pekade på de tidigare offentliggjorda produktsårbarheter som flera externa forskare hade föreslagit. Han angav i stället **direkt internetexponering av kylutrustning, oskyddade administrationsgränssnitt och svaga lösenord** som grundläggande säkerhetsbrister bakom angreppet. Detta är en **officiell, preliminär teknisk bedömning för Frankrike**, dokumenterad i [senatens protokoll](https://www.senat.fr/compte-rendu-commissions/20261019/etran.html), inte en publicerad rekonstruktion av varje inloggning eller bevis för samma metod i Sverige och andra länder. Ingen specifik utnyttjad CVE eller firmwareversion fastställdes i uttalandet.
@@ -124,6 +128,7 @@ Frankrikes blodtjänst **EFS** uppgav den 4 november att kylutrustning vid **tre
 | **3 november** | Havaristen och Ullensvang Fruktlager i Norge rapporterar temperaturmanipulation och misstänkta intrång i kyl- och fryssystem. |
 | **2 november** | Danfoss rapporterar minst 17 drabbade mindre verksamheter i Nederländerna; Coop Radenza bekräftar fyra butiker i Italien, Grupo Mosqueteiros sju Intermarché-butiker i Portugal och IKEA en butik i Belgien. |
 | **5 november** | Lüthi's Fleischwaren i Köniz bekräftar ett angrepp mot kylstyrningen; Volg uppger ändrade kylinställningar i tre schweiziska butiker. |
+| **6 november** | Danfoss bekräftar i ett skriftligt svar till Installatør att AK-SM800, AK-SC355 och AK-SM800A med äldre programvara finns bland berörda system. Danska medier återger myndighetsuppgift om fyra till fem berörda verksamheter i Danmark. |
 | **5 november** | Amerikanska myndigheter varnar för hot mot kommersiella kylstyrsystem enligt Reuters; ingen amerikansk kompromettering fastställs. |
 | **4 november** | NSR redovisar upptäckta internetexponerade norska kylsystem, några med fabriksinställda lösenord. |
 | **4 november** | Brittiska medier identifierar Langridge Organic som drabbad grossist: sex av tio kylsystem manipulerades enligt företaget, men inga varor förstördes. |
@@ -150,6 +155,8 @@ Angreppen visar en **bekräftad fysisk och ekonomisk konsekvens av kompromettera
 
 - [ANSA/Rai Tg1, 4 november: publicerat ansvarsanspråk från NoName057(16) och Z-Pentest](https://videoembed.ansa.it/sito/videogallery/italia/2026/11/04/tg1-due-gruppi-di-hacker-filorussi-rivendicano-gli-attacchi-ai-supermercati_f0623c7e-4512-4b73-8321-74543de654d1.html)
 - [SentinelLABS, 3 november: teknisk bedömning och otillräckligt underlag för attribuering](https://www.sentinelone.com/labs/defrost-and-disrupt-an-assessment-of-europe-s-refrigeration-attacks/)
+
+- [Installatør, 6 november: Danfoss namnger berörda styrsystem och redovisar säkerhetsråd; medieuppgift om Danmark](https://www.installator.dk/efter-hackerangreb-danfoss-opfordrer-til-opdatering-og-bedre-sikkerhed)
 
 ### Myndigheter och primära uttalanden
 - [Norska NSM, 4 november: säkerhetsläget för dagligvarubranschens kylsystem](https://nsm.no/aktuelt/norske-dagligvarebutikker-er-godt-sikret-mot-digitale-angrep-pa-kjoleanlegg)
