@@ -1,12 +1,12 @@
 ---
 title: "Visit Group – verifierad händelseförlopp"
-date: 2026-11-03
+date: 2026-11-08
 description: "Sammanställda bekräftade uppgifter om dataintrånget hos VISIT och berörda kunder."
 ---
 
 # Dataintrång hos Visit Group
 
-**Rapportversion 1.24 · 3 november 2026**
+**Rapportversion 1.25 · 8 november 2026**
 
 Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess påverkan. Uppgifter från kunder och leverantören återges som deras egna besked. Obekräftade tekniska hypoteser, historiska bevakningsnotiser och uppgifter utan betydelse för incidenten ingår inte. Tidigare rapportversioner finns i [arkivet](./historik/).
 
@@ -14,7 +14,7 @@ Rapporten redovisar **verifierade offentliga uppgifter** om incidenten och dess 
 
 [VISIT har bekräftat](https://status.visitgroup.com/issues/6ae1d4a838e2f6f97a391a3e) att en obehörig aktör fått tillgång till en begränsad mängd bokningsuppgifter i **Citybreak Online**. VISIT uppger att åtkomsten blockerats, att berörda kunder och relevanta myndigheter informerats och att externa experter utreder händelsen. Enligt leverantören omfattas inte kortuppgifter, inloggningsuppgifter eller API-nycklar. **VISIT uppger uttryckligen att incidenten endast gäller Citybreak och att koncernens övriga produkter inte är påverkade.** Detta är leverantörens egen avgränsning, inte en oberoende forensisk verifiering.
 
-Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade incidentbesked: **Skansen, Liseberg, Tekniska museet, Svenska Turistföreningen (STF), Junibacken, Skånes Djurpark och Kongeparken (Norge)**. Deras uppgifter har olika grad av säkerhet beträffande faktisk dataexponering. De offentliga källorna fastställer inte att samtliga verksamheter omfattas av exakt samma tekniska händelse eller samma databas.
+Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade besked: **Skansen, Liseberg, Tekniska museet, Svenska Turistföreningen (STF), Junibacken, Skånes Djurpark och Kongeparken (Norge)**. Deras uppgifter har olika grad av säkerhet beträffande faktisk dataexponering. De offentliga källorna fastställer inte att samtliga verksamheter omfattas av exakt samma tekniska händelse eller samma databas. **Därutöver har norska iTromsø den 5 november rapporterat att Brim Explorer och Fjellheisen berörts av VISIT-intrånget.** Dessa två är medieuppgifter som ännu inte har verifierats genom egna offentliga kundbesked.
 
 | Verksamhet | Offentligt besked | Känd omfattning |
 |---|---|---|
@@ -25,6 +25,8 @@ Sju verksamheter i Sverige och Norge har publicerat egna Visit-relaterade incide
 | [Junibacken](https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/) | Visit-relaterat intrång och kundinformation | Antal ej publicerat |
 | [Skånes Djurpark](https://www.skanesdjurpark.se/dataintrang) | Intrång hos Visit Group; ytterligare berörda e-postadresser identifierades och kontaktades 2 november | Antal ej publicerat |
 | [Kongeparken, Norge](https://www.kongeparken.no/) | Parken uppger att biljettleverantören Visit Group utsatts för dataintrång och att berörda gäster kontaktats | Antal ej publicerat |
+| [Brim Explorer, Norge](https://www.itromso.no/nyheter/n/0BMdjA/tromsoeselskaper-rammet-av-dataangrep) | **Medieuppgift:** iTromsø rapporterar 5 november att kunddata påverkats genom VISIT | Antal och uppgiftstyper okända; inget eget kundbesked verifierat |
+| [Fjellheisen, Norge](https://www.itromso.no/nyheter/n/0BMdjA/tromsoeselskaper-rammet-av-dataangrep) | **Medieuppgift:** iTromsø rapporterar 5 november att kunddata påverkats genom VISIT | Antal och uppgiftstyper okända; inget eget kundbesked verifierat |
 
 **Antalen ska inte summeras.** Personer, gäster och bokningar är inte samma mått. Det finns heller inget offentligt belägg för att de berörda grupperna är helt åtskilda.
 
@@ -70,6 +72,14 @@ VISIT tillhandahåller bland annat **Citybreak, iTicket, BookVisit och VisBook**
 
 [Kongeparkens officiella webbplats](https://www.kongeparken.no/) publicerar ett meddelande under rubriken *Viktig informasjon om datainnbrudd*. Parken uppger att den **27 oktober** informerades om ett dataintrång hos sin biljettleverantör **Visit Group** och att **berörda gäster har kontaktats via e-post**. Det är ett **eget kundbesked med uttrycklig koppling till Visit-intrånget**, inte enbart en leverantörsreferens eller ett medieomnämnande. Antal berörda, vilka uppgifter som kan ha exponerats och exakt berörd teknisk produkt är inte offentligt fastställda. Beskedet är synligt i webbplatsens sökindexerade innehåll; det kunde inte återfinnas i den direktlästa förenklade HTML-vyn.
 
+### Brim Explorer och Fjellheisen (Norge) – medieuppgifter
+
+Den norska tidningen [iTromsø rapporterade den 5 november 2026](https://www.itromso.no/nyheter/n/0BMdjA/tromsoeselskaper-rammet-av-dataangrep) att de två Tromsø-verksamheterna **Brim Explorer och Fjellheisen** fått delar av sina kunduppgifter åtkomliga vid intrånget hos bokningsleverantören **VISIT**. Uppgiften återges också i [FM CyberSecurity:s källförtecknade norska angreppsregister](https://fmcybersecurity.com/en/insights/attacks/). **Säkerhetsgrad: medieuppgift med uttrycklig VISIT-koppling, inte självständigt bekräftad av respektive kund i tillgängliga offentliga meddelanden.** Det är okänt hur många som berörts, vilka uppgifter som exponerats och om samma tekniska åtkomst omfattat de svenska kunderna.
+
+### Strawberry – separat leverantörsangrepp
+
+[Horecanytt rapporterade den 6 november 2026](https://www.horecanytt.no/datainnbrudd-hotell-november-2026/sikkerhetsbrudd-rammer-stordalen-kunder/1578879) om personuppgifter som berör flera tusen Strawberry-kunder. [FM CyberSecurity](https://fmcybersecurity.com/en/insights/attacks/) identifierar **presentkortsleverantören Gift Up** som berörd leverantör. **Ingen koppling till VISIT-intrånget är belagd.** Uppgiften ska därför inte räknas som VISIT-påverkan.
+
 ## Personuppgifter och praktiska risker
 
 Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinformation**. VISIT och flera kunder uppger att **kortuppgifter inte ingår**. Uppgifterna innebär ändå risk för exempelvis riktade falska meddelanden som hänvisar till en verklig bokning. Någon faktisk bedrägerikampanj kopplad till just dessa uppgifter är inte verifierad i underlaget.
@@ -88,16 +98,14 @@ Offentliga kundbesked nämner främst **namn, kontaktuppgifter och bokningsinfor
 | **30 oktober** | [STF](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) redovisar 762 identifierade bokningar och vilka uppgifter som hämtats ut. |
 | **2 november** | [Skånes Djurpark](https://www.skanesdjurpark.se/dataintrang) uppger att ytterligare berörda e-postadresser identifierats och kontaktats samma eftermiddag. |
 | **31 oktober–1 november** | VISIT informerar STF om ytterligare 630 berörda bokningar sent den 31 oktober. [STF publicerar den 1 november](https://www.svenskaturistforeningen.se/om-stf/aktuellt/information-om-sakerhetsincident-hos-var-bokningsleverantor/) den sammanlagda omfattningen **1 392 bokningar**. Perioden för de ytterligare bokningarna är ännu okänd. |
+| **5 november** | [iTromsø](https://www.itromso.no/nyheter/n/0BMdjA/tromsoeselskaper-rammet-av-dataangrep) rapporterar VISIT-relaterad påverkan på Brim Explorer och Fjellheisen. |
+| **6 november** | [Horecanytt](https://www.horecanytt.no/datainnbrudd-hotell-november-2026/sikkerhetsbrudd-rammer-stordalen-kunder/1578879) rapporterar separat leverantörsintrång som berör Strawberry; ingen VISIT-koppling belagd. |
 
 ## Metod och källvärdering
 
 Rapporten bygger på **leverantörens och kundernas offentliga meddelanden**, kompletterat med namngiven nyhetsrapportering där källan uttryckligen anges. Kundens uppgift om påverkan skiljs från teknisk verifiering av intrång och från journalistiska uppgifter om omfattning.
 
 Ingen aktiv sårbarhetsskanning, exploatering eller åtkomst till interna system har utförts. **Frånvaro av offentlig bekräftelse är inte bevis för att en verksamhet är opåverkad.** Rapporten innehåller därför ingen lista som påstår att övriga VISIT-kunder drabbats.
-
-## Versionshistorik
-
-[Tidigare rapporter](./historik/) innehåller äldre kartläggningar, tekniska observationer, hypoteser och förändringar som inte längre hör hemma i den aktuella lägesrapporten. Se även [GitHub-historiken](https://github.com/einand/handelserapporter/commits/main/visit/index.md).
 
 <!-- PDF-ARKIV-START -->
 
