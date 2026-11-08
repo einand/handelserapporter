@@ -120,8 +120,11 @@ Ingen aktiv sårbarhetsskanning, exploatering eller åtkomst till interna system
 - [PDF-kopia av källa](/handelserapporter/kallor/46504b30a9d536f49085.pdf) – https://www.junibacken.se/uppgifter-om-dataintrang-28-oktober-2026/ (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/add0a24c2ee7838ffa6f.pdf) – https://www.skanesdjurpark.se/dataintrang (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/0b824f2633b1fff0bff1.pdf) – https://www.kongeparken.no/ (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/c387d1e4c48bedb466b7.pdf) – https://www.itromso.no/nyheter/n/0BMdjA/tromsoeselskaper-rammet-av-dataangrep (hämtad 2026-11-08)
 - [PDF-kopia av källa](/handelserapporter/kallor/93cb53428e2a9aeb07c8.pdf) – https://www.aftonbladet.se/nyheter/a/kv5Qrj/goteborg-15-000-lisebergsgaster-drabbade-av-datalacka (hämtad 2026-11-04)
 - [PDF-kopia av källa](/handelserapporter/kallor/81afe1706647847d5693.pdf) – https://www.gp.se/nyheter/goteborg/15-000-lisebergsgaster-drabbade-av-datalacka.eebf20c2-0085-53f5-a9ef-a85bb1000e4e (hämtad 2026-11-04)
+- [PDF-kopia av källa](/handelserapporter/kallor/326c7f152e32be69cbee.pdf) – https://fmcybersecurity.com/en/insights/attacks/ (hämtad 2026-11-08)
+- [PDF-kopia av källa](/handelserapporter/kallor/fe1d7b3e1ec7ab85318f.pdf) – https://www.horecanytt.no/datainnbrudd-hotell-november-2026/sikkerhetsbrudd-rammer-stordalen-kunder/1578879 (hämtad 2026-11-08)
 - [PDF-kopia av källa](/handelserapporter/kallor/5fe7fe2a2eece17b2514.pdf) – https://status.visitgroup.com/issues/6ae0be26cf60a849e36da5b4 (hämtad 2026-11-04)
 
 <!-- PDF-ARKIV-SLUT -->
