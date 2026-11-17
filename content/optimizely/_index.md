@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.06 · 17 november 2026**
+**Rapportversion 1.07 · 17 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -237,6 +237,16 @@ Report URI redovisade cirka **7 040 USD** i mottagna kryptotransaktioner till id
 Enligt Report URI hade antalet fortfarande infekterade skript i deras urval sjunkit från **169 kl. 20.56 UTC** till **ett kl. 21.52 UTC** den 16 november. **Uppdatering 17 november:** Report URI uppger att samtliga infekterade Optimizely-filer i deras övervakade urval var rensade **16 november kl. 23.11 UTC** och därefter förblev rena vid forskarnas kontroller. Angriparens huvuddomän `1688360.cc` sattes i `clientHold` **17 november kl. 00.37 UTC** och upphörde att slå upp i DNS. Det innebär inte att redan stulna uppgifter kan återtas eller att alla eventuella följdskador upphört. Optimizelys [statusmeddelande](https://status.optimizely.com/) stod fortfarande på **Monitoring** vid kontroll den 17 november, utan ett nytt slutligt besked.
 
 **Uppdaterad betalningsspårning 17 november:** Report URI:s senare sammanställning visar omkring **7 150 USD** i mottagna transaktioner över flera kryptokedjor. Plånböcker tömdes tidigt den 17 november. Beloppet är fortfarande **inte** en verifierad förlustsumma från enbart besökare på Optimizely-kunders webbplatser, eftersom plånboks- och uttagsadresser också kopplats till tidigare aktivitet. Kortstölder och lyckade iOS-intrång saknar verifierade totalsiffror. [Report URI, uppdatering 17 november](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/), [Help Net Security, 17 november](https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/).
+
+## Fördjupad analys 17 november – iOS och betalningsspår
+
+**iOS-kedjor:** Hudson Rock redovisar en senare analys av Kirk/Ohey som beskriver ytterligare DarkSword D11-steg, bland annat `post_exploit.js`, med kod för registrering av enheter och uppladdning av `keychain-2.db` och andra databaser. Panelkod uppges även vara avsedd att samla in återställningsfraser och privata nycklar. Detta är **analys av återfunnen kod**, inte bevis för att sådana uppgifter faktiskt stulits från en besökare. Hudson Rock har inte oberoende återskapat ett lyckat intrång i en fysisk iPhone. [Hudson Rock, 17 november](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/).
+
+**iOS 26:** Ohey har observerat en kodväg till `C10/b.html` och `rce_worker_26.x.js` vid en iOS 26.3-märkt förfrågan, men kedjans egen logg anger `usable_grade=DEAD weaponized=false`. Detta är **inte** belägg för ett fungerande iOS 26-exploit eller en komprometterad enhet. [Hudson Rock, 17 november](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/).
+
+**Kryptobelopp – viktig precisering:** De omkring 7 150 USD som tidigare nämnts är observerade **mottagna plånbokstransaktioner**, inte en fastställd stöldsumma. StepSecurity redovisar att Galaxy Digitals Alex Thorn uppskattat möjliga offeröverföringar till cirka **2 300 USD**, eftersom en del Bitcoin-transaktioner kan ha varit angriparens egna medel. Även denna lägre siffra är en **extern uppskattning**, inte en verifierad totalsumma. StepSecurity noterar också att en av TRON-plånböckerna användes redan i mars 2026. [StepSecurity, uppdaterad 17 november](https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer).
+
+**Kvarstående osäkerhet:** Inga nya belägg har framkommit för antal stulna betalkort, lyckade iOS-komprometteringar eller en svensk besökarskada. Optimizelys officiella status står fortsatt på **Monitoring** vid kontroll den 17 november. [Optimizelys status](https://status.optimizely.com/).
 
 ## Svensk påverkan
 
