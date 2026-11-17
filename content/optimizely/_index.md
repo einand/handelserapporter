@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.04 · 17 november 2026**
+**Rapportversion 1.05 · 17 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -21,190 +21,190 @@ Den 16 november 2026 identifierade säkerhetsforskaren **Scott Helme (Report URI
 
 ## Kartläggning av 178 rapporterade poster
 
-Tabellen återger den sekundära [Minuto60-sammanställningen](https://www.minuto60.com/vida-moderna/las-178-organizaciones-afectadas-ciberataque-hoy-optimizely-javascript-hacker/19066) och ska **inte** tolkas som 178 unika verifierade domäner eller intrång. Regionala varumärken och vissa dubbletter förekommer. Exakta domäner saknas för de flesta posterna i denna sammanställning; dessa markeras därför som ej verifierade. En enskild domän som nämns i den tekniska primärkällan är `client.home-design.ikea.com`, men tabellen anger inte domän för andra poster utan separat källverifiering.
+Tabellen är nu avstämd mot **[Report URI:s ursprungliga domänförteckning, 16 november 2026](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/)**. Samtliga 178 poster har en eller flera identifierade domäner i primärkällan. För ett fåtal poster visar primärkällan bara de första domänerna följt av ”+ fler”; de återstående namnen är inte publicerade i den synliga tabellen. Vissa poster avser test- och stagingmiljöer, varumärken i samma koncern eller dubbletter. **Verifierad här betyder att domänen finns i forskarnas dokumenterade fynd från 16 november, inte att den är infekterad i dag eller att företagets interna system har hackats.**
 
 <div id="organisationstabell" style="overflow-x:auto;max-width:100%">
 <table>
-<thead><tr><th>Nr</th><th>Organisation eller webbplatsgrupp</th><th>Verifierad exakt domän</th></tr></thead>
+<thead><tr><th>Nr</th><th>Organisation eller webbplatsgrupp</th><th>Domäner i Report URI:s fynd</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Paychex</td><td>Ej verifierad</td></tr>
-<tr><td>2</td><td>HSBC USA</td><td>Ej verifierad</td></tr>
-<tr><td>3</td><td>Equifax</td><td>Ej verifierad</td></tr>
-<tr><td>4</td><td>SmartAsset</td><td>Ej verifierad</td></tr>
-<tr><td>5</td><td>HSBC Hongkong</td><td>Ej verifierad</td></tr>
-<tr><td>6</td><td>ABN AMRO</td><td>Ej verifierad</td></tr>
-<tr><td>7</td><td>TaxAct</td><td>Ej verifierad</td></tr>
-<tr><td>8</td><td>HSBC Mexiko</td><td>Ej verifierad</td></tr>
-<tr><td>9</td><td>HSBC Singapore</td><td>Ej verifierad</td></tr>
-<tr><td>10</td><td>NetCredit</td><td>Ej verifierad</td></tr>
-<tr><td>11</td><td>Associated Bank</td><td>Ej verifierad</td></tr>
-<tr><td>12</td><td>S-Pankki</td><td>Ej verifierad</td></tr>
-<tr><td>13</td><td>Equifax Kanada</td><td>Ej verifierad</td></tr>
-<tr><td>14</td><td>Equifax Storbritannien</td><td>Ej verifierad</td></tr>
-<tr><td>15</td><td>The Work Number (Equifax)</td><td>Ej verifierad</td></tr>
-<tr><td>16</td><td>Funding Circle</td><td>Ej verifierad</td></tr>
-<tr><td>17</td><td>HSBC Australien</td><td>Ej verifierad</td></tr>
-<tr><td>18</td><td>CashNetUSA</td><td>Ej verifierad</td></tr>
-<tr><td>19</td><td>OnDeck</td><td>Ej verifierad</td></tr>
-<tr><td>20</td><td>ICS Cards</td><td>Ej verifierad</td></tr>
-<tr><td>21</td><td>HSBC Förenade Arabemiraten</td><td>Ej verifierad</td></tr>
-<tr><td>22</td><td>HSBC Malaysia</td><td>Ej verifierad</td></tr>
-<tr><td>23</td><td>Rest Super</td><td>Ej verifierad</td></tr>
-<tr><td>24</td><td>HSBC Taiwan</td><td>Ej verifierad</td></tr>
-<tr><td>25</td><td>HSBC Vietnam</td><td>Ej verifierad</td></tr>
-<tr><td>26</td><td>HSBC Egypten</td><td>Ej verifierad</td></tr>
-<tr><td>27</td><td>HSBC Filippinerna</td><td>Ej verifierad</td></tr>
-<tr><td>28</td><td>SmartAdvisor Match (SmartAsset)</td><td>Ej verifierad</td></tr>
-<tr><td>29</td><td>Compare Club</td><td>Ej verifierad</td></tr>
-<tr><td>30</td><td>ABN AMRO Lease</td><td>Ej verifierad</td></tr>
-<tr><td>31</td><td>Energy Scout</td><td>Ej verifierad</td></tr>
-<tr><td>32</td><td>Hang Seng Investment</td><td>Ej verifierad</td></tr>
-<tr><td>33</td><td>Zoom</td><td>Ej verifierad</td></tr>
-<tr><td>34</td><td>Bitly</td><td>Ej verifierad</td></tr>
-<tr><td>35</td><td>Salesforce</td><td>Ej verifierad</td></tr>
-<tr><td>36</td><td>GitLab</td><td>Ej verifierad</td></tr>
-<tr><td>37</td><td>Optimizely</td><td>Ej verifierad</td></tr>
-<tr><td>38</td><td>Mixpanel</td><td>Ej verifierad</td></tr>
-<tr><td>39</td><td>Typeform</td><td>Ej verifierad</td></tr>
-<tr><td>40</td><td>InMotion Hosting</td><td>Ej verifierad</td></tr>
-<tr><td>41</td><td>Wasabi</td><td>Ej verifierad</td></tr>
-<tr><td>42</td><td>Perforce / Zend / Puppet</td><td>Ej verifierad</td></tr>
-<tr><td>43</td><td>Tableau</td><td>Ej verifierad</td></tr>
-<tr><td>44</td><td>Hootsuite</td><td>Ej verifierad</td></tr>
-<tr><td>45</td><td>Smartsheet</td><td>Ej verifierad</td></tr>
-<tr><td>46</td><td>MuleSoft</td><td>Ej verifierad</td></tr>
-<tr><td>47</td><td>Thales / Imperva</td><td>Ej verifierad</td></tr>
-<tr><td>48</td><td>Tricentis</td><td>Ej verifierad</td></tr>
-<tr><td>49</td><td>Web Hosting Hub</td><td>Ej verifierad</td></tr>
-<tr><td>50</td><td>QR Code Generator</td><td>Ej verifierad</td></tr>
-<tr><td>51</td><td>ServiceChannel</td><td>Ej verifierad</td></tr>
-<tr><td>52</td><td>Brandfolder</td><td>Ej verifierad</td></tr>
-<tr><td>53</td><td>Intelex</td><td>Ej verifierad</td></tr>
-<tr><td>54</td><td>Enverus</td><td>Ej verifierad</td></tr>
-<tr><td>55</td><td>Accruent</td><td>Ej verifierad</td></tr>
-<tr><td>56</td><td>IKEA</td><td>Ej verifierad</td></tr>
-<tr><td>57</td><td>ASOS</td><td>Ej verifierad</td></tr>
-<tr><td>58</td><td>Mattel</td><td>Ej verifierad</td></tr>
-<tr><td>59</td><td>American Eagle</td><td>Ej verifierad</td></tr>
-<tr><td>60</td><td>Scheels</td><td>Ej verifierad</td></tr>
-<tr><td>61</td><td>Ariat</td><td>Ej verifierad</td></tr>
-<tr><td>62</td><td>American Girl</td><td>Ej verifierad</td></tr>
-<tr><td>63</td><td>StackSocial</td><td>Ej verifierad</td></tr>
-<tr><td>64</td><td>Crocs Indien</td><td>Ej verifierad</td></tr>
-<tr><td>65</td><td>Levi's Japan</td><td>Ej verifierad</td></tr>
-<tr><td>66</td><td>Todd Snyder</td><td>Ej verifierad</td></tr>
-<tr><td>67</td><td>Levi's Indonesien</td><td>Ej verifierad</td></tr>
-<tr><td>68</td><td>Just Russel</td><td>Ej verifierad</td></tr>
-<tr><td>69</td><td>Loloi Rugs</td><td>Ej verifierad</td></tr>
-<tr><td>70</td><td>Levi's Australien</td><td>Ej verifierad</td></tr>
-<tr><td>71</td><td>Levi's Malaysia</td><td>Ej verifierad</td></tr>
-<tr><td>72</td><td>Levi's Filippinerna</td><td>Ej verifierad</td></tr>
-<tr><td>73</td><td>Levi's Singapore</td><td>Ej verifierad</td></tr>
-<tr><td>74</td><td>Levi's Sydkorea</td><td>Ej verifierad</td></tr>
-<tr><td>75</td><td>Levi's Nya Zeeland</td><td>Ej verifierad</td></tr>
-<tr><td>76</td><td>Peacock</td><td>Ej verifierad</td></tr>
-<tr><td>77</td><td>D&amp;D Beyond</td><td>Ej verifierad</td></tr>
-<tr><td>78</td><td>Wizards of the Coast</td><td>Ej verifierad</td></tr>
-<tr><td>79</td><td>NOW TV</td><td>Ej verifierad</td></tr>
-<tr><td>80</td><td>Zattoo</td><td>Ej verifierad</td></tr>
-<tr><td>81</td><td>Crave</td><td>Ej verifierad</td></tr>
-<tr><td>82</td><td>Starz</td><td>Ej verifierad</td></tr>
-<tr><td>83</td><td>SkyShowtime</td><td>Ej verifierad</td></tr>
-<tr><td>84</td><td>Bravo</td><td>Ej verifierad</td></tr>
-<tr><td>85</td><td>SeaWorld</td><td>Ej verifierad</td></tr>
-<tr><td>86</td><td>WOW (Sky Deutschland)</td><td>Ej verifierad</td></tr>
-<tr><td>87</td><td>NOW Italien</td><td>Ej verifierad</td></tr>
-<tr><td>88</td><td>CNN</td><td>Ej verifierad</td></tr>
-<tr><td>89</td><td>BBC</td><td>Ej verifierad</td></tr>
-<tr><td>90</td><td>Fox News</td><td>Ej verifierad</td></tr>
-<tr><td>91</td><td>NPR</td><td>Ej verifierad</td></tr>
-<tr><td>92</td><td>CTV News</td><td>Ej verifierad</td></tr>
-<tr><td>93</td><td>Fox Sports</td><td>Ej verifierad</td></tr>
-<tr><td>94</td><td>BNN Bloomberg / CP24</td><td>Ej verifierad</td></tr>
-<tr><td>95</td><td>TSN</td><td>Ej verifierad</td></tr>
-<tr><td>96</td><td>Top Gear</td><td>Ej verifierad</td></tr>
-<tr><td>97</td><td>BBC Earth</td><td>Ej verifierad</td></tr>
-<tr><td>98</td><td>Alaska Airlines / Hawaiian Airlines</td><td>Ej verifierad</td></tr>
-<tr><td>99</td><td>Transavia</td><td>Ej verifierad</td></tr>
-<tr><td>100</td><td>Air France-KLM</td><td>Ej verifierad</td></tr>
-<tr><td>101</td><td>KLM Nederländerna</td><td>Ej verifierad</td></tr>
-<tr><td>102</td><td>Trafalgar</td><td>Ej verifierad</td></tr>
-<tr><td>103</td><td>Contiki</td><td>Ej verifierad</td></tr>
-<tr><td>104</td><td>Insight Vacations</td><td>Ej verifierad</td></tr>
-<tr><td>105</td><td>The Travel Corporation</td><td>Ej verifierad</td></tr>
-<tr><td>106</td><td>Costsaver</td><td>Ej verifierad</td></tr>
-<tr><td>107</td><td>Invisalign</td><td>Ej verifierad</td></tr>
-<tr><td>108</td><td>Takeda</td><td>Ej verifierad</td></tr>
-<tr><td>109</td><td>Covetrus</td><td>Ej verifierad</td></tr>
-<tr><td>110</td><td>iTero (Align)</td><td>Ej verifierad</td></tr>
-<tr><td>111</td><td>Covetrus Pharmacy</td><td>Ej verifierad</td></tr>
-<tr><td>112</td><td>myCovetrus</td><td>Ej verifierad</td></tr>
-<tr><td>113</td><td>RaySafe (Fluke)</td><td>Ej verifierad</td></tr>
-<tr><td>114</td><td>Takeda Oncology</td><td>Ej verifierad</td></tr>
-<tr><td>115</td><td>Fluke</td><td>Ej verifierad</td></tr>
-<tr><td>116</td><td>eMaint (Fluke)</td><td>Ej verifierad</td></tr>
-<tr><td>117</td><td>Fluke Networks</td><td>Ej verifierad</td></tr>
-<tr><td>118</td><td>Vaillant Tyskland</td><td>Ej verifierad</td></tr>
-<tr><td>119</td><td>Fluke Process Instruments</td><td>Ej verifierad</td></tr>
-<tr><td>120</td><td>Fluke Biomedical</td><td>Ej verifierad</td></tr>
-<tr><td>121</td><td>Landauer</td><td>Ej verifierad</td></tr>
-<tr><td>122</td><td>Vaillant Spanien</td><td>Ej verifierad</td></tr>
-<tr><td>123</td><td>Virgin Media</td><td>Ej verifierad</td></tr>
-<tr><td>124</td><td>Virgin Media O2</td><td>Ej verifierad</td></tr>
-<tr><td>125</td><td>Vodafone Australien</td><td>Ej verifierad</td></tr>
-<tr><td>126</td><td>O2</td><td>Ej verifierad</td></tr>
-<tr><td>127</td><td>TPG Telecom</td><td>Ej verifierad</td></tr>
-<tr><td>128</td><td>Mint Mobile</td><td>Ej verifierad</td></tr>
-<tr><td>129</td><td>TalkTalk</td><td>Ej verifierad</td></tr>
-<tr><td>130</td><td>Ledger</td><td>Ej verifierad</td></tr>
-<tr><td>131</td><td>IG</td><td>Ej verifierad</td></tr>
-<tr><td>132</td><td>OANDA / Coinpass</td><td>Ej verifierad</td></tr>
-<tr><td>133</td><td>Interactive Investor</td><td>Ej verifierad</td></tr>
-<tr><td>134</td><td>TMS Brokers</td><td>Ej verifierad</td></tr>
-<tr><td>135</td><td>Betashares</td><td>Ej verifierad</td></tr>
-<tr><td>136</td><td>Asurion / uBreakiFix</td><td>Ej verifierad</td></tr>
-<tr><td>137</td><td>Mutual of Omaha</td><td>Ej verifierad</td></tr>
-<tr><td>138</td><td>Admiral</td><td>Ej verifierad</td></tr>
-<tr><td>139</td><td>Securian Financial</td><td>Ej verifierad</td></tr>
-<tr><td>140</td><td>eRenterPlan</td><td>Ej verifierad</td></tr>
-<tr><td>141</td><td>AKA (dansk arbetslöshetskassa)</td><td>Ej verifierad</td></tr>
-<tr><td>142</td><td>Buildium</td><td>Ej verifierad</td></tr>
-<tr><td>143</td><td>Loft Living Apartments</td><td>Ej verifierad</td></tr>
-<tr><td>144</td><td>Buildium</td><td>Ej verifierad</td></tr>
-<tr><td>145</td><td>HireAHelper</td><td>Ej verifierad</td></tr>
-<tr><td>146</td><td>Flytte och associerade jämförelsesidor</td><td>Ej verifierad</td></tr>
-<tr><td>147</td><td>MovingPlace</td><td>Ej verifierad</td></tr>
-<tr><td>148</td><td>Ospecificerade restaurangbeställningssidor</td><td>Ej verifierad</td></tr>
-<tr><td>149</td><td>Heineken</td><td>Ej verifierad</td></tr>
-<tr><td>150</td><td>Home Chef</td><td>Ej verifierad</td></tr>
-<tr><td>151</td><td>Starbucks Kanada</td><td>Ej verifierad</td></tr>
-<tr><td>152</td><td>Cinnabon</td><td>Ej verifierad</td></tr>
-<tr><td>153</td><td>Resideo</td><td>Ej verifierad</td></tr>
-<tr><td>154</td><td>Honeywell Home</td><td>Ej verifierad</td></tr>
-<tr><td>155</td><td>myQ (Chamberlain)</td><td>Ej verifierad</td></tr>
-<tr><td>156</td><td>Chamberlain</td><td>Ej verifierad</td></tr>
-<tr><td>157</td><td>First Alert</td><td>Ej verifierad</td></tr>
-<tr><td>158</td><td>Change</td><td>Ej verifierad</td></tr>
-<tr><td>159</td><td>ASPCA</td><td>Ej verifierad</td></tr>
-<tr><td>160</td><td>UNICEF USA</td><td>Ej verifierad</td></tr>
-<tr><td>161</td><td>DonorsChoose</td><td>Ej verifierad</td></tr>
-<tr><td>162</td><td>Betsson</td><td>Ej verifierad</td></tr>
-<tr><td>163</td><td>PokerStars</td><td>Ej verifierad</td></tr>
-<tr><td>164</td><td>Tombola</td><td>Ej verifierad</td></tr>
-<tr><td>165</td><td>Betfred</td><td>Ej verifierad</td></tr>
-<tr><td>166</td><td>Freshfields</td><td>Ej verifierad</td></tr>
-<tr><td>167</td><td>CohnReznick</td><td>Ej verifierad</td></tr>
-<tr><td>168</td><td>Baringa</td><td>Ej verifierad</td></tr>
-<tr><td>169</td><td>Cro Metrics</td><td>Ej verifierad</td></tr>
-<tr><td>170</td><td>ShipStation / ShipEngine</td><td>Ej verifierad</td></tr>
-<tr><td>171</td><td>Stamps.com</td><td>Ej verifierad</td></tr>
-<tr><td>172</td><td>ShipEngine</td><td>Ej verifierad</td></tr>
-<tr><td>173</td><td>Lucid Motors</td><td>Ej verifierad</td></tr>
-<tr><td>174</td><td>O'Brien Glass</td><td>Ej verifierad</td></tr>
-<tr><td>175</td><td>Chevrolet-återförsäljarnätverk (Bill Rapp med flera)</td><td>Ej verifierad</td></tr>
-<tr><td>176</td><td>Walden University</td><td>Ej verifierad</td></tr>
-<tr><td>177</td><td>Perlego</td><td>Ej verifierad</td></tr>
-<tr><td>178</td><td>Chamberlain University</td><td>Ej verifierad</td></tr>
+<tr><td>1</td><td>Paychex</td><td><code>www.paychex.com</code></td></tr>
+<tr><td>2</td><td>HSBC USA</td><td><code>www.us.hsbc.com</code></td></tr>
+<tr><td>3</td><td>Equifax</td><td><code>equifax.com, my.equifax.com, signin.my.equifax.com, www.equifax.com</code></td></tr>
+<tr><td>4</td><td>SmartAsset</td><td><code>smartasset.com</code></td></tr>
+<tr><td>5</td><td>HSBC Hongkong</td><td><code>www.hsbc.com.hk</code></td></tr>
+<tr><td>6</td><td>ABN AMRO</td><td><code>www.abnamro.de, www.abnamro.nl, www.abnamromeespierson.be</code></td></tr>
+<tr><td>7</td><td>TaxAct</td><td><code>www.taxact.com</code></td></tr>
+<tr><td>8</td><td>HSBC Mexiko</td><td><code>www.hsbc.com.mx</code></td></tr>
+<tr><td>9</td><td>HSBC Singapore</td><td><code>www.insurance.hsbc.com.sg</code></td></tr>
+<tr><td>10</td><td>NetCredit</td><td><code>www.netcredit.com</code></td></tr>
+<tr><td>11</td><td>Associated Bank</td><td><code>www.associatedbank.com</code></td></tr>
+<tr><td>12</td><td>S-Pankki</td><td><code>www.s-pankki.fi</code></td></tr>
+<tr><td>13</td><td>Equifax Kanada</td><td><code>my.equifax.ca, www.equifax.ca</code></td></tr>
+<tr><td>14</td><td>Equifax Storbritannien</td><td><code>equifax.co.uk</code></td></tr>
+<tr><td>15</td><td>The Work Number (Equifax)</td><td><code>theworknumber.com</code></td></tr>
+<tr><td>16</td><td>Funding Circle</td><td><code>fundingcircle.com, www.fundingcircle.com</code></td></tr>
+<tr><td>17</td><td>HSBC Australien</td><td><code>www.hsbc.com.au</code></td></tr>
+<tr><td>18</td><td>CashNetUSA</td><td><code>www.cashnetusa.com</code></td></tr>
+<tr><td>19</td><td>OnDeck</td><td><code>www.ondeck.com</code></td></tr>
+<tr><td>20</td><td>ICS Cards</td><td><code>www.icscards.nl</code></td></tr>
+<tr><td>21</td><td>HSBC Förenade Arabemiraten</td><td><code>www.hsbc.ae</code></td></tr>
+<tr><td>22</td><td>HSBC Malaysia</td><td><code>www.hsbc.com.my, www.hsbcamanah.com.my</code></td></tr>
+<tr><td>23</td><td>Rest Super</td><td><code>rest.com.au</code></td></tr>
+<tr><td>24</td><td>HSBC Taiwan</td><td><code>www.hsbc.com.tw</code></td></tr>
+<tr><td>25</td><td>HSBC Vietnam</td><td><code>www.hsbc.com.vn</code></td></tr>
+<tr><td>26</td><td>HSBC Egypten</td><td><code>www.hsbc.com.eg</code></td></tr>
+<tr><td>27</td><td>HSBC Filippinerna</td><td><code>www.hsbc.com.ph</code></td></tr>
+<tr><td>28</td><td>SmartAdvisor Match (SmartAsset)</td><td><code>smartadvisormatch.com</code></td></tr>
+<tr><td>29</td><td>Compare Club</td><td><code>compareclub.com.au</code></td></tr>
+<tr><td>30</td><td>ABN AMRO Lease</td><td><code>abnamrolease.com</code></td></tr>
+<tr><td>31</td><td>Energy Scout</td><td><code>energyscout.com.au</code></td></tr>
+<tr><td>32</td><td>Hang Seng Investment</td><td><code>www.hangsenginvestment.com</code></td></tr>
+<tr><td>33</td><td>Zoom</td><td><code>www.zoom.com, zoom.com, zoom.us</code></td></tr>
+<tr><td>34</td><td>Bitly</td><td><code>arcg.is, bit.ly, bitly.com</code></td></tr>
+<tr><td>35</td><td>Salesforce</td><td><code>evergage.com, exacttarget.com, pardot.com, salesforce-scrt.com (+4 ej utskrivna)</code></td></tr>
+<tr><td>36</td><td>GitLab</td><td><code>about.gitlab.com, gitlab.com</code></td></tr>
+<tr><td>37</td><td>Optimizely</td><td><code>home.optimizely.com, login.optimizely.com, optimizely.com, prep.login.optimizely.com (+1 ej utskriven)</code></td></tr>
+<tr><td>38</td><td>Mixpanel</td><td><code>mixpanel.com</code></td></tr>
+<tr><td>39</td><td>Typeform</td><td><code>typeform.com, www.typeform.com</code></td></tr>
+<tr><td>40</td><td>InMotion Hosting</td><td><code>www.inmotionhosting.com</code></td></tr>
+<tr><td>41</td><td>Wasabi</td><td><code>wasabi.com, wasabisys.com</code></td></tr>
+<tr><td>42</td><td>Perforce / Zend / Puppet</td><td><code>www.perforce.com, www.puppet.com, zend.com</code></td></tr>
+<tr><td>43</td><td>Tableau</td><td><code>www.tableau.com</code></td></tr>
+<tr><td>44</td><td>Hootsuite</td><td><code>hootsuite.com, www.hootsuite.com</code></td></tr>
+<tr><td>45</td><td>Smartsheet</td><td><code>de.smartsheet.com, es.smartsheet.com, fr.smartsheet.com, help.smartsheet.com (+2 ej utskrivna)</code></td></tr>
+<tr><td>46</td><td>MuleSoft</td><td><code>mulesoft.com, www.mulesoft.com</code></td></tr>
+<tr><td>47</td><td>Thales / Imperva</td><td><code>community-cybersec.thalesgroup.com, imperva.com</code></td></tr>
+<tr><td>48</td><td>Tricentis</td><td><code>www.tricentis.com</code></td></tr>
+<tr><td>49</td><td>Web Hosting Hub</td><td><code>www.webhostinghub.com</code></td></tr>
+<tr><td>50</td><td>QR Code Generator</td><td><code>login.qr-code-generator.com, www.qr-code-generator.com</code></td></tr>
+<tr><td>51</td><td>ServiceChannel</td><td><code>preview.servicechannel.com, servicechannel.com, servicechannel.us</code></td></tr>
+<tr><td>52</td><td>Brandfolder</td><td><code>brandfolder.com</code></td></tr>
+<tr><td>53</td><td>Intelex</td><td><code>www.intelex.com</code></td></tr>
+<tr><td>54</td><td>Enverus</td><td><code>www.enverus.com</code></td></tr>
+<tr><td>55</td><td>Accruent</td><td><code>www.accruent.com</code></td></tr>
+<tr><td>56</td><td>IKEA</td><td><code>client.home-design.ikea.com</code></td></tr>
+<tr><td>57</td><td>ASOS</td><td><code>asos.com</code></td></tr>
+<tr><td>58</td><td>Mattel</td><td><code>creations.mattel.com</code></td></tr>
+<tr><td>59</td><td>American Eagle</td><td><code>www.ae.com</code></td></tr>
+<tr><td>60</td><td>Scheels</td><td><code>scheels.com, www.scheels.com</code></td></tr>
+<tr><td>61</td><td>Ariat</td><td><code>www.ariat.com</code></td></tr>
+<tr><td>62</td><td>American Girl</td><td><code>www.americangirl.com</code></td></tr>
+<tr><td>63</td><td>StackSocial</td><td><code>www.stacksocial.com</code></td></tr>
+<tr><td>64</td><td>Crocs Indien</td><td><code>www.crocs.in</code></td></tr>
+<tr><td>65</td><td>Levi's Japan</td><td><code>levi.jp</code></td></tr>
+<tr><td>66</td><td>Todd Snyder</td><td><code>www.toddsnyder.com</code></td></tr>
+<tr><td>67</td><td>Levi's Indonesien</td><td><code>levi.co.id</code></td></tr>
+<tr><td>68</td><td>Just Russel</td><td><code>app.brt-4076-credits-in-order-summary.justrussel.de, app.rph-487-customer-can-switch-their-pet-to.justrussel.be, app.rph-487-customer-can-switch-their-pet-to.justrussel.com, app.rph-487-customer-can-switch-their-pet-to.justrussel.fr (+1 ej utskriven)</code></td></tr>
+<tr><td>69</td><td>Loloi Rugs</td><td><code>www.loloirugs.com</code></td></tr>
+<tr><td>70</td><td>Levi's Australien</td><td><code>levis.com.au</code></td></tr>
+<tr><td>71</td><td>Levi's Malaysia</td><td><code>levi.com.my</code></td></tr>
+<tr><td>72</td><td>Levi's Filippinerna</td><td><code>levi.com.ph</code></td></tr>
+<tr><td>73</td><td>Levi's Singapore</td><td><code>levi.com.sg</code></td></tr>
+<tr><td>74</td><td>Levi's Sydkorea</td><td><code>levi.co.kr</code></td></tr>
+<tr><td>75</td><td>Levi's Nya Zeeland</td><td><code>levis.co.nz</code></td></tr>
+<tr><td>76</td><td>Peacock</td><td><code>peacocktv.com, www.peacocktv.com</code></td></tr>
+<tr><td>77</td><td>D&amp;D Beyond</td><td><code>dndbeyond.com, www.dndbeyond.com</code></td></tr>
+<tr><td>78</td><td>Wizards of the Coast</td><td><code>secretlair.wizards.com</code></td></tr>
+<tr><td>79</td><td>NOW TV</td><td><code>nowtv.com, www.nowtv.com</code></td></tr>
+<tr><td>80</td><td>Zattoo</td><td><code>zattoo.com</code></td></tr>
+<tr><td>81</td><td>Crave</td><td><code>www.crave.ca</code></td></tr>
+<tr><td>82</td><td>Starz</td><td><code>www.starz.com</code></td></tr>
+<tr><td>83</td><td>SkyShowtime</td><td><code>www.skyshowtime.com</code></td></tr>
+<tr><td>84</td><td>Bravo</td><td><code>www.bravotv.com</code></td></tr>
+<tr><td>85</td><td>SeaWorld</td><td><code>buschgardens.com, seaworld.com</code></td></tr>
+<tr><td>86</td><td>WOW (Sky Deutschland)</td><td><code>www.wowtv.de</code></td></tr>
+<tr><td>87</td><td>NOW Italien</td><td><code>www.nowtv.it</code></td></tr>
+<tr><td>88</td><td>CNN</td><td><code>cnn.com, edition.cnn.com, us.cnn.com, www.cnn.com</code></td></tr>
+<tr><td>89</td><td>BBC</td><td><code>www.bbc.co.uk, www.bbc.com</code></td></tr>
+<tr><td>90</td><td>Fox News</td><td><code>www.foxnews.com</code></td></tr>
+<tr><td>91</td><td>NPR</td><td><code>legacy-s1.npr.org, legacy.stage.npr.org, media.stage.npr.org, s-s1-origin.npr.org</code></td></tr>
+<tr><td>92</td><td>CTV News</td><td><code>www.ctvnews.ca</code></td></tr>
+<tr><td>93</td><td>Fox Sports</td><td><code>foxsports.com</code></td></tr>
+<tr><td>94</td><td>BNN Bloomberg / CP24</td><td><code>www.bnnbloomberg.ca, www.cp24.com</code></td></tr>
+<tr><td>95</td><td>TSN</td><td><code>www.tsn.ca</code></td></tr>
+<tr><td>96</td><td>Top Gear</td><td><code>www.topgear.com</code></td></tr>
+<tr><td>97</td><td>BBC Earth</td><td><code>www.bbcearth.com</code></td></tr>
+<tr><td>98</td><td>Alaska Airlines / Hawaiian Airlines</td><td><code>www.alaskaair.com, www.hawaiianairlines.com</code></td></tr>
+<tr><td>99</td><td>Transavia</td><td><code>www.transavia.com</code></td></tr>
+<tr><td>100</td><td>Air France-KLM</td><td><code>liberia.klm.com, russia.airfrance.com, www.klm.be, wwws.airfrance.fr</code></td></tr>
+<tr><td>101</td><td>KLM Nederländerna</td><td><code>deal.klm.nl</code></td></tr>
+<tr><td>102</td><td>Trafalgar</td><td><code>www.trafalgar.com</code></td></tr>
+<tr><td>103</td><td>Contiki</td><td><code>www.contiki.com</code></td></tr>
+<tr><td>104</td><td>Insight Vacations</td><td><code>www.insightvacations.com</code></td></tr>
+<tr><td>105</td><td>The Travel Corporation</td><td><code>uat.costco.ttc.com</code></td></tr>
+<tr><td>106</td><td>Costsaver</td><td><code>www.costsavertour.com</code></td></tr>
+<tr><td>107</td><td>Invisalign</td><td><code>invisalign.com, www.invisalign.com</code></td></tr>
+<tr><td>108</td><td>Takeda</td><td><code>www.takeda.com</code></td></tr>
+<tr><td>109</td><td>Covetrus</td><td><code>covetrus.com</code></td></tr>
+<tr><td>110</td><td>iTero (Align)</td><td><code>itero.com</code></td></tr>
+<tr><td>111</td><td>Covetrus Pharmacy</td><td><code>eastfieldveterinary.covetruspharmacy.com</code></td></tr>
+<tr><td>112</td><td>myCovetrus</td><td><code>www.mycovetrus.com</code></td></tr>
+<tr><td>113</td><td>RaySafe (Fluke)</td><td><code>www.raysafe.com</code></td></tr>
+<tr><td>114</td><td>Takeda Oncology</td><td><code>www.takedaoncology.com</code></td></tr>
+<tr><td>115</td><td>Fluke</td><td><code>fluke.com</code></td></tr>
+<tr><td>116</td><td>eMaint (Fluke)</td><td><code>www.emaint.com</code></td></tr>
+<tr><td>117</td><td>Fluke Networks</td><td><code>www.flukenetworks.com</code></td></tr>
+<tr><td>118</td><td>Vaillant Tyskland</td><td><code>www.vaillant.de</code></td></tr>
+<tr><td>119</td><td>Fluke Process Instruments</td><td><code>www.flukeprocessinstruments.com</code></td></tr>
+<tr><td>120</td><td>Fluke Biomedical</td><td><code>www.flukebiomedical.com</code></td></tr>
+<tr><td>121</td><td>Landauer</td><td><code>www.landauer.com</code></td></tr>
+<tr><td>122</td><td>Vaillant Spanien</td><td><code>www.vaillant.es</code></td></tr>
+<tr><td>123</td><td>Virgin Media</td><td><code>virginmedia.com, www.virginmedia.com</code></td></tr>
+<tr><td>124</td><td>Virgin Media O2</td><td><code>virginmediao2.co.uk, www.virginmediao2.co.uk</code></td></tr>
+<tr><td>125</td><td>Vodafone Australien</td><td><code>www.vodafone.com.au</code></td></tr>
+<tr><td>126</td><td>O2</td><td><code>o2.co.uk, www.o2.co.uk</code></td></tr>
+<tr><td>127</td><td>TPG Telecom</td><td><code>www.tpg.com.au</code></td></tr>
+<tr><td>128</td><td>Mint Mobile</td><td><code>www.mintmobile.com</code></td></tr>
+<tr><td>129</td><td>TalkTalk</td><td><code>talktalk.co.uk, www.talktalk.co.uk</code></td></tr>
+<tr><td>130</td><td>Ledger</td><td><code>ledger.com, www.ledger.com</code></td></tr>
+<tr><td>131</td><td>IG</td><td><code>www.ig.com</code></td></tr>
+<tr><td>132</td><td>OANDA / Coinpass</td><td><code>oanda.com, www.oanda.com</code></td></tr>
+<tr><td>133</td><td>Interactive Investor</td><td><code>www.ii.co.uk</code></td></tr>
+<tr><td>134</td><td>TMS Brokers</td><td><code>www.tms.pl</code></td></tr>
+<tr><td>135</td><td>Betashares</td><td><code>www.betashares.com.au</code></td></tr>
+<tr><td>136</td><td>Asurion / uBreakiFix</td><td><code>www.asurion.com, www.ubreakifix.com</code></td></tr>
+<tr><td>137</td><td>Mutual of Omaha</td><td><code>moocat.mutualofomaha.com, www.mutualofomaha.com</code></td></tr>
+<tr><td>138</td><td>Admiral</td><td><code>www.admiral.com</code></td></tr>
+<tr><td>139</td><td>Securian Financial</td><td><code>www.securian.com</code></td></tr>
+<tr><td>140</td><td>eRenterPlan</td><td><code>erenterplan.com</code></td></tr>
+<tr><td>141</td><td>AKA (dansk arbetslöshetskassa)</td><td><code>www.aka.dk</code></td></tr>
+<tr><td>142</td><td>Buildium</td><td><code>headwayassetsllc.managebuilding.com</code></td></tr>
+<tr><td>143</td><td>Loft Living Apartments</td><td><code>theapartmentsatkeltonstation.loftliving.com</code></td></tr>
+<tr><td>144</td><td>Buildium</td><td><code>www.buildium.com</code></td></tr>
+<tr><td>145</td><td>HireAHelper</td><td><code>qa2.hireahelper.com</code></td></tr>
+<tr><td>146</td><td>Flytte och associerade jämförelsesidor</td><td><code>flytte.no</code></td></tr>
+<tr><td>147</td><td>MovingPlace</td><td><code>unionplus-qa4.movingplace.com</code></td></tr>
+<tr><td>148</td><td>Ospecificerade restaurangbeställningssidor</td><td><code>order.online</code></td></tr>
+<tr><td>149</td><td>Heineken</td><td><code>www.heineken.com</code></td></tr>
+<tr><td>150</td><td>Home Chef</td><td><code>www.homechef.com</code></td></tr>
+<tr><td>151</td><td>Starbucks Kanada</td><td><code>www.starbucks.ca</code></td></tr>
+<tr><td>152</td><td>Cinnabon</td><td><code>www.cinnabon.com</code></td></tr>
+<tr><td>153</td><td>Resideo</td><td><code>resideo.com, www.resideo.com</code></td></tr>
+<tr><td>154</td><td>Honeywell Home</td><td><code>www.honeywellhome.com</code></td></tr>
+<tr><td>155</td><td>myQ (Chamberlain)</td><td><code>www.myq.com</code></td></tr>
+<tr><td>156</td><td>Chamberlain</td><td><code>www.chamberlain.com</code></td></tr>
+<tr><td>157</td><td>First Alert</td><td><code>www.firstalert.com</code></td></tr>
+<tr><td>158</td><td>Change</td><td><code>www.change.org</code></td></tr>
+<tr><td>159</td><td>ASPCA</td><td><code>aspca.org, dev-cloudflare.aspca.org, secure.aspca.org, www.aspca.org</code></td></tr>
+<tr><td>160</td><td>UNICEF USA</td><td><code>www.unicefusa.org</code></td></tr>
+<tr><td>161</td><td>DonorsChoose</td><td><code>www.donorschoose.org</code></td></tr>
+<tr><td>162</td><td>Betsson</td><td><code>betsson.bet.ar, www.betsson.co, www.betsson.com, www.betsson1002.com</code></td></tr>
+<tr><td>163</td><td>PokerStars</td><td><code>www.pokerstars.com, www.pokerstars.de, www.pokerstars.fr, www.pokerstars.pt (+1 ej utskriven)</code></td></tr>
+<tr><td>164</td><td>Tombola</td><td><code>tombola.co.uk, tombolaarcade.co.uk, www.tombola.co.uk, www.tombola.it (+1 ej utskriven)</code></td></tr>
+<tr><td>165</td><td>Betfred</td><td><code>www.betfred.com</code></td></tr>
+<tr><td>166</td><td>Freshfields</td><td><code>www.freshfields.com</code></td></tr>
+<tr><td>167</td><td>CohnReznick</td><td><code>www.cohnreznick.com</code></td></tr>
+<tr><td>168</td><td>Baringa</td><td><code>www.baringa.com</code></td></tr>
+<tr><td>169</td><td>Cro Metrics</td><td><code>crometrics.com</code></td></tr>
+<tr><td>170</td><td>ShipStation / ShipEngine</td><td><code>shipstation.com, www.shipstation.com</code></td></tr>
+<tr><td>171</td><td>Stamps.com</td><td><code>www.stamps.com</code></td></tr>
+<tr><td>172</td><td>ShipEngine</td><td><code>www.shipengine.com</code></td></tr>
+<tr><td>173</td><td>Lucid Motors</td><td><code>lucidmotors.com</code></td></tr>
+<tr><td>174</td><td>O'Brien Glass</td><td><code>www.obrien.com.au</code></td></tr>
+<tr><td>175</td><td>Chevrolet-återförsäljarnätverk (Bill Rapp med flera)</td><td><code>www.billrappchevy.com</code></td></tr>
+<tr><td>176</td><td>Walden University</td><td><code>www.waldenu.edu</code></td></tr>
+<tr><td>177</td><td>Perlego</td><td><code>www.perlego.com</code></td></tr>
+<tr><td>178</td><td>Chamberlain University</td><td><code>www.chamberlain.edu</code></td></tr>
 </tbody></table>
 </div>
 
