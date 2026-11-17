@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.07 · 17 november 2026**
+**Rapportversion 1.08 · 18 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -247,6 +247,14 @@ Enligt Report URI hade antalet fortfarande infekterade skript i deras urval sjun
 **Kryptobelopp – viktig precisering:** De omkring 7 150 USD som tidigare nämnts är observerade **mottagna plånbokstransaktioner**, inte en fastställd stöldsumma. StepSecurity redovisar att Galaxy Digitals Alex Thorn uppskattat möjliga offeröverföringar till cirka **2 300 USD**, eftersom en del Bitcoin-transaktioner kan ha varit angriparens egna medel. Även denna lägre siffra är en **extern uppskattning**, inte en verifierad totalsumma. StepSecurity noterar också att en av TRON-plånböckerna användes redan i mars 2026. [StepSecurity, uppdaterad 17 november](https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer).
 
 **Kvarstående osäkerhet:** Inga nya belägg har framkommit för antal stulna betalkort, lyckade iOS-komprometteringar eller en svensk besökarskada. Optimizelys officiella status står fortsatt på **Monitoring** vid kontroll den 17 november. [Optimizelys status](https://status.optimizely.com/).
+
+## Hur CSP påverkade angreppet
+
+**Ny dokumenterad teknisk analys (Report URI, 16–17 november):** Forskarna utvärderade Content Security Policy (CSP) på **256 värdar** kopplade till de berörda organisationerna. Resultaten som redovisas omfattar **68 utan CSP**, **50 där CSP tillät både skadlig kod och datatrafik**, **17 där koden kunde köras men `connect-src` blockerade utgående datatrafik**, och **24 där CSP blockerade den skadliga koden helt**. Dessa kategorier summerar till **159**, inte 256: för återstående **97 värdar är kategorisering okänd i den publicerade sammanställningen**. Andelen 24 av 159 är cirka 15 %, men detta får inte beskrivas som 15 % av samtliga 256 värdar. Analysen visar vad CSP-konfigurationerna tillät eller blockerade, inte hur många besökare som faktiskt fick data stulna.
+
+Att tillåta `cdn.optimizely.com` räckte inte eftersom den skadliga koden levererades från den betrodda domänen. En strikt `script-src` kunde blockera den externa laddningen. `strict-dynamic` kunde däremot ge ett betrott skript rätt att ladda nästa skript. `unsafe-eval` kunde låta den inbäddade reservvarianten köras trots blockering av angriparens domän. En restriktiv `connect-src` kunde hindra kort-, cookie- och skärmbildsdata från att skickas till angriparens server, men inte hindra lokal manipulation av kryptoadresser. Report URI nämner HSBC som exempel på att en inbäddad variant kunde köras samtidigt som utgående stöldtrafik blockerades. Detta ska inte tolkas som verifierad datastöld hos HSBC.
+
+**Åtgärder för webbplatsägare:** granska `Project JavaScript` och experimentkod, kontrollera användare och API-token med skrivåtkomst, rotera berörda autentiseringsuppgifter, se över `script-src` och `connect-src`, undvik `unsafe-eval` där möjligt och aktivera CSP-rapportering. [Report URI:s CSP-granskning och indikatorer](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/).
 
 ## Svensk påverkan
 
