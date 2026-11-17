@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.05 · 17 november 2026**
+**Rapportversion 1.06 · 17 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -234,7 +234,9 @@ Att kod för en exploateringskedja levererades är **inte** bevis för lyckad ko
 
 Report URI redovisade cirka **7 040 USD** i mottagna kryptotransaktioner till identifierade plånböcker fram till 16 november kl. 19.25 UTC. Detta är en observerad transaktionssumma, **inte en verifierad förlustsumma för just Optimizely-angreppet**: vissa plånböcker användes redan före den 16 november. Reuters har inte kunnat fastställa hur många besökare som faktiskt drabbades eller hur många försök som lyckades. Omfattningen av eventuell kortdatastöld, cookieexfiltration och lyckad iOS-exploatering är **okänd**.
 
-Enligt Report URI hade antalet fortfarande infekterade skript i deras urval sjunkit från **169 kl. 20.56 UTC** till **ett kl. 21.52 UTC** den 16 november. Det bevisar inte att alla risker eller följdskador upphört. Optimizely uppger att sårbarheten åtgärdats och berörda konton säkrats.
+Enligt Report URI hade antalet fortfarande infekterade skript i deras urval sjunkit från **169 kl. 20.56 UTC** till **ett kl. 21.52 UTC** den 16 november. **Uppdatering 17 november:** Report URI uppger att samtliga infekterade Optimizely-filer i deras övervakade urval var rensade **16 november kl. 23.11 UTC** och därefter förblev rena vid forskarnas kontroller. Angriparens huvuddomän `1688360.cc` sattes i `clientHold` **17 november kl. 00.37 UTC** och upphörde att slå upp i DNS. Det innebär inte att redan stulna uppgifter kan återtas eller att alla eventuella följdskador upphört. Optimizelys [statusmeddelande](https://status.optimizely.com/) stod fortfarande på **Monitoring** vid kontroll den 17 november, utan ett nytt slutligt besked.
+
+**Uppdaterad betalningsspårning 17 november:** Report URI:s senare sammanställning visar omkring **7 150 USD** i mottagna transaktioner över flera kryptokedjor. Plånböcker tömdes tidigt den 17 november. Beloppet är fortfarande **inte** en verifierad förlustsumma från enbart besökare på Optimizely-kunders webbplatser, eftersom plånboks- och uttagsadresser också kopplats till tidigare aktivitet. Kortstölder och lyckade iOS-intrång saknar verifierade totalsiffror. [Report URI, uppdatering 17 november](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/), [Help Net Security, 17 november](https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/).
 
 ## Svensk påverkan
 
@@ -251,7 +253,9 @@ IKEA finns i forskarnas lista genom den specifika domänen `client.home-design.i
 - **16 november 13.43:** Kortuppgiftsskimming tillkommer i den observerade koden.
 - **16 november 17.13–17.57:** Ytterligare iOS-relaterad exploateringskod observeras.
 - **16 november 20.40–21.52:** Omfattande rensning observeras i forskarnas skripturval.
-- **17 november:** Optimizelys åtgärder och forskarnas fortsatta analyser rapporteras offentligt.
+- **16 november 23.11:** Alla infekterade Optimizely-skript i Report URI:s övervakade urval rapporteras rensade.
+- **17 november 00.37:** Angriparens huvuddomän `1688360.cc` spärras med `clientHold`.
+- **17 november:** Optimizelys åtgärder och forskarnas fortsatta analyser rapporteras offentligt; status kvarstår som Monitoring.
 
 ## Råd till potentiellt berörda
 
@@ -264,4 +268,6 @@ Den som besökte en berörd webbplats bör uppdatera operativsystem och webbläs
 3. [Optimizelys offentliga drift- och säkerhetsmeddelanden](https://status.optimizely.com/)
 4. [BleepingComputer, leverantörsbekräftelse och kundreaktioner, 16 november 2026](https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/)
 5. [Reuters, kunduttalanden och osäker påverkan, 17 november 2026](https://www.reuters.com/legal/government/popular-websites-subverted-bid-steal-crypto-target-iphone-users-2026-11-17/)
+7. [Help Net Security, rensning och kryptotransaktioner, 17 november 2026](https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/)
+8. [StepSecurity, separat blockkedjeanalys, 17 november 2026](https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer)
 6. [Nyheter24, svensk nyhetsrapportering, 17 november 2026](https://nyheter24.se/nyheter/teknik/1531477-besokte-du-dessa-sajter-igar-dina-uppgifter-kan-ha-stulits)
