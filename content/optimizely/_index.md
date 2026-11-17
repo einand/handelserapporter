@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.01 · 17 november 2026**
+**Rapportversion 1.02 · 17 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -15,6 +15,9 @@ Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot 
 Den 16 november 2026 identifierade säkerhetsforskaren **Scott Helme (Report URI)** skadlig JavaScript-kod som levererades genom Optimizely Web Experimentation till webbplatser kopplade till **178 organisationer**. Forskarna undersökte **1 611** Optimizely-skript och fann **188 infekterade**. Det är antal skript och organisationer, inte antal drabbade besökare. [Report URI, 16 november](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/).
 
 **Optimizely har bekräftat** att en obehörig aktör utnyttjade en sårbarhet i Experimentation-tjänsten för att lägga till skadlig kod i kundprojekt. Enligt företagets besked har sårbarheten åtgärdats, den injicerade koden avlägsnats, berörda konton säkrats och kunder informerats. Optimizely uppgav till BleepingComputer att den utnyttjade sårbarheten låg i **registreringsflödet för Experimentation-konton**. Bolaget uppger att den sårbara vägen blockerats, att aktiva sessioner avslutats, åtkomsttoken återkallats och åtkomst för berörda konton återställts. Den exakta kodbristen är fortfarande **okänd**. [Nyheter24, 17 november](https://nyheter24.se/nyheter/teknik/1531477-besokte-du-dessa-sajter-igar-dina-uppgifter-kan-ha-stulits), [Hudson Rock, 17 november](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/).
+
+
+**Fullständig namnförteckning:** [178 rapporterade organisationer och webbplatser](./organisationer/). Förteckningen är en sekundär sammanställning med regionala dubbletter och ospecificerade webbplatsgrupper; den motsvarar inte 178 individuellt bekräftade företagsintrång.
 
 ## Omfattning och berörda webbplatser
 
