@@ -10,3 +10,44 @@
 .prose .diagram-panel pre.mermaid{background:transparent;color:inherit;padding:0;margin:0;text-align:center;white-space:pre-wrap;overflow:visible}
 .diagram-panel svg{display:block;max-width:100%;height:auto;margin:auto}
 @media(max-width:580px){.diagram-panel{padding:12px}.diagram-panel svg{min-width:540px;max-width:none}}
+
+/* Mobile-first reading and navigation improvements. */
+.mobile-toc{display:none}
+.primary-nav{min-width:0}
+.prose a{overflow-wrap:anywhere}
+.prose table{width:100%;max-width:100%;-webkit-overflow-scrolling:touch}
+.prose table th,.prose table td{min-width:0}
+.prose table code{white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+#organisationstabell{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+#organisationstabell table{display:table;width:100%;table-layout:fixed}
+#organisationstabell th:first-child,#organisationstabell td:first-child{width:48px}
+#organisationstabell th:nth-child(2),#organisationstabell td:nth-child(2){width:35%}
+#organisationstabell td{overflow-wrap:anywhere;word-break:break-word}
+@media(max-width:900px){
+ .mobile-toc{display:block;background:#fff;border:1px solid var(--line);border-radius:10px}
+ .mobile-toc summary{cursor:pointer;min-height:48px;padding:12px 16px;font-weight:700;list-style-position:inside}
+ .mobile-toc nav{padding:0 16px 16px}
+ .mobile-toc nav ul{padding-left:18px}
+ .mobile-toc nav a{display:block;padding:5px 0;font-size:14px}
+ .desktop-toc{display:none}
+ .sidebar{position:static;overflow:visible}
+}
+@media(max-width:580px){
+ .topinner{gap:14px}
+ .primary-nav{display:flex;width:100%;gap:6px 14px;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding:0 0 8px;scrollbar-width:thin}
+ .primary-nav a{flex:0 0 auto;padding:8px 0;min-height:40px;display:inline-flex;align-items:center}
+ .brand{font-size:12px;letter-spacing:.055em}
+ .breadcrumbs{overflow-wrap:anywhere}
+ .pagehead h1{font-size:clamp(27px,8vw,38px)}
+ .document{padding:18px 14px;border-radius:8px}
+ .prose{font-size:15px;line-height:1.65}
+ .prose h1{font-size:26px}
+ .prose h2{font-size:21px}
+ .prose table{font-size:12px}
+ #organisationstabell table{font-size:12px}
+ #organisationstabell th,#organisationstabell td{padding:9px 6px;line-height:1.45}
+ #organisationstabell th:first-child,#organisationstabell td:first-child{width:34px}
+ #organisationstabell th:nth-child(2),#organisationstabell td:nth-child(2){width:32%}
+ #organisationstabell code{font-size:11px}
+ .footerinner{flex-direction:column}
+}
