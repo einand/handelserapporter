@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.08 · 18 november 2026**
+**Rapportversion 1.09 · 18 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -18,6 +18,40 @@ Den 16 november 2026 identifierade säkerhetsforskaren **Scott Helme (Report URI
 
 **Optimizely har bekräftat** att en obehörig aktör utnyttjade en sårbarhet i Experimentation-tjänsten för att lägga till skadlig kod i kundprojekt. Enligt företagets besked har sårbarheten åtgärdats, den injicerade koden avlägsnats, berörda konton säkrats och kunder informerats. Optimizely uppgav till BleepingComputer att den utnyttjade sårbarheten låg i **registreringsflödet för Experimentation-konton**. Bolaget uppger att den sårbara vägen blockerats, att aktiva sessioner avslutats, åtkomsttoken återkallats och åtkomst för berörda konton återställts. Den exakta kodbristen är fortfarande **okänd**. [Nyheter24, 17 november](https://nyheter24.se/nyheter/teknik/1531477-besokte-du-dessa-sajter-igar-dina-uppgifter-kan-ha-stulits), [Hudson Rock, 17 november](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/).
 
+
+## Nytt verifierat: Optimizelys tekniska kundrapport (17 november, granskad 18 november)
+
+Optimizely har publicerat en nio sidor lång [preliminär teknisk kundrapport](https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf), med betydligt mer konkreta uppgifter än statusmeddelandet. **Mandiant** har anlitats för en oberoende forensisk granskning. Slutlig rotorsaksanalys och fullständiga indikatorer återstår.
+
+**Intrångsväg:** En brist i **registreringsflödet för Web Experimentation-konton** gjorde det möjligt att skapa konton och sedan utge sig för att vara befintliga administratörer genom offentligt tillgängliga konto-/projekt-ID:n och upprepade gissningar av användarnas e-postadresser. Angriparen gjorde upp till tusentals försök per kund. Åtkomst till en kund gav inte automatiskt åtkomst till en annan. Angriparen ändrade kundernas **Project JavaScript**, i vissa fall genom att ersätta tidigare anpassad kod. Det var **inte** ett intrång i Optimizelys administratörskonto och enligt Optimizely **inte** en lösenordsstöld. En angripare kunde se sådana experiment- och projektuppgifter som den imiterade användarens behörighet medgav; faktisk läsning eller exfiltration av sådana uppgifter är **okänd**. Detta ska skiljas från intrång i kundernas egna nätverk, som inte har belagts.
+
+**Optimizelys tidslinje, 16 november (UTC):**
+
+| Tid | Leverantörens verifierade åtgärd eller observation |
+|---|---|
+| 00.37 | Första angriparkontot för användarimitation skapas |
+| 07.51 | Första skadliga kodändringen i ett kundprojekt enligt Optimizelys loggar |
+| 13.34 | Optimizely upptäcker aktiviteten |
+| 16.06 | Cloudflare-blockering av skadlig utgående kod/trafik enligt Optimizely |
+| 16.10 | Sårbarheten i registreringsflödet åtgärdas |
+| 16.53 | Angriparens aktiva sessioner avslutas och token återkallas |
+| 22.24 | All injicerad kod borttagen från berörda projekt enligt Optimizely |
+
+**Viktig tidsavvikelse:** Report URI:s tidigare observation kl. **04.21 UTC** (BBC-relaterat skript) ligger före Optimizelys angivna första skadliga projektändring **07.51 UTC**. Båda tidsuppgifterna bevaras med källangivelse; orsaken till skillnaden är **okänd**. Report URI:s verifiering av rensning i sitt urval kl. 23.11 UTC avser en annan mätning än Optimizelys interna uppgift om borttagning kl. 22.24 UTC.
+
+**Indikatorer från Optimizely/Mandiants preliminära analys:**
+
+- `pay-relay.wordpressadmin001.workers.dev` – utpekad exfiltrationsadress för kortskimmern. Webbläsarförfrågningar dit är en stark indikator på att skimmern kördes, inte i sig bevis för att uppgifter faktiskt togs emot.
+- `pay-cloud.online` och `pay.pay-cloud.online` – angriparkontrollerad infrastruktur och värd för skimmerkod.
+- `193.176.211.170` och `193.176.211.203` – observerade VPN-utgångsadresser, **inte tillförlitliga indikatorer för blockering eller attribution**.
+
+Mandiants preliminära koppling av `pay-cloud.online` till **ADAPTAGENT** och **CUPCAKE C2** sedan åtminstone september 2026 visar äldre infrastrukturaktivitet, men identifierar **inte** angriparen. Denna infrastruktur ska hållas åtskild från Report URI:s tidigare identifierade `1688360.cc` tills samband har belagts.
+
+**Vad skriptet kunde göra:** Enligt Optimizely kördes skimmern direkt vid laddning, bevakade sidan via 50-millisekunders polling, DOM-observatörer och urklippshändelser samt försökte fånga kortfält och manipulera kryptoadresser. Vid adressbyte kunde läsbara cookies, sidans URL och skärmbild skickas. Betalfält i separat hostade iframes skyddades av webbläsarens same-origin-regler. Optimizely bekräftar en iOS/iPadOS-inriktad andra fas men **inte** att en fysisk enhet komprometterats. Optimizely uppger att de **inte har bevis för att personuppgifter exfiltrerats**; hur många kort, sessioner eller besökare som faktiskt drabbades är **okänt**. Report URI:s plånbokstransaktioner kvarstår som observerade överföringar, inte entydigt verifierad stöld orsakad av just detta angrepp.
+
+**Produktavgränsning:** Endast **Web Experimentation** är bekräftat berörd. **Feature Experimentation, SDK:er och äldre Full Stack** uppges inte vara drabbade; inga belägg för påverkan på övriga produkter. Optimizely uppger också att mekanismen kunde kringgå skydd för den särskilda `cdn-pci.optimizely.com`-leveransen. Antal ytterligare drabbade kunder utöver Report URI:s 178 är **okänt**. Leverantören kontaktar kunder individuellt och kan lämna kundspecifika exponeringsintervall.
+
+**Reviderade åtgärder:** Optimizely uppger att det nu är säkert att återaktivera Web Experimentation och att generellt byte av kundlösenord/API-token **inte krävs för denna autentiseringsbrist**. Detta ersätter tidigare generella rotationsråd; eventuella faktiskt exponerade sessionstoken i läsbara cookies behöver däremot bedömas separat. Kunder bör bevara loggar från 16 november, granska CSP och utgående förfrågningar, kontrollera kort- och kryptoflöden, begära kundspecifika tider från Optimizely och överväga informationsskyldighet. Optimizelys statuswebbplats visar fortfarande **Monitoring** trots att den preliminära rapporten säger att angreppsvägen är stängd och koden borttagen.
 
 ## Kartläggning av 178 rapporterade poster
 
@@ -280,6 +314,8 @@ IKEA finns i forskarnas lista genom den specifika domänen `client.home-design.i
 Den som besökte en berörd webbplats bör uppdatera operativsystem och webbläsare. Den som skrev in kortuppgifter i ett formulär på en berörd sida bör granska kontoutdrag och kontakta banken vid misstänkta transaktioner. Kryptobetalningar bör kontrolleras mot avsedd mottagaradress. Ett besök på en listad webbplats innebär **inte automatiskt** att uppgifter stulits.
 
 ## Källor
+
+- [Optimizely, preliminär teknisk kundrapport 17 november 2026 (PDF)](https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf)
 
 1. [Scott Helme / Report URI, primär teknisk undersökning, 16 november 2026](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/)
 2. [Hudson Rock, analys av flera skriptleverantörer, 17 november 2026](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/)
