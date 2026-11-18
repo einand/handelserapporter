@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.09 · 18 november 2026**
+**Rapportversion 1.10 · 18 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -18,6 +18,12 @@ Den 16 november 2026 identifierade säkerhetsforskaren **Scott Helme (Report URI
 
 **Optimizely har bekräftat** att en obehörig aktör utnyttjade en sårbarhet i Experimentation-tjänsten för att lägga till skadlig kod i kundprojekt. Enligt företagets besked har sårbarheten åtgärdats, den injicerade koden avlägsnats, berörda konton säkrats och kunder informerats. Optimizely uppgav till BleepingComputer att den utnyttjade sårbarheten låg i **registreringsflödet för Experimentation-konton**. Bolaget uppger att den sårbara vägen blockerats, att aktiva sessioner avslutats, åtkomsttoken återkallats och åtkomst för berörda konton återställts. Den exakta kodbristen är fortfarande **okänd**. [Nyheter24, 17 november](https://nyheter24.se/nyheter/teknik/1531477-besokte-du-dessa-sajter-igar-dina-uppgifter-kan-ha-stulits), [Hudson Rock, 17 november](https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/).
 
+
+## Nytt besked 18 november kl. 14.49 UTC – Optimizely anger andel drabbade kunder
+
+Optimizely publicerade den **18 november 2026 kl. 14.49 UTC (15.49 svensk tid)** en ny offentlig uppdatering. Bolaget uppger för första gången att **färre än 5 procent av dess kunder påverkades**, att **samtliga Web Experimentation-kunder har kontaktats individuellt** med besked om de berörts och att **inga andra Optimizely-produkter påverkades**. Procentsiffrans exakta nämnare och antalet berörda kunder är **okänt**. Uppgiften ska **inte** räknas om till ett antal organisationer eller likställas med Report URI:s 178 observerade organisationer och 188 infekterade skript. Den säger inte heller hur många besökare som faktiskt fick kod körd i sin webbläsare.
+
+Optimizely upprepar att en brist i registreringsflödet tillät användarimitation och ändringar av kunders Project JavaScript, att sårbarheten stängdes och koden togs bort samma dag samt att det **inte rörde sig om ett lösenordsintrång**. Enligt bolaget finns ingen skadlig kod kvar i dess system. Händelsen visas fortfarande under **Monitoring** på statussidan. Uppdateringen redovisar **inte** antal verifierade datastölder, lyckade iOS-komprometteringar eller intrång i kundernas egna system; dessa förblir **okända**. Inte heller någon särskild svensk besökarskada har bekräftats. [Optimizelys statusuppdatering, 18 november 2026](https://status.optimizely.com/).
 
 ## Nytt verifierat: Optimizelys tekniska kundrapport (17 november, granskad 18 november)
 
@@ -51,7 +57,7 @@ Mandiants preliminära koppling av `pay-cloud.online` till **ADAPTAGENT** och **
 
 **Produktavgränsning:** Endast **Web Experimentation** är bekräftat berörd. **Feature Experimentation, SDK:er och äldre Full Stack** uppges inte vara drabbade; inga belägg för påverkan på övriga produkter. Optimizely uppger också att mekanismen kunde kringgå skydd för den särskilda `cdn-pci.optimizely.com`-leveransen. Antal ytterligare drabbade kunder utöver Report URI:s 178 är **okänt**. Leverantören kontaktar kunder individuellt och kan lämna kundspecifika exponeringsintervall.
 
-**Reviderade åtgärder:** Optimizely uppger att det nu är säkert att återaktivera Web Experimentation och att generellt byte av kundlösenord/API-token **inte krävs för denna autentiseringsbrist**. Detta ersätter tidigare generella rotationsråd; eventuella faktiskt exponerade sessionstoken i läsbara cookies behöver däremot bedömas separat. Kunder bör bevara loggar från 16 november, granska CSP och utgående förfrågningar, kontrollera kort- och kryptoflöden, begära kundspecifika tider från Optimizely och överväga informationsskyldighet. Optimizelys statuswebbplats visar fortfarande **Monitoring** trots att den preliminära rapporten säger att angreppsvägen är stängd och koden borttagen.
+**Reviderade åtgärder:** Optimizely uppger att det nu är säkert att återaktivera Web Experimentation och att generellt byte av kundlösenord/API-token **inte krävs för denna autentiseringsbrist**. Detta ersätter tidigare generella rotationsråd; eventuella faktiskt exponerade sessionstoken i läsbara cookies behöver däremot bedömas separat. Kunder bör bevara loggar från 16 november, granska CSP och utgående förfrågningar, kontrollera kort- och kryptoflöden, begära kundspecifika tider från Optimizely och överväga informationsskyldighet. Optimizelys statuswebbplats visar fortfarande **Monitoring** även efter uppdateringen den 18 november trots att den preliminära rapporten säger att angreppsvägen är stängd och koden borttagen.
 
 ## Kartläggning av 178 rapporterade poster
 
@@ -315,6 +321,7 @@ Den som besökte en berörd webbplats bör uppdatera operativsystem och webbläs
 
 ## Källor
 
+- [Optimizely, statusuppdatering 18 november kl. 14.49 UTC](https://status.optimizely.com/)
 - [Optimizely, preliminär teknisk kundrapport 17 november 2026 (PDF)](https://pages.optimizely.com/rs/947-RKE-048/images/Security%20Incident%20Report%20-%20Optimizely%20Web%20Experimentation%20-%20Nov%2017%202026.pdf)
 
 1. [Scott Helme / Report URI, primär teknisk undersökning, 16 november 2026](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/)
