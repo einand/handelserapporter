@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.10 · 18 november 2026**
+**Rapportversion 1.11 · 19 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -256,6 +256,20 @@ Report URI:s fynd omfattar bland annat webbskript associerade med **BBC, CNN, Zo
 
 **Bekräftat:** skadlig kod återfanns i undersökta skript. **Inte generellt bekräftat:** intrång i varje namngivet företags egna system, faktisk exfiltration av kunduppgifter från varje webbplats eller infektion av samtliga besökare. Antal exponerade personer och antal stulna kortuppgifter är **okänt**.
 
+## Ny verifierad teknisk kartläggning – Zscaler ThreatLabz, 18 november
+
+Den 18 november publicerade **Zscaler ThreatLabz** en separat teknisk undersökning av Optimizely-angreppet. Forskarna identifierade **över 450 unika domäner och över 3 000 URL:er som levererade det skadliga skriptet**. Detta är **inte** en verifierad siffra över 450 drabbade organisationer, 3 000 infekterade kundprojekt eller lyckade datastölder: domäner, URL:er, skript och organisationer är olika mått. Report URI:s dokumenterade **188 infekterade Optimizely-skript hos 178 organisationer** kvarstår som en separat kartläggning. Hur många unika organisationer Zscalers observationer motsvarar är **okänt**.
+
+Zscalers kodanalys preciserar att den vanliga webbkoden kunde påverka den aktuella sidans innehåll, formulär, anrop och JavaScript-åtkomliga cookies, **inte** andra flikar, andra webbplatsers cookies eller användarens lokala filer. En separat iOS-exploateringskedja kunde i teorin nå längre om den lyckades; **bekräftade lyckade iOS-intrång är fortfarande okända**.
+
+Zscaler beskriver också en mer avgränsad utlösare för vissa datainsamlingsfunktioner: skärmbildstagning och cookieinsamling i den analyserade koden skedde när en kryptoadress hade bytts ut och det berörda elementet var synligt. Då kunde information skickas till `1688360[.]cc/hit.php`. Betalkortsuppgifter från vanliga sidformulär kunde skickas till `1688360[.]cc/card.php`, medan skyddade betalningsfält i externa iframe-fönster, exempelvis Stripe eller Adyen, inte var direkt läsbara för skriptet.
+
+**Ytterligare tekniska indikatorer enligt Zscaler:** `ios-hack[.]icu` (huvuddomän för iOS-laddare), `q1ls1ho9x7wsxlu[.]icu` (sekundär styrserver), `eil786npto9u5bq[.]icu/JIUJIU888/weifile.html` (dold iframe), `5vobauua3ojpklx[.]icu/boot.js` (iOS-laddare) och `1688360[.]cc/card.php` (betalningsskimmer). Domänerna är indikatorer för kontroll av historiska loggar, inte belägg för att ett visst system blivit infekterat.
+
+Zscaler uppger att de har infört detektioner för kampanjens indikatorer. Ingen ny bekräftelse har framkommit om antalet faktiskt drabbade besökare, lyckade iOS-intrång, stulna kortuppgifter, intrång i kundernas interna system eller svensk påverkan.
+
+[Källa: Zscaler ThreatLabz, 18 november 2026](https://www.zscaler.com/blogs/security-research/attackers-exploit-optimizely-flaw-inject-malicious-javascript) ([publicerad kopia med tekniska detaljer](https://securityboulevard.com/2026/11/attackers-exploit-optimizely-flaw-to-inject-malicious-javascript/)).
+
 ## Teknisk analys
 
 Webbplatserna laddade normalt JavaScript från Optimizelys betrodda leveransdomän `cdn.optimizely.com`. Angriparen lade till kod i kundprojektens **Project JavaScript**, som kunde ladda ytterligare kod från angriparkontrollerad infrastruktur. Detta gjorde att den skadliga koden kunde köras i besökarens webbläsare som en del av den ordinarie sidan. Report URI beskriver detta som en kompromettering av en tredjepartsberoende kodkedja, inte som bevis för ett separat intrång på varje kunds webbserver.
@@ -332,3 +346,5 @@ Den som besökte en berörd webbplats bör uppdatera operativsystem och webbläs
 7. [Help Net Security, rensning och kryptotransaktioner, 17 november 2026](https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/)
 8. [StepSecurity, separat blockkedjeanalys, 17 november 2026](https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer)
 6. [Nyheter24, svensk nyhetsrapportering, 17 november 2026](https://nyheter24.se/nyheter/teknik/1531477-besokte-du-dessa-sajter-igar-dina-uppgifter-kan-ha-stulits)
+
+9. [Zscaler ThreatLabz, egen teknisk analys och indikatorer, 18 november 2026](https://www.zscaler.com/blogs/security-research/attackers-exploit-optimizely-flaw-inject-malicious-javascript)
