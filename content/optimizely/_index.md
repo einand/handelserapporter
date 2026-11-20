@@ -6,11 +6,17 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.11 · 19 november 2026**
+**Rapportversion 1.12 · 20 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
 [**Visa tabellen med samtliga 178 poster**](#organisationstabell)
+
+## 19–20 november 2026: D&D Beyond bekräftar påverkan och skyddade betalningar
+
+Den 19 november bekräftade **Brian Perry, ansvarig producent för D&D Beyond**, i ett offentligt svar att webbplatsen berördes av säkerhetshändelsen hos en tredjepartsleverantör. D&D Beyond tog snabbt bort leverantörstjänsten från webbplatsen och fortsätter sin granskning. Företaget uppger uttryckligen att **betalningar inte påverkades**, eftersom de hanteras av en separat säker betalningsleverantör. Om granskningen visar att användare behöver agera kommer de att kontaktas direkt. Detta är en **kundspecifik bekräftelse**, inte ett bevis för att samtliga besökare var exponerade eller att någon faktisk datastöld skett. Antalet besökare som körde den skadliga koden, eventuell annan dataexponering och intrång i interna system är **okänt**. [Brian Perrys uttalande i r/DnD, 19 november](https://www.reddit.com/r/DnD/comments/1xz4bxh/dd_beyond_hit_with_massive_malware_attack/); [GamesRadar, 19 november](https://www.gamesradar.com/tabletop-gaming/d-and-d-beyond-was-hit-with-a-major-malware-attack-but-dont-worry-your-payment-details-are-safe/).
+
+Den 20 november rapporterades också att **Wizards of the Coast** hade granskat **Magic: The Gathering Secret Lair** och uppgav att inga kunduppgifter påverkades där. Uppgiften är ett återgivet företagsbesked; någon självständig teknisk verifiering av samtliga kunduppgifter finns inte i de granskade källorna. [GodisaGeek, 20 november](https://godisageek.com/2026/11/dnd-beyond-optimizely-breach/).
 
 ## Sammanfattning
 
