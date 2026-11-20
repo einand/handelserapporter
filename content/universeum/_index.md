@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om exponering av Universeums gästers
 
 # Dataintrång som berör Universeums gäster
 
-**Rapportversion 1.00 · 20 november 2026**
+**Rapportversion 1.01 · 20 november 2026**
 
 Rapporten beskriver det offentligt belagda händelseförloppet. Uppgifter från verksamheter och medier tillskrivs respektive källa. Det som inte är belagt anges som **okänt**.
 
@@ -19,6 +19,14 @@ Enligt [SVT Nyheter den 20 november](https://www.svt.se/nyheter/lokalt/vast/data
 Uppgifter som enligt Universeums besked kan ha exponerats är **namn, e-postadresser, telefonnummer och födelsedatum**. Även barns uppgifter kan omfattas om årskortet tillhör ett barn, enligt [Aftonbladets återgivning](https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=1506571). **Personnummer, kort- och betalningsuppgifter uppges inte omfattas.** Detta är verksamhetens och leverantörens besked, inte en publicerad oberoende forensisk granskning.
 
 Det finns **inga offentligt bekräftade fall av missbruk** av Universeums exponerade uppgifter i de kontrollerade källorna. Att uppgifter har varit åtkomliga är inte samma sak som att samtliga har använts i bedrägerier.
+
+## Nya verifierade uppgifter den 20 november, kväll
+
+Enligt [TT:s rapportering återgiven av Sweden Herald](https://swedenherald.com/article/universeum-booking-system-hacked-exposing-data-of-280000-guests) beskriver Universeums försäljningschef Eric Edblad **två dataintrång** hos bokningsleverantören: ett i slutet av oktober och ett som Universeum fick kännedom om tidigare under veckan. Han skiljer också på uppgifterna: det första ska ha berört mer bokningsinformation, exempelvis ordernummer, medan det senare ska ha berört kontaktuppgifter såsom namn, telefonnummer och e-postadress, **inte vad gästerna bokat**. Detta är en viktig avgränsning: uppgifterna pekar på två angreppstillfällen, men fastställer inte att två olika angripare eller två olika tekniska sårbarheter förekom.
+
+[Omni den 20 november kl. 19.38](https://omni.se/universeum-hackat-280000-gasters-data-lackt/a/r8Aym3) återger att leverantören har vidtagit säkerhetsåtgärder och att **personuppgiftsincidenten har anmälts till Integritetsskyddsmyndigheten (IMY)**. Det är en uppgift från Universeum återgiven i medier, inte ett självständigt publicerat IMY-beslut. Inga tecken på bedrägerimissbruk har rapporterats.
+
+**Förtydligande om kopplingen till tidigare Visit Group-intrång:** Det första av de två rapporterade angreppen ligger tidsmässigt i linje med Visits tidigare offentliggjorda incident i oktober. Att det rör sig om exakt samma åtkomsthändelse är dock ännu inte tekniskt verifierat. Det andra angreppets exakta datum, intrångsväg och koppling till det första är **okända**.
 
 ## Händelseförlopp
 
@@ -33,6 +41,10 @@ Det finns **inga offentligt bekräftade fall av missbruk** av Universeums expone
 [Svenska Turistföreningen, STF](https://www.swedishtouristassociation.com/about-stf/news/information-about-a-security-incident-at-our-booking-provider/), uppdaterat 4 november, uppger att Visit först identifierade **762** berörda bokningar och senare ytterligare **630**, sammanlagt **1 392 bokningar**. STF anger att vissa bokningar gjordes redan i augusti 2025 och januari 2026. Detta visar att det inte räcker att enbart undersöka bokningar från 23–26 oktober för att beskriva hela den kända exponeringen.
 
 STF uppger att leverantören stoppade intrånget **26 oktober**, stängde de utnyttjade åtkomstvägarna och lät oberoende säkerhetsexperter granska utredningen. Det är leverantörsuppgifter återgivna av STF.
+
+### Veckan före 20 november – Universeum får kännedom om ytterligare angrepp
+
+Enligt Eric Edblad, återgiven av TT, fick Universeum tidigare under veckan kännedom om ett andra angrepp hos leverantören. Den exakta tidpunkten och tekniska intrångsvägen är **okända**.
 
 ### 20 november – Universeum informerar gäster
 
@@ -56,7 +68,8 @@ Att Universeum och tidigare berörda verksamheter använder samma leverantör ä
 | Exakt teknisk intrångsväg | Okänd för Universeums exponerade uppgifter |
 | Angriparens identitet, motiv och eventuell utpressning | Okänt |
 | Tidpunkt för åtkomst till Universeums uppgifter | Okänd |
-| Polisanmälan och anmälan till IMY för just Universeum | Okänt i granskade källor |
+| Anmälan till IMY | Uppges ha gjorts enligt Universeums besked återgivet av Omni 20 november; inget IMY-beslut granskat |
+| Polisanmälan | Okänt |
 
 ## Risker och råd till gäster
 
@@ -74,4 +87,7 @@ Detta är förebyggande råd. De innebär **inte** att sådana bedrägerier har 
 4. [Skansen – Information about a data breach](https://www.skansen.se/en/data-breach/) – primärkälla om Visits tidigare intrång och avgränsning.
 5. [STF – Information about a security incident at our booking provider](https://www.swedishtouristassociation.com/about-stf/news/information-about-a-security-incident-at-our-booking-provider/) – primärkälla om tidslinje, åtgärder och berörda bokningar.
 
-**Senast faktagranskad: 20 november 2026.** Nästa version skapas endast när nya väsentliga uppgifter kan verifieras.
+6. [TT/Sweden Herald, 20 november – två angrepp och olika uppgiftstyper](https://swedenherald.com/article/universeum-booking-system-hacked-exposing-data-of-280000-guests).
+7. [Omni, 20 november kl. 19.38 – anmälan till IMY och två angrepp](https://omni.se/universeum-hackat-280000-gasters-data-lackt/a/r8Aym3).
+
+**Senast faktagranskad: 20 november 2026, kväll.** Nästa version skapas endast när nya väsentliga uppgifter kan verifieras.
