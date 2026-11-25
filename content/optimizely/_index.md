@@ -6,11 +6,19 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.12 · 20 november 2026**
+**Rapportversion 1.13 · 25 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
 [**Visa tabellen med samtliga 178 poster**](#organisationstabell)
+
+## 24–25 november 2026: CVE, myndighetsklassning och nytt leverantörsbesked
+
+Sårbarheten har fått beteckningen **CVE-2026-132224** (publicerad 18 november, CWE-642). Den amerikanska cybersäkerhetsmyndigheten CISA lade till den i sin katalog över faktiskt utnyttjade sårbarheter (KEV) den **24 november**, med åtgärdsfrist 27 november för berörda amerikanska federala myndigheter. Detta avser den redan dokumenterade sårbarheten i registreringsflödet, inte ett nytt bekräftat angrepp efter rensningen. Kunder behöver följa leverantörens åtgärdsråd och utreda historisk exponering; själva molntjänstens brist uppges redan vara åtgärdad. CISA:s klassning bekräftar inte lyckad iOS-exploatering eller faktisk stöld av besökares uppgifter. [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132224), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [RadioCSIRT:s återgivning av KEV-posten](https://cve.radiocsirt.org/vuln/CVE-2026-132224).
+
+Den **25 november** publicerade Optimizelys Shafqat Islam ett nytt offentligt besked där företaget ber om ursäkt, bekräftar att kundwebbplatser försågs med skadlig kod och upprepar att sårbarheten stängdes inom timmar och berörda kunder kontaktades. Beskedets tillgängliga utdrag ger inga nya verifierade siffror för besökare eller datastöld; hela artikeln kunde inte hämtas vid kontrollen. [Optimizely, 25 november](https://www.optimizely.com/field-notes/articles/web-experimentation-security-incident-update).
+
+Antalet infekterade skript i Report URI:s tidigare kartläggning är fortsatt 188 hos 178 organisationer. Faktisk kortdatastöld, lyckad iOS-exploatering, svensk besökarpåverkan och slutlig kryptostöldsumma är fortsatt **okända**. Det separata angreppet mot Configured Commerce anges av Optimizely vara orelaterat. [Status](https://status.optimizely.com/).
 
 ## 19–20 november 2026: D&D Beyond bekräftar påverkan och skyddade betalningar
 
