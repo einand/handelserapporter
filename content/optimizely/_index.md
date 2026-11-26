@@ -6,7 +6,7 @@ description: "Verifierat händelseförlopp om manipulerade Optimizely-skript, be
 
 # Cyberangrepp via Optimizely Web Experimentation
 
-**Rapportversion 1.13 · 25 november 2026**
+**Rapportversion 1.14 · 26 november 2026**
 
 Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot Optimizelys webbskript. Ett infekterat skript på en organisations webbplats är **inte** liktydigt med att organisationens interna system har hackats eller att alla dess besökare har fått uppgifter stulna. Där uppgifter saknas anges **okänt**.
 
@@ -16,7 +16,13 @@ Denna rapport sammanställer offentligt verifierbara uppgifter om angreppet mot 
 
 Sårbarheten har fått beteckningen **CVE-2026-132224** (publicerad 18 november, CWE-642). Den amerikanska cybersäkerhetsmyndigheten CISA lade till den i sin katalog över faktiskt utnyttjade sårbarheter (KEV) den **24 november**, med åtgärdsfrist 27 november för berörda amerikanska federala myndigheter. Detta avser den redan dokumenterade sårbarheten i registreringsflödet, inte ett nytt bekräftat angrepp efter rensningen. Kunder behöver följa leverantörens åtgärdsråd och utreda historisk exponering; själva molntjänstens brist uppges redan vara åtgärdad. CISA:s klassning bekräftar inte lyckad iOS-exploatering eller faktisk stöld av besökares uppgifter. [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-132224), [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [RadioCSIRT:s återgivning av KEV-posten](https://cve.radiocsirt.org/vuln/CVE-2026-132224).
 
-Den **25 november** publicerade Optimizelys Shafqat Islam ett nytt offentligt besked där företaget ber om ursäkt, bekräftar att kundwebbplatser försågs med skadlig kod och upprepar att sårbarheten stängdes inom timmar och berörda kunder kontaktades. Beskedets tillgängliga utdrag ger inga nya verifierade siffror för besökare eller datastöld; hela artikeln kunde inte hämtas vid kontrollen. [Optimizely, 25 november](https://www.optimizely.com/field-notes/articles/web-experimentation-security-incident-update).
+Den **25 november** publicerade Optimizelys Shafqat Islam ett utförligt [leverantörsbesked](https://www.optimizely.com/field-notes/articles/web-experimentation-security-incident-update), nu tillgängligt i sin helhet och granskat den 26 november. Följande nya uppgifter är leverantörens egna forensiska fynd, inte en färdig oberoende granskning.
+
+- Den äldre registreringen för gratis provkonton och funktionen för användarimitation har stängts permanent. Angriparen återöppnade även arkiverade projekt; kvarvarande skript på gamla sidor kunde därför åter börja leverera kod. Försök att ändra Feature Experimentation stoppades.
+- Reviderad tidslinje (UTC): testkonton skapades 13 november 18.40; tidig testkod infördes 16 november 01.20, i produktion 03.54; huvudangreppet började 07.51. En kund slog larm 13.34. Detta förklarar varför den tidigare angivna huvudattackens start inte var första möjliga exponering. Första kundmeddelandet skickades 17 november 00.01.
+- Optimizelys egen inloggningssida levererade koden eftersom CSP endast rapporterade överträdelser. Besökarpåverkan utreds; huvudsidan blockerade koden.
+- Inga bekräftade kort- eller kryptoförluster hos kunder, inga rapporterade infekterade enheter och inga belägg för exfiltration av data lagrade hos Optimizely enligt företaget. Faktisk besökarpåverkan är fortfarande okänd. Mandiants slutrapport väntas inom några veckor.
+- Uppdaterade indikatorer: `webshell[.]lol`, `1688360[.]cc`, `5vobauua3ojpklx[.]icu`, `eil786npto9u5bq[.]icu`, oväntade användarinbjudningar från `fldubai[.]com`, plusadresser som efterliknar kollegor samt okända webhooks. Kontrollera även historiska projekt och tidigare loggsökningar. Leverantören planerar tvåpersonsgodkännande för kodändringar och inbyggda förändringslarm; funktionerna är ännu inte bekräftat införda.
 
 Antalet infekterade skript i Report URI:s tidigare kartläggning är fortsatt 188 hos 178 organisationer. Faktisk kortdatastöld, lyckad iOS-exploatering, svensk besökarpåverkan och slutlig kryptostöldsumma är fortsatt **okända**. Det separata angreppet mot Configured Commerce anges av Optimizely vara orelaterat. [Status](https://status.optimizely.com/).
 
@@ -57,7 +63,7 @@ Optimizely har publicerat en nio sidor lång [preliminär teknisk kundrapport](h
 | 16.53 | Angriparens aktiva sessioner avslutas och token återkallas |
 | 22.24 | All injicerad kod borttagen från berörda projekt enligt Optimizely |
 
-**Viktig tidsavvikelse:** Report URI:s tidigare observation kl. **04.21 UTC** (BBC-relaterat skript) ligger före Optimizelys angivna första skadliga projektändring **07.51 UTC**. Båda tidsuppgifterna bevaras med källangivelse; orsaken till skillnaden är **okänd**. Report URI:s verifiering av rensning i sitt urval kl. 23.11 UTC avser en annan mätning än Optimizelys interna uppgift om borttagning kl. 22.24 UTC.
+**Viktig tidsavvikelse:** Report URI:s tidigare observation kl. **04.21 UTC** (BBC-relaterat skript) ligger före Optimizelys angivna första skadliga projektändring **07.51 UTC**. Båda tidsuppgifterna bevaras med källangivelse; den senare leverantörstidslinjen från 25 november anger tidig testkod före huvudangreppet och förklarar därmed den tidigare skenbara tidskonflikten; exakt koppling till BBC-observationen är fortfarande okänd. Report URI:s verifiering av rensning i sitt urval kl. 23.11 UTC avser en annan mätning än Optimizelys interna uppgift om borttagning kl. 22.24 UTC.
 
 **Indikatorer från Optimizely/Mandiants preliminära analys:**
 
@@ -322,7 +328,7 @@ Enligt Report URI hade antalet fortfarande infekterade skript i deras urval sjun
 
 Att tillåta `cdn.optimizely.com` räckte inte eftersom den skadliga koden levererades från den betrodda domänen. En strikt `script-src` kunde blockera den externa laddningen. `strict-dynamic` kunde däremot ge ett betrott skript rätt att ladda nästa skript. `unsafe-eval` kunde låta den inbäddade reservvarianten köras trots blockering av angriparens domän. En restriktiv `connect-src` kunde hindra kort-, cookie- och skärmbildsdata från att skickas till angriparens server, men inte hindra lokal manipulation av kryptoadresser. Report URI nämner HSBC som exempel på att en inbäddad variant kunde köras samtidigt som utgående stöldtrafik blockerades. Detta ska inte tolkas som verifierad datastöld hos HSBC.
 
-**Åtgärder för webbplatsägare:** granska `Project JavaScript` och experimentkod, kontrollera användare och API-token med skrivåtkomst, rotera berörda autentiseringsuppgifter, se över `script-src` och `connect-src`, undvik `unsafe-eval` där möjligt och aktivera CSP-rapportering. [Report URI:s CSP-granskning och indikatorer](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/).
+**Åtgärder för webbplatsägare:** granska `Project JavaScript` och experimentkod, kontrollera användare och API-token med skrivåtkomst, rotera autentiseringsuppgifter vid konkret exponering (inte generellt på grund av registreringsbristen), se över `script-src` och `connect-src`, undvik `unsafe-eval` där möjligt och aktivera CSP-rapportering. [Report URI:s CSP-granskning och indikatorer](https://report-uri.ghost.io/worlds-largest-brands-infected-with-malware-via-optimizely/).
 
 ## Svensk påverkan
 
